@@ -1,0 +1,52 @@
+{
+  "Type": "Ground Unit",
+  "Description": "The Archon is a powerful Protoss short-range spellcaster unit formed by merging two High Templar or Dark Templar. It excels against biological units and structures with its area-of-effect attack that damages both ground and air targets. Archons possess massive shield capacity but extremely low health, making them resilient against sustained damage but vulnerable to shield-draining abilities.",
+  "Built From": "Merged from 2 High Templar or Dark Templar",
+  "Requirements": "2 High Templar or 2 Dark Templar (Templar Archives required for High Templar)",
+  "Cost": {
+    "mineral": 100,
+    "vespene": 300,
+    "game_time": 9,
+    "supply": 4
+  },
+  "Hotkey": "Select Templar and press T",
+  "Attack": {
+    "Targets": "Ground / Air",
+    "Damage": "25 (+3) (Splash)",
+    "DPS": "15.6 (Base), 19.5 (vs Biological)",
+    "Cooldown": "1.6",
+    "Bonus": "+10 (+1) vs Biological",
+    "Bonus DPS": "+6.25 (+0.625) vs Biological",
+    "Range": "3"
+  },
+  "Unit stats": {
+    "Defense": "10 350 0 (+1)",
+    "Attributes": "Psionic, Massive",
+    "Sight": "9",
+    "Speed": "3.94",
+    "Cargo size": "4"
+  },
+  "Strong against": [
+    "Marine",
+    "Zergling",
+    "Mutalisk",
+    "Baneling",
+    "Adept",
+    "Zealot"
+  ],
+  "Weak against": [
+    "Ghost",
+    "Immortal",
+    "Viper",
+    "Thor",
+    "Corruptor"
+  ],
+  "Ability": "No ability found",
+  "Upgrade": "No upgrade found",
+  "Competitive Usage": {
+    "General": "Archons serve as versatile frontline bruisers and area-denial units. With only 3 range, they function best behind a wall of Zealots where they can deal splash damage safely. Their massive shields allow them to absorb tremendous punishment and regenerate quickly out of combat. Archons are particularly valuable for breaking Force Fields in PvP and providing quick access to area damage before Colossi or Psionic Storm become available. The merging process takes 9 seconds during which the Archon is vulnerable but can be repositioned.",
+    "Vs. Protoss": "Excellent against gateway compositions, shredding Zealots and Adepts while breaking Sentry Force Fields. Vulnerable to Disruptor focus fire due to their large hitbox and shield-heavy composition. Effective against air compositions like Void Rays and Carriers when supported by Shield Batteries and sufficient numbers.",
+    "Vs. Terran": "Devastating against bio compositions (Marine/Marauder/Medivac), dealing bonus damage to both core units. Immune to Marauder slow but extremely vulnerable to Ghost EMP which removes 100 shields. Surprisingly durable against mech compositions due to lack of Armored tag, making them resilient against Siege Tanks.",
+    "Vs. Zerg": "Dominant against Ling/Bane/Muta compositions, one-shotting Zerglings and Banelings while crippling Mutalisk balls. Effective for clearing Creep Tumors without detection by splashing nearby units. Can be dropped via Warp Prism for harassment. Less efficient against Roach/Hydra/Lurker compositions but still serviceable."
+  }
+}

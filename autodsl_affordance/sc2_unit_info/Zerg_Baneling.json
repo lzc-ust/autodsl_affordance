@@ -1,0 +1,76 @@
+{
+  "Type": "Ground Unit",
+  "Description": "The Baneling is a suicidal Zerg unit morphed from Zerglings that deals massive area damage upon detonation. Specializing in wiping out clusters of light units and structures, its explosive attack makes it devastating against tightly packed armies. While fragile and short-ranged, proper control can allow Banelings to decide engagements through well-placed detonations.",
+  "Built From": "Morphed from Zergling",
+  "Requirements": "Baneling Nest",
+  "Cost": {
+    "mineral": 25,
+    "vespene": 25,
+    "game_time": 14,
+    "supply": 0.5
+  },
+  "Hotkey": "Select Zergling and press B",
+  "Attack": {
+    "Targets": "Ground",
+    "Damage": "16 (+2) (Splash)",
+    "DPS": "N/A (Suicide Attack)",
+    "Cooldown": "N/A",
+    "Bonus": "+19 (+2) vs Light",
+    "Bonus DPS": "N/A",
+    "Range": "0.25 (Detonation Radius: 2.2)"
+  },
+  "Unit stats": {
+    "Defense": "30 0 0 (+1)",
+    "Attributes": "Biological",
+    "Sight": "8",
+    "Speed": "3.5",
+    "Cargo size": "2"
+  },
+  "Strong against": [
+    "Marine",
+    "Zergling",
+    "Zealot",
+    "Adept",
+    "Probe",
+    "SCV",
+    "Drone"
+  ],
+  "Weak against": [
+    "Marauder",
+    "Roach",
+    "Stalker",
+    "Hellion",
+    "Siege Tank",
+    "Widow Mine"
+  ],
+  "Ability": {
+    "Name": "Explode",
+    "Hotkey": "X",
+    "Description": "Manual detonation command. Banelings also automatically explode upon death or when attacking in melee range."
+  },
+  "Upgrade": [
+    {
+      "Name": "Centrifugal Hooks",
+      "Mineral Cost": 150,
+      "Vespene Cost": 150,
+      "Research Time": 57,
+      "Researched From": "Baneling Nest",
+      "Effect": "Increases Baneling movement speed from 3.5 to 4.55"
+    },
+    {
+      "Name": "Metabolic Boost",
+      "Mineral Cost": 100,
+      "Vespene Cost": 100,
+      "Research Time": 57,
+      "Researched From": "Spawning Pool",
+      "Effect": "Increases Zergling/Baneling movement speed from 3.5 to 4.55"
+    }
+  ],
+  "Competitive Usage": {
+    "General": "Banelings excel at punishing clumped armies and enabling Zerg's aggressive playstyles. Their splash damage makes them ideal for breaking formations and clearing worker lines. Effective Baneling usage requires flanking maneuvers, proper timing, and target selection to maximize value against light units. They are particularly devastating when combined with Zerglings to overwhelm split armies.",
+    "Vs. Protoss": "Primarily used for worker harassment and against Gateway unit compositions. Can one-shot Probes with +2 melee upgrades. Effective against Zealots and Adepts but vulnerable to Stalker kiting and force fields. Less common in main armies since nerfs to non-light damage, but remain valuable for base trade scenarios and timing attacks.",
+    "Vs. Terran": "Core unit against bio compositions, where they force Marine splitting and create engagement advantages. Devastating against clumped Marines but vulnerable to Widow Mine splash and Tank fire. The Centrifugal Hooks upgrade is crucial for connecting against stimmed bio armies. Often used in Ling-Bane-Muta compositions to handle Terran infantry.",
+    "Vs. Zerg": "Fundamental in ZvZ early game, where Ling-Bane wars determine map control and expansion timing. Can instantly kill Zerglings and decide early engagements. Vulnerable to Roach compositions and becomes less effective as games transition to higher tech units. Critical for maintaining aggression and denying enemy expansions."
+  }
+}
+

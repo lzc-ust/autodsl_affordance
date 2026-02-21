@@ -1,0 +1,72 @@
+{
+  "Type": "Ground Unit",
+  "Description": "The Zergling is the swift and numerous melee attacker that forms the core of the Zerg swarm. While individually weak, they become devastating in large groups that can surround and overwhelm enemy forces. Their exceptional speed, low cost, and rapid production make them ideal for map control, harassment, and supporting more expensive units.",
+  "Built From": "Larva (requires Spawning Pool)",
+  "Requirements": "Spawning Pool",
+  "Cost": {
+    "mineral": 25,
+    "vespene": 0,
+    "game_time": 17,
+    "supply": 0.5
+  },
+  "Hotkey": "Z",
+  "Attack": {
+    "Targets": "Ground",
+    "Damage": "5 (+1)",
+    "DPS": "8.3 (Base), 11.9 (Adrenal Glands)",
+    "Cooldown": "0.60 (0.42 with Adrenal Glands)",
+    "Bonus": "None",
+    "Bonus DPS": "None",
+    "Range": "0.1 (Melee)"
+  },
+  "Unit stats": {
+    "Defense": "35 0 0 (+1)",
+    "Attributes": "Biological, Light",
+    "Sight": "8",
+    "Speed": "4.13",
+    "Cargo size": "1"
+  },
+  "Strong against": [
+    "Marauder",
+    "Stalker",
+    "Immortal",
+    "Roach",
+    "Hydralisk"
+  ],
+  "Weak against": [
+    "Hellion",
+    "Colossus",
+    "Baneling",
+    "Zealot",
+    "Siege Tank"
+  ],
+  "Ability": {
+    "Name": "Morph to Baneling",
+    "Hotkey": "B",
+    "Description": "Transforms the Zergling into a Baneling. Requires Baneling Nest."
+  },
+  "Upgrade": [
+    {
+      "Name": "Metabolic Boost",
+      "Mineral Cost": 100,
+      "Vespene Cost": 100,
+      "Research Time": 57,
+      "Researched From": "Spawning Pool",
+      "Effect": "Increases Zergling movement speed from 4.13 to 6.58"
+    },
+    {
+      "Name": "Adrenal Glands",
+      "Mineral Cost": 200,
+      "Vespene Cost": 200,
+      "Research Time": 57,
+      "Researched From": "Spawning Pool",
+      "Effect": "Increases Zergling attack speed by 42.9%"
+    }
+  ],
+  "Competitive Usage": {
+    "General": "Zerglings are the primary mineral dump and map control unit for Zerg. Their speed allows them to scout, harass, and counter-attack across multiple fronts simultaneously. When upgraded, they become one of the fastest and most cost-effective units in the game. Effective Zergling usage requires constant multi-tasking and awareness of enemy army positioning to maximize their harassment potential.",
+    "Vs. Protoss": "Excellent for run-bys against undefended bases and punishing Protoss expansions. Effective against Stalkers and Immortals when surrounding, but vulnerable to Zealots with Charge. Speedlings can bypass frontlines to attack vulnerable tech structures and worker lines. Late-game Cracklings with full upgrades remain threatening against isolated Protoss units.",
+    "Vs. Terran": "Core unit for map control and multi-pronged attacks against Terran. Essential for cleaning up scattered bio units after Baneling connections. Vulnerable to Hellion and Hellbat splash damage. Speedlings excel at punishing Terran positioning errors and defending against drops. Often paired with Banelings to force Marine splitting.",
+    "Vs. Zerg": "Fundamental in early ZvZ for establishing map control and applying pressure. Speedlings determine early expansion timing and can punish greedy openings. Vulnerable to Banelings and Roach compositions as the game progresses. Critical for maintaining creep spread and denying enemy map vision throughout the match."
+  }
+}

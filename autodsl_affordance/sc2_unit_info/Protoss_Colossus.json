@@ -1,0 +1,61 @@
+{
+  "Type": "Ground Unit",
+  "Description": "The Colossus is a massive Protoss robotic walker that towers over battlefield terrain. Built from the Robotics Facility, it serves as a premier area-of-effect damage dealer against ground forces. Its dual Thermal Lances sweep across units in a wide linear pattern, making it exceptionally effective against clustered light infantry. The Colossus's unique cliff-walking ability and extended range with upgrades allow it to maintain superior positioning while unleashing devastating fire.",
+  "Built From": "Robotics Facility",
+  "Requirements": "Robotics Bay",
+  "Cost": {
+    "mineral": 300,
+    "vespene": 200,
+    "game_time": 54,
+    "supply": 6
+  },
+  "Hotkey": "C",
+  "Attack": {
+    "Targets": "Ground",
+    "Damage": "10 (+1) per beam (x2 beams)",
+    "DPS": "21.4 (Base), 30.7 (vs Light)",
+    "Cooldown": "0.93",
+    "Bonus": "+5 (+1) vs Light",
+    "Bonus DPS": "+9.3 (+1.87) vs Light",
+    "Range": "7 (9 with Extended Thermal Lance)"
+  },
+  "Unit stats": {
+    "Defense": "200 150 1 (+1)",
+    "Attributes": "Armored, Massive, Mechanical",
+    "Sight": "10",
+    "Speed": "3.15",
+    "Cargo size": "8"
+  },
+  "Strong against": [
+    "Marine",
+    "Zergling",
+    "Zealot",
+    "Adept",
+    "Hydralisk"
+  ],
+  "Weak against": [
+    "Viking",
+    "Corruptor",
+    "Tempest",
+    "Marauder",
+    "Immortal"
+  ],
+  "Ability": {
+    "Name": "Cliff Walk",
+    "Description": "Can traverse cliffs and elevated terrain, providing high ground vision"
+  },
+  "Upgrade": {
+    "Name": "Extended Thermal Lance",
+    "Mineral Cost": 150,
+    "Vespene Cost": 150,
+    "Research Time": 100,
+    "Researched From": "Robotics Bay",
+    "Effect": "Increases attack range from 7 to 9"
+  },
+  "Competitive Usage": {
+    "General": "The Colossus serves as Protoss's primary consistent splash damage option, excelling against light ground unit compositions. Its cliff-walking capability enables unique positioning and kiting opportunities. However, its vulnerability to air units with anti-armored bonuses (Vikings, Corruptors) requires substantial anti-air support. The Extended Thermal Lance upgrade is essential for maintaining safe positioning behind frontline units.",
+    "Vs. Protoss": "Rarely used in PvP due to the prevalence of Immortals (bonus vs Armored) and Disruptors. When deployed, requires careful positioning to avoid being focused by Stalkers and Immortals. Can be effective against heavy Gateway unit compositions if properly protected.",
+    "Vs. Terran": "Excellent against Marine-heavy bio compositions, where its linear splash damage can devastate tightly packed formations. Vulnerable to Viking support and Marauder focus fire. Typically used in mid-game timing attacks before Terran can mass air counters. Requires Stalker support to handle Vikings.",
+    "Vs. Zerg": "Effective against Ling/Hydra compositions and useful for breaking Roach/Ravager positions. Becomes vulnerable once Zerg reaches Hive tech with Vipers (Abduct) and Corruptors. Often transitions into Tempest or Carrier compositions later in the game. Struggles against Lurker-based armies without proper detection and positioning."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "Type": "Ground Unit",
+  "Description": "The Adept is a Protoss gateway unit specializing in worker harassment and light unit elimination. After building a Cybernetics Core, it can be warped in from Gateways. Its key mechanic is the Psionic Transfer ability, which projects an invulnerable Shade for tactical repositioning. The Adept's attacks are linear psionic projectiles that deal bonus damage to Light targets, though with a slow base attack speed improved significantly by the Resonating Glaives upgrade.",
+  "Built From": "Gateway (requires Cybernetics Core)",
+  "Requirements": "Cybernetics Core",
+  "Cost": {
+    "mineral": 100,
+    "vespene": 25,
+    "game_time": 27,
+    "supply": 2
+  },
+  "Hotkey": "A",
+  "Attack": {
+    "Targets": "Ground",
+    "Damage": "10 (+1)",
+    "DPS": "7.1 (Base), 12.5 (Resonating Glaives)",
+    "Cooldown": "1.41 (Base), 0.83 (Resonating Glaives)",
+    "Bonus": "+12 (+1) vs Light",
+    "Bonus DPS": "17.0 (Base vs Light), 30.1 (Resonating Glaives vs Light)",
+    "Range": "4"
+  },
+  "Unit stats": {
+    "Defense": "70 70 1 (+1)",
+    "Attributes": "Light, Biological",
+    "Sight": "10",
+    "Speed": "3.5",
+    "Cargo size": "2"
+  },
+  "Strong against": [
+    "SCV",
+    "Drone",
+    "Probe",
+    "Zergling",
+    "Marine"
+  ],
+  "Weak against": [
+    "Stalker",
+    "Marauder",
+    "Roach",
+    "Queen",
+    "All air units"
+  ],
+  "Ability": {
+    "Name": "Psionic Transfer",
+    "Hotkey": "F",
+    "Cooldown": "11",
+    "Description": "Summons an invulnerable Shade that moves forward. After 3.5 seconds, the Adept teleports to the Shade's location. Can be canceled manually."
+  },
+  "Upgrade": {
+    "Name": "Resonating Glaives",
+    "Mineral Cost": 150,
+    "Vespene Cost": 150,
+    "Research Time": 121,
+    "Researched From": "Twilight Council",
+    "Effect": "Reduces attack cooldown from 1.41 to 0.83, increasing DPS by approximately 76%"
+  },
+  "Competitive Usage": {
+    "General": "The Adept excels at early-game harassment and mid-game light unit clearing. Using Psionic Transfer, it can safely scout and harass enemy mineral lines, posing a significant threat to worker units. After researching Resonating Glaives, the Adept becomes a formidable force in direct engagements, particularly effective against compositions heavy on Light units.",
+    "Vs. Protoss": "In mirror matches, primarily used for early-game Probe harassment and effective against Zealots. However, it is countered by Stalkers, requiring careful Shade micro for damage avoidance and tactical flanking.",
+    "Vs. Terran": "A core unit against Terran, specifically targeting SCVs and Marines. Common Adept timing attacks combined with Immortals and Force Fields can create immense pressure on Terran defenses in the early to mid-game.",
+    "Vs. Zerg": "Extremely effective against Zerg, perfectly countering Zerglings while efficiently draining Queen and Drone health. Adept expands and Adept timing attacks are classic PvZ strategies, utilizing multi-prong harassment to suppress Zerg economy."
+  }
+}

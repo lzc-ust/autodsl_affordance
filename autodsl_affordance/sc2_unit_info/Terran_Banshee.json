@@ -1,0 +1,75 @@
+{
+  "Type": "Air Unit",
+  "Description": "The Banshee is a Terran air-to-ground assault craft specializing in hit-and-run harassment and surgical strikes against key ground targets. Built from a Starport with Tech Lab, it can research Cloak to become invisible, making it a potent threat against unprepared opponents. While fragile and vulnerable to anti-air, its high ground damage and stealth capabilities allow it to devastate worker lines and unsupported ground armies.",
+  "Built From": "Starport (with Tech Lab)",
+  "Requirements": "Starport, Tech Lab",
+  "Cost": {
+    "mineral": 150,
+    "vespene": 100,
+    "game_time": 43,
+    "supply": 3
+  },
+  "Hotkey": "B",
+  "Attack": {
+    "Targets": "Ground",
+    "Damage": "12 (+1) × 2 rockets",
+    "DPS": "21.8 (Base)",
+    "Cooldown": "1.1",
+    "Bonus": "None",
+    "Bonus DPS": "None",
+    "Range": "6"
+  },
+  "Unit stats": {
+    "Defense": "140 0 0 (+1)",
+    "Attributes": "Light, Mechanical",
+    "Sight": "10",
+    "Speed": "3.85",
+    "Cargo size": "N/A"
+  },
+  "Strong against": [
+    "SCV",
+    "Drone",
+    "Probe",
+    "Colossus",
+    "Siege Tank",
+    "Ultralisk"
+  ],
+  "Weak against": [
+    "Phoenix",
+    "Viking",
+    "Hydralisk",
+    "Marine",
+    "Cyclone",
+    "Missile Turret"
+  ],
+  "Ability": {
+    "Name": "Cloak",
+    "Hotkey": "C",
+    "Energy Cost": "25 initial + 0.7875 per second",
+    "Description": "Renders the Banshee invisible to enemies without detection. Requires research at Starport Tech Lab."
+  },
+  "Upgrade": [
+    {
+      "Name": "Banshee Cloak",
+      "Mineral Cost": 100,
+      "Vespene Cost": 100,
+      "Research Time": 79,
+      "Researched From": "Starport Tech Lab",
+      "Effect": "Unlocks the Cloak ability for Banshees"
+    },
+    {
+      "Name": "Hyperflight Rotors",
+      "Mineral Cost": 150,
+      "Vespene Cost": 150,
+      "Research Time": 79,
+      "Researched From": "Starport Tech Lab",
+      "Effect": "Increases Banshee movement speed from 3.85 to 5.25"
+    }
+  ],
+  "Competitive Usage": {
+    "General": "Banshees excel at early-game harassment and mid-game tactical strikes. Their ability to cloak makes them particularly deadly against opponents who lack detection. Two Banshees can one-shot workers, making them devastating to enemy economies. While largely superseded by Liberators in many roles, Banshees remain valuable for their burst damage and stealth capabilities. They require careful micro to avoid anti-air and should be used for hit-and-run attacks rather than direct engagements.",
+    "Vs. Protoss": "Effective against Protoss due to their weak early anti-air. Can devastate mineral lines if Protoss lacks Observer coverage. Vulnerable to Phoenix and Stalkers with detection. Often used in early-game timing attacks before Protoss can establish sufficient anti-air defenses. Requires at least 2 Banshees to one-shot Probes through Shield Battery healing.",
+    "Vs. Terran": "Common in TvT openings, especially with Cloak, to harass mineral lines and snipe Siege Tanks. Vulnerable to Viking superiority, Cyclone lock-ons, and Raven detection. The speed upgrade enables more effective harassment in mid-to-late game. Must avoid Marine clusters and Missile Turret coverage.",
+    "Vs. Zerg": "Potent against early Zerg compositions that lack anti-air. Can handle Queens and pick off drones, but vulnerable to Spore Crawler and Queen combinations. Becomes ineffective once Zerg reaches Hydralisk or Mutalisk tech. Useful for defending against early Roach pushes since Roaches cannot attack air."
+  }
+}

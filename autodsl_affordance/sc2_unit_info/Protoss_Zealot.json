@@ -1,0 +1,62 @@
+{
+  "Type": "Ground Unit",
+  "Description": "The Zealot is the foundational melee unit of the Protoss army, serving as a durable frontline fighter and excellent mineral sink. With high health and dual psionic blades, it excels at absorbing damage and engaging in close combat. While vulnerable to kiting before researching Charge, it becomes a formidable threat once upgraded, capable of quickly closing distances and trapping enemy forces.",
+  "Built From": "Gateway",
+  "Requirements": "Gateway",
+  "Cost": {
+    "mineral": 100,
+    "vespene": 0,
+    "game_time": 27,
+    "supply": 2
+  },
+  "Hotkey": "Z",
+  "Attack": {
+    "Targets": "Ground",
+    "Damage": "8 (+1) × 2 attacks",
+    "DPS": "11.4 (Base)",
+    "Cooldown": "1.4",
+    "Bonus": "None",
+    "Bonus DPS": "None",
+    "Range": "0.1 (Melee)"
+  },
+  "Unit stats": {
+    "Defense": "100 50 1 (+1)",
+    "Attributes": "Light, Biological",
+    "Sight": "9",
+    "Speed": "3.15 (4.72 with Charge)",
+    "Cargo size": "2"
+  },
+  "Strong against": [
+    "Zergling",
+    "Marine",
+    "Marauder",
+    "Stalker",
+    "Immortal"
+  ],
+  "Weak against": [
+    "Hellion",
+    "Colossus",
+    "Baneling",
+    "Roach",
+    "Siege Tank"
+  ],
+  "Ability": {
+    "Name": "Charge",
+    "Hotkey": "C",
+    "Description": "After research, Zealots gain increased movement speed and quickly dash to attack nearby enemies"
+  },
+  "Upgrade": {
+    "Name": "Charge Research",
+    "Mineral Cost": 100,
+    "Vespene Cost": 100,
+    "Research Time": 121,
+    "Researched From": "Twilight Council",
+    "Effect": "Increases Zealot movement speed to 4.72 and enables dash attack animation"
+  },
+  "Competitive Usage": {
+    "General": "Zealots serve as the primary mineral dump and frontline tank for Protoss armies. Their high durability makes them excellent damage sponges while more expensive units deal damage from behind. The Charge upgrade is essential for making Zealots effective against ranged armies, allowing them to quickly engage and trap enemies. They excel at base harassment when combined with Warp Prisms and are crucial for absorbing damage in late-game compositions.",
+    "Vs. Protoss": "Effective as frontline tanks against Stalkers and Immortals, able to absorb significant damage while more valuable units attack from behind. Vulnerable to Colossus splash damage and Adept kiting before Charge. With Charge, they can effectively engage and surround enemy armies, particularly in Immortal-Archon-Chargelot compositions.",
+    "Vs. Terran": "Core component against bio compositions, where they tank damage while splash units like Colossi and High Templar deal area damage. Charge prevents Terran bio from kiting indefinitely. Excellent for multi-prong attacks via Warp Prism drops. +1 weapons upgrade allows them to kill Marines more efficiently and trade better against Marauders.",
+    "Vs. Zerg": "Essential in Immortal-Archon-Chargelot compositions, countering Zerglings and providing a durable frontline. Charge enables effective engagement against Hydralisks and Roaches. Vulnerable to Baneling surrounds, requiring careful splitting and Archon support. Excellent for base harassment and counter-attacks when paired with Warp Prisms."
+  }
+}

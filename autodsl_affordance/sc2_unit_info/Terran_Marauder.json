@@ -1,0 +1,62 @@
+{
+  "Type": "Ground Unit",
+  "Description": "The Marauder is a heavily armored Terran infantry unit that specializes in countering armored ground targets. Built from Barracks with Tech Labs, it serves as the backbone of Terran bio armies with its high durability, slowing attacks, and bonus damage against armored units. While slow-firing, its projectiles pack a punch and its Concussive Shells ability makes it excellent at kiting and controlling engagements.",
+  "Built From": "Barracks (with Tech Lab)",
+  "Requirements": "Barracks, Tech Lab",
+  "Cost": {
+    "mineral": 100,
+    "vespene": 25,
+    "game_time": 21,
+    "supply": 2
+  },
+  "Hotkey": "M",
+  "Attack": {
+    "Targets": "Ground",
+    "Damage": "10 (+1)",
+    "DPS": "9.3 (Base), 18.6 (vs Armored)",
+    "Cooldown": "1.07",
+    "Bonus": "+10 (+1) vs Armored",
+    "Bonus DPS": "+9.3 (+0.93) vs Armored",
+    "Range": "6"
+  },
+  "Unit stats": {
+    "Defense": "125 0 1 (+1)",
+    "Attributes": "Armored, Biological",
+    "Sight": "10",
+    "Speed": "3.15",
+    "Cargo size": "2"
+  },
+  "Strong against": [
+    "Stalker",
+    "Roach",
+    "Immortal",
+    "Thor",
+    "Siege Tank",
+    "Hellbat"
+  ],
+  "Weak against": [
+    "Marine",
+    "Zergling",
+    "Zealot",
+    "Baneling",
+    "Colossus"
+  ],
+  "Ability": {
+    "Name": "Concussive Shells",
+    "Description": "Passive ability that slows enemy ground units hit by Marauder attacks by 50% for 1.5 seconds. Does not affect Massive units."
+  },
+  "Upgrade": {
+    "Name": "Concussive Shells Research",
+    "Mineral Cost": 100,
+    "Vespene Cost": 100,
+    "Research Time": 43,
+    "Researched From": "Barracks Tech Lab",
+    "Effect": "Enables the Concussive Shells slowing effect on Marauder attacks"
+  },
+  "Competitive Usage": {
+    "General": "Marauders form the durable core of Terran bio armies, excelling at kiting melee units and destroying armored targets. Their slowing effect allows them to control engagements and retreat safely when combined with Stimpack. They work best when mixed with Marines to handle both armored and light threats, and are essential for breaking fortified positions and tank lines.",
+    "Vs. Protoss": "Essential against Protoss ground armies, particularly effective against Stalkers and Immortals. Concussive Shells prevent Zealots from engaging effectively and allow kiting of most Protoss units. Vulnerable to Colossus splash and Psionic Storm. Often paired with Ghosts for EMP support against shield-heavy compositions.",
+    "Vs. Terran": "Valuable in TvT against mech compositions, where they counter Siege Tanks and Hellbats. Their armored attribute makes them resistant to Hellion splash. Less common in bio vs bio mirrors where Marines are more cost-effective. Excellent for breaking tank positions with proper medivac support and stutter-step micro.",
+    "Vs. Zerg": "Crucial against Roach-based compositions, where their bonus damage shines. Forces Zerg to manually control Banelings against Marines rather than attack-moving. Weak against Zergling surrounds without Marine support. Effective in mid-game timing attacks before Zerg reaches higher tech like Brood Lords or Ultras."
+  }
+}

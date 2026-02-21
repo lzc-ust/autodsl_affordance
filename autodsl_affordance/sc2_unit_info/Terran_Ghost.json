@@ -1,0 +1,94 @@
+{
+  "Type": "Ground Unit",
+  "Description": "The Ghost is a specialized Terran infantry unit that serves as an anti-spellcaster and tactical operative. Built from a Barracks with Tech Lab after constructing a Ghost Academy, it excels at disrupting enemy armies through energy drain, precision sniping, and nuclear strikes. With cloaking capability and versatile abilities, the Ghost provides critical support in late-game Terran compositions.",
+  "Built From": "Barracks (with Tech Lab)",
+  "Requirements": "Ghost Academy",
+  "Cost": {
+    "mineral": 150,
+    "vespene": 125,
+    "game_time": 29,
+    "supply": 2
+  },
+  "Hotkey": "G",
+  "Attack": {
+    "Targets": "Ground / Air",
+    "Damage": "10 (+1)",
+    "DPS": "9.3 (Base), 18.6 (vs Light)",
+    "Cooldown": "1.07",
+    "Bonus": "+10 (+1) vs Light",
+    "Bonus DPS": "+9.3 (+0.93) vs Light",
+    "Range": "6"
+  },
+  "Unit stats": {
+    "Defense": "100 0 0 (+1)",
+    "Attributes": "Biological, Psionic",
+    "Sight": "11",
+    "Speed": "3.94",
+    "Cargo size": "2"
+  },
+  "Strong against": [
+    "High Templar",
+    "Infestor",
+    "Raven",
+    "Overseer",
+    "Brood Lord",
+    "Ultralisk"
+  ],
+  "Weak against": [
+    "Zergling",
+    "Marine",
+    "Stalker",
+    "Observer",
+    "Overseer"
+  ],
+  "Ability": [
+    {
+      "Name": "EMP Round",
+      "Hotkey": "E",
+      "Energy Cost": "75",
+      "Description": "Fires an area-of-effect projectile that removes 100 shields and 100 energy from all affected units. Reveals cloaked units in the area temporarily."
+    },
+    {
+      "Name": "Snipe",
+      "Hotkey": "R",
+      "Energy Cost": "50",
+      "Description": "Deals 130 damage (+40 vs Psionic) to a biological target after a 1.07 second channel. Refunds energy cost if interrupted."
+    },
+    {
+      "Name": "Cloak",
+      "Hotkey": "C",
+      "Energy Cost": "25 initial + 0.7875 per second",
+      "Description": "Renders the Ghost invisible to enemies without detection."
+    },
+    {
+      "Name": "Tactical Nuke",
+      "Hotkey": "N",
+      "Energy Cost": "N/A (requires purchased nuke)",
+      "Description": "Calls down a nuclear strike after 14 seconds, dealing 300 damage to units (+200 vs structures) in a large area. Requires a nuke purchased from Ghost Academy."
+    }
+  ],
+  "Upgrade": [
+    {
+      "Name": "Personal Cloaking",
+      "Mineral Cost": 100,
+      "Vespene Cost": 100,
+      "Research Time": 79,
+      "Researched From": "Ghost Academy",
+      "Effect": "Unlocks the Cloak ability for Ghosts"
+    },
+    {
+      "Name": "Enhanced Shock Waves",
+      "Mineral Cost": 150,
+      "Vespene Cost": 150,
+      "Research Time": 79,
+      "Researched From": "Ghost Academy",
+      "Effect": "Increases EMP Round radius by 50%"
+    }
+  ],
+  "Competitive Usage": {
+    "General": "Ghosts are late-game support units that excel at countering spellcasters and high-value targets. Their EMP is devastating against Protoss armies, while Snipe handles biological threats. Cloak enables tactical positioning and harassment. Ghosts require careful energy management and protection, as they are fragile and expensive. They work best when mixed with bio armies or used for strategic nuclear strikes.",
+    "Vs. Protoss": "Essential in late-game TvP for EMP against shield-based armies. Effectively neutralizes High Templar, Sentries, and Archons by draining shields and energy. Can reveal Observers and Dark Templar. Often built after taking a third base to counter Protoss tech units. Must be protected from Stalkers and detection.",
+    "Vs. Terran": "Niche use in TvT for nuke harassment and EMP against Medivacs and Ravens. EMP can disable Orbital Command energy and reveal cloaked Banshees. Nuclear strikes can break siege tank lines and force repositioning. Less common than in other matchups due to Raven prevalence.",
+    "Vs. Zerg": "Valuable against late-game Zerg compositions. Snipe effectively handles Brood Lords, Ultralisks, and Infestors. EMP drains Infestor and Viper energy. Cloak enables strategic positioning but vulnerable to detection from Overseers and Spore Crawlers. Often used in bio-heavy compositions to counter Zerg's highest-tech units."
+  }
+}

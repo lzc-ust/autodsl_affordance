@@ -1,0 +1,63 @@
+{
+  "Type": "Ground Unit",
+  "Description": "The Stalker is a versatile Protoss gateway unit that provides mobile anti-air and anti-ground capabilities. With its high movement speed and Blink ability, it excels at hit-and-run tactics, map control, and defending against aerial threats. While not the most cost-effective unit in direct engagements, its mobility and tactical flexibility make it essential throughout the game.",
+  "Built From": "Gateway",
+  "Requirements": "Cybernetics Core",
+  "Cost": {
+    "mineral": 125,
+    "vespene": 50,
+    "game_time": 30,
+    "supply": 2
+  },
+  "Hotkey": "S",
+  "Attack": {
+    "Targets": "Ground / Air",
+    "Damage": "13 (+1)",
+    "DPS": "9.7 (Base), 13.4 (vs Armored)",
+    "Cooldown": "1.34",
+    "Bonus": "+5 (+1) vs Armored",
+    "Bonus DPS": "+3.7 (+0.75) vs Armored",
+    "Range": "6"
+  },
+  "Unit stats": {
+    "Defense": "80 80 1 (+1)",
+    "Attributes": "Armored, Mechanical",
+    "Sight": "10",
+    "Speed": "4.13",
+    "Cargo size": "2"
+  },
+  "Strong against": [
+    "Void Ray",
+    "Mutalisk",
+    "Oracle",
+    "Phoenix",
+    "Reaper"
+  ],
+  "Weak against": [
+    "Marauder",
+    "Immortal",
+    "Zergling",
+    "Roach",
+    "Siege Tank"
+  ],
+  "Ability": {
+    "Name": "Blink",
+    "Hotkey": "B",
+    "Cooldown": "7",
+    "Description": "Instantly teleports the Stalker up to 7.5 range. Requires research at Twilight Council."
+  },
+  "Upgrade": {
+    "Name": "Blink Research",
+    "Mineral Cost": 150,
+    "Vespene Cost": 150,
+    "Research Time": 121,
+    "Researched From": "Twilight Council",
+    "Effect": "Unlocks the Blink ability for Stalkers"
+  },
+  "Competitive Usage": {
+    "General": "Stalkers serve as Protoss's primary mobile anti-air and harassment unit. Their high speed makes them excellent for map control and defending multiple locations. While gas-expensive for their damage output, their versatility and Blink mobility compensate through tactical advantages. Stalkers work best when leveraging their mobility for flanking, escaping unfavorable engagements, and picking off key targets.",
+    "Vs. Protoss": "Core unit in PvP for early aggression and anti-air defense. Effective against Adepts and other Stalkers, but vulnerable to Immortals. Blink Stalkers can bypass force fields and secure key positioning. Essential for defending against Oracle and Phoenix openings. Often transitions into Robotics-based compositions as the game progresses.",
+    "Vs. Terran": "Crucial for defending against early Reaper and Hellion harassment. Vulnerable to Marauders without Blink due to Concussive Shells. Blink enables tank sniping and Liberator defense. Excellent for multi-prong defense against Medivac drops. Falls off in late-game against bio compositions without splash damage support.",
+    "Vs. Zerg": "Primary defense against Mutalisk harassment and Overlord scouting. Blink allows chasing down Mutalisks and escaping unfavorable engagements. Less effective against Roach and Ling compositions compared to Immortals and Archons. Useful in timing attacks before Zerg reaches Hive tech. Can snipe Brood Lords with proper positioning and vision."
+  }
+}

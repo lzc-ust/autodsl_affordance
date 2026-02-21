@@ -1,0 +1,4 @@
+﻿scene,prefab_enabled,model_type,average_total_steps,average_execution_time,average_unit_survival_rate,average_enemy_elimination_rate,average_decision_quality,average_resource_efficiency,experiment_count
+MMM场景,True,VLM,16.0,576.90401225,0.0,1.0,0.8296072131547766,10.84375,4
+MMM2场景,True,VLM,16.0,747.0921664999998,0.0,1.0,0.8275244297987714,11.28125,4
+VLM注意力机制,False,VLM,11.5,581.4974625,0.75,0.875,0.8479925271739129,8.575757575757576,4

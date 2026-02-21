@@ -1,0 +1,74 @@
+{
+  "Type": "Air Unit",
+  "Description": "The Viking is a versatile Terran transforming unit that excels at air superiority with its long-range anti-air capabilities. In Fighter Mode, it specializes in taking down armored air units and providing crucial vision for siege units. While its Assault Mode sees limited competitive use, the Viking's aerial dominance makes it essential for countering high-value air threats and establishing map control.",
+  "Built From": "Starport",
+  "Requirements": "Starport",
+  "Cost": {
+    "mineral": 150,
+    "vespene": 75,
+    "game_time": 30,
+    "supply": 2
+  },
+  "Hotkey": "V",
+  "Attack": {
+    "Targets": "Air (Fighter Mode), Ground (Assault Mode)",
+    "Damage": "10 (+1) × 2 missiles (Air), 12 (+1) (Ground)",
+    "DPS": "14.3 (vs Air), 8.6 (vs Ground)",
+    "Cooldown": "1.4 (Air), 1.4 (Ground)",
+    "Bonus": "+4 (+1) vs Armored (Air), +8 (+1) vs Mechanical (Ground)",
+    "Bonus DPS": "+5.7 (+1.43) vs Armored (Air), +5.7 (+0.71) vs Mechanical (Ground)",
+    "Range": "9 (Air), 6 (Ground)"
+  },
+  "Unit stats": {
+    "Defense": "125 0 0 (+1)",
+    "Attributes": "Armored, Mechanical",
+    "Sight": "10",
+    "Speed": "3.85 (Air), 2.25 (Ground)",
+    "Cargo size": "2"
+  },
+  "Strong against": [
+    "Colossus",
+    "Brood Lord",
+    "Void Ray",
+    "Battlecruiser",
+    "Corruptor",
+    "Tempest",
+    "Carrier"
+  ],
+  "Weak against": [
+    "Phoenix",
+    "Mutalisk",
+    "Marine",
+    "Stalker",
+    "Hydralisk",
+    "Thor"
+  ],
+  "Ability": [
+    {
+      "Name": "Fighter Mode",
+      "Hotkey": "F",
+      "Cooldown": "3 seconds",
+      "Description": "Transforms into an aerial unit with 9-range anti-air attack. Excellent for air superiority and providing vision."
+    },
+    {
+      "Name": "Assault Mode",
+      "Hotkey": "G",
+      "Cooldown": "3 seconds",
+      "Description": "Transforms into a ground walker with anti-ground attacks. Rarely used due to poor mobility and damage output."
+    }
+  ],
+  "Upgrade": {
+    "Name": "Viking Jotun Boosters",
+    "Mineral Cost": 150,
+    "Vespene Cost": 150,
+    "Research Time": 79,
+    "Researched From": "Factory Tech Lab",
+    "Effect": "Increases Viking Fighter Mode speed from 3.85 to 4.65"
+  },
+  "Competitive Usage": {
+    "General": "Vikings are specialized anti-air units that excel at establishing air control and countering specific high-value targets. Their 9 range allows them to outrange most air units and provide crucial vision for siege units. Vikings are typically produced in specific numbers to counter enemy air compositions rather than massed continuously. Proper positioning and focus fire are essential for maximizing their effectiveness. They are vulnerable to fast, light air units and ground-based anti-air when poorly positioned.",
+    "Vs. Protoss": "Essential for countering Colossus-based armies, as Vikings can safely pick them off from maximum range. Effective against Void Rays, Carriers, and Tempests. Vulnerable to Phoenix swarms and Stalker focus fire. Often paired with bio armies to handle Protoss air transitions and provide aerial vision for engagements. Typically 4-6 Vikings are sufficient to handle early Colossus counts.",
+    "Vs. Terran": "Core unit in TvT for air superiority battles. Critical for protecting siege tank lines and denying enemy vision. Vikings determine air control, which directly impacts tank effectiveness through vision advantage. Vulnerable to mass Marine compositions and Thor anti-air. The Jotun Boosters upgrade significantly enhances their kiting capability. Air dominance often decides TvT engagements.",
+    "Vs. Zerg": "Primary counter to Brood Lords and effective against Corruptor-based compositions. Can snipe Overlords for supply denial and scouting disruption. Vulnerable to Fungal Growth and Parasitic Bomb when clumped. Requires careful positioning and spreading against spellcaster support. Often used in late-game mech compositions to handle Zerg's aerial threats. Approximately 8-12 Vikings are needed to effectively counter Brood Lord transitions."
+  }
+}

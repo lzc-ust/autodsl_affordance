@@ -1,0 +1,13 @@
+# autodsl_affordance 依赖文件
+
+# Core dependencies
+numpy>=1.10
+jsonschema>=4.0.0
+pytest>=6.0.0
+
+# Optional dependencies
+# For visualization
+matplotlib>=3.0.0
+
+# For documentation
+sphinx>=4.0.0

@@ -1,0 +1,70 @@
+{
+  "Type": "Ground Unit",
+  "Description": "The High Templar is a powerful Protoss spellcaster that provides crucial area-of-effect damage and utility through its energy-based abilities. While possessing a weak basic attack, its true strength lies in Psionic Storm for area denial and Feedback for countering enemy casters. High Templar can also merge to form Archons, making them versatile units that remain valuable even when depleted of energy.",
+  "Built From": "Gateway",
+  "Requirements": "Templar Archives",
+  "Cost": {
+    "mineral": 50,
+    "vespene": 150,
+    "game_time": 39,
+    "supply": 2
+  },
+  "Hotkey": "T",
+  "Attack": {
+    "Targets": "Ground",
+    "Damage": "4 (+1)",
+    "DPS": "2.8 (Base)",
+    "Cooldown": "1.43",
+    "Bonus": "None",
+    "Bonus DPS": "None",
+    "Range": "4"
+  },
+  "Unit stats": {
+    "Defense": "40 40 0 (+1)",
+    "Attributes": "Biological, Light, Psionic",
+    "Sight": "10",
+    "Speed": "2.82",
+    "Cargo size": "2"
+  },
+  "Strong against": [
+    "Marine",
+    "Hydralisk",
+    "Mutalisk",
+    "Medivac",
+    "Spellcasters"
+  ],
+  "Weak against": [
+    "Ghost",
+    "Zergling",
+    "Roach",
+    "Any fast melee units"
+  ],
+  "Ability": [
+    {
+      "Name": "Psionic Storm",
+      "Hotkey": "T",
+      "Energy Cost": "75",
+      "Description": "Deals 80 damage over 3 seconds to all units in a target area. Affects both air and ground units."
+    },
+    {
+      "Name": "Feedback",
+      "Hotkey": "F", 
+      "Energy Cost": "50",
+      "Description": "Instantly deals damage equal to the target's current energy and drains all energy. Effective against spellcasters and Medivacs."
+    }
+  ],
+  "Upgrade": {
+    "Name": "Psionic Storm Research",
+    "Mineral Cost": 200,
+    "Vespene Cost": 200,
+    "Research Time": 79,
+    "Researched From": "Templar Archives",
+    "Effect": "Unlocks the Psionic Storm ability for High Templar"
+  },
+  "Competitive Usage": {
+    "General": "High Templar are essential for Protoss army compositions requiring area damage and anti-caster capabilities. They must be carefully protected behind frontline units due to their fragility and slow movement speed. Optimal usage involves spreading Templar to avoid being wiped out by area effects like EMP. Warp Prisms are commonly used to transport and position Templar safely. When out of energy, Templar can be merged into Archons to maintain value in the army.",
+    "Vs. Protoss": "Primarily used to form Archons in Immortal-Archon-Chargelot compositions. Can provide support against Void Ray clusters with Psionic Storm and counter Phoenix/Oracle harassment with Feedback. Requires careful positioning to avoid being focused by Stalkers.",
+    "Vs. Terran": "Crucial against bio compositions, where well-placed Storms can devastate Marine/Marauder balls. Feedback is essential for draining Ghost energy before they can cast EMP and for damaging high-energy Medivacs. Advanced techniques include using Warp Prisms to drop spread-out Templar during engagements to avoid EMP splash.",
+    "Vs. Zerg": "The premier splash damage option against Zerg, effective against all unit types including air. Storms weaken Hydralisks and Mutalisks for other units to clean up. Feedback counters Vipers and Overseers. Late-game Storm support is vital for protecting capital ships against Corruptor swarms. Must be protected from Zergling surrounds and fungal growth."
+  }
+}

@@ -1,0 +1,1173 @@
+[
+  {
+    "function_id": "TERRAN_SYNERGY_0",
+    "function_type": "interaction",
+    "name": "terran_mm_push_synergy",
+    "description": "MM推进协同 - 陆战队员、掠夺者与医疗运输机配合",
+    "strategy_description": "医疗运输机提供治疗和机动性，陆战队员和掠夺者形成火力线，利用兴奋剂和集火创造局部优势",
+    "tactic_category": "heterogeneous_coordination",
+    "linkage_type": "support_dps_coordination",
+    "execution_type": "coordinated_advance",
+    "prerequisites": {
+      "min_units": 5,
+      "required_units": [
+        "Marine",
+        "Marauder",
+        "Medivac"
+      ],
+      "optional_units": [
+        "Ghost"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 2.2,
+      "survival_rate_increase": 0.5,
+      "threat_elimination_speed": 2.8
+    },
+    "execution_flow": [
+      "use_stim_pack(Marine, Marauder)",
+      "medivac_follow(Medivac, infantry_squad)",
+      "focus_fire(Marine, highest_threat_enemy)",
+      "concussive_shell(Marauder, retreating_enemies)",
+      "heal_injured_units(Medivac, low_health_units)"
+    ],
+    "evidence": [
+      "MM组合是人族经典的地面推进战术",
+      "医疗运输机大幅提高部队生存能力",
+      "兴奋剂配合集火可以快速消灭敌方单位"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "function_id": "TERRAN_SYNERGY_1",
+    "function_type": "interaction",
+    "name": "terran_air_ground_assault",
+    "description": "地空协同突击 - 维京战机与地面部队配合",
+    "strategy_description": "维京战机提供空中支援和对空防御，地面部队正面推进，形成立体打击效果",
+    "tactic_category": "air_ground_coordination",
+    "linkage_type": "air_ground_synergy",
+    "execution_type": "combined_assault",
+    "prerequisites": {
+      "min_units": 4,
+      "required_units": [
+        "Viking",
+        "SiegeTank"
+      ],
+      "optional_units": [
+        "Marine",
+        "Marauder"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 2.5,
+      "survival_rate_increase": 0.4,
+      "threat_elimination_speed": 3.0
+    },
+    "execution_flow": [
+      "viking_air_support(Viking, enemy_air_units)",
+      "siege_tank_deploy(SiegeTank, high_ground_position)",
+      "infantry_screen(Marine, Marauder, siege_tanks)",
+      "viking_strike(Viking, exposed_enemies)",
+      "coordinated_pullback(all_units, enemy_counter_attack)"
+    ],
+    "evidence": [
+      "地空协同可以发挥立体打击优势",
+      "维京战机可以有效克制敌方空中单位",
+      "攻城坦克在远程提供强大火力支援"
+    ],
+    "confidence": 0.93
+  },
+  {
+    "function_id": "TERRAN_SYNERGY_2",
+    "function_type": "interaction",
+    "name": "terran_siege_support",
+    "description": "攻城支援协同 - 攻城坦克与步兵配合",
+    "strategy_description": "攻城坦克在安全位置部署，步兵提供掩护和侦察，形成强大的远程火力网",
+    "tactic_category": "long_short_range_coordination",
+    "linkage_type": "long_short_range_coordination",
+    "execution_type": "fortified_position",
+    "prerequisites": {
+      "min_units": 3,
+      "required_units": [
+        "SiegeTank",
+        "Marine"
+      ],
+      "optional_units": [
+        "Marauder",
+        "Ghost"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 2.3,
+      "survival_rate_increase": 0.6,
+      "threat_elimination_speed": 2.7
+    },
+    "execution_flow": [
+      "scout_forward(Marine, enemy_positions)",
+      "siege_tank_deploy(SiegeTank, defensive_position)",
+      "infantry_cover(Marine, Marauder, siege_tanks)",
+      "ghost_snipe(Ghost, priority_targets)",
+      "maintain_fire_position(siege_tanks)"
+    ],
+    "evidence": [
+      "攻城坦克是人族最强大的远程单位之一",
+      "步兵掩护可以防止敌方单位接近攻城坦克",
+      "良好的阵地可以最大化攻城坦克的火力优势"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "function_id": "TERRAN_SYNERGY_3",
+    "function_type": "interaction",
+    "name": "terran_stealth_strike",
+    "description": "隐形打击协同 - 幽灵特工与女妖战机配合",
+    "strategy_description": "女妖战机提供空中隐形打击，幽灵特工进行地面隐形渗透，形成双重隐形威胁",
+    "tactic_category": "stealth_synergy",
+    "linkage_type": "ability_unit_coordination",
+    "execution_type": "ambush_attack",
+    "prerequisites": {
+      "min_units": 3,
+      "required_units": [
+        "Ghost",
+        "Banshee"
+      ],
+      "optional_units": [
+        "Medivac"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 3.0,
+      "survival_rate_increase": 0.7,
+      "threat_elimination_speed": 3.5
+    },
+    "execution_flow": [
+      "ghost_cloak(Ghost)",
+      "banshee_cloak(Banshee)",
+      "banshee_strike(Banshee, enemy_structures)",
+      "ghost_emp(Ghost, enemy_energy_units)",
+      "tactical_retreat(all_units, enemy_response)"
+    ],
+    "evidence": [
+      "隐形单位可以发起出其不意的攻击",
+      "幽灵特工的EMP可以有效削弱敌方单位",
+      "女妖战机对建筑物和轻甲单位有巨大威胁"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "function_id": "TERRAN_SYNERGY_4",
+    "function_type": "interaction",
+    "name": "terran_mech_infantry_combo",
+    "description": "机械步兵组合 - 地狱蝙蝠与雷神配合",
+    "strategy_description": "雷神提供远程火力和对空防御，地狱蝙蝠提供近距离范围伤害，形成强大的混合机械部队",
+    "tactic_category": "armor_type_coordination",
+    "linkage_type": "armor_matching_coordination",
+    "execution_type": "frontal_assault",
+    "prerequisites": {
+      "min_units": 3,
+      "required_units": [
+        "Hellbat",
+        "Thor"
+      ],
+      "optional_units": [
+        "Marine"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 2.1,
+      "survival_rate_increase": 0.8,
+      "threat_elimination_speed": 2.4
+    },
+    "execution_flow": [
+      "thor_advance(Thor, front_line)",
+      "hellbat_flame_attack(Hellbat, enemy_clusters)",
+      "thor_anti_air(Thor, enemy_air_units)",
+      "infantry_support(Marine, flanking_enemies)",
+      "maintain_formation(all_units)"
+    ],
+    "evidence": [
+      "机械部队具有较高的装甲和生存能力",
+      "地狱蝙蝠的范围伤害对密集敌人效果显著",
+      "雷神可以同时应对空中和地面威胁"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "function_id": "TERRAN_SYNERGY_5",
+    "function_type": "interaction",
+    "name": "terran_mm_tank_push",
+    "description": "MM+坦克协同推进 - 陆战队员、掠夺者、医疗运输机与攻城坦克配合",
+    "strategy_description": "攻城坦克提供远程压制火力，MM部队掩护坦克并清理接近的敌人，医疗运输机提供持续治疗",
+    "tactic_category": "heterogeneous_coordination",
+    "linkage_type": "long_short_range_coordination",
+    "execution_type": "coordinated_advance",
+    "prerequisites": {
+      "min_units": 6,
+      "required_units": [
+        "Marine",
+        "Marauder",
+        "Medivac",
+        "SiegeTank"
+      ],
+      "optional_units": []
+    },
+    "tactical_effects": {
+      "damage_multiplier": 2.4,
+      "survival_rate_increase": 0.5,
+      "threat_elimination_speed": 3.0
+    },
+    "execution_flow": [
+      "siege_tank_deploy(SiegeTank, high_ground_position)",
+      "infantry_screen(Marine, Marauder, siege_tanks)",
+      "medivac_heal(Medivac, injured_units)",
+      "focus_fire_on_colossus(all_units, enemy_colossus)",
+      "maintain_distance_from_colossus(all_units, 8.0)"
+    ],
+    "evidence": [
+      "坦克的远程火力可以有效压制敌方部队",
+      "MM部队可以保护坦克免受敌方单位接近",
+      "医疗运输机可以提高部队的持续作战能力"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "function_id": "TERRAN_SYNERGY_7",
+    "function_type": "interaction",
+    "name": "terran_anti_blink_maneuver",
+    "description": "反闪烁机动战术 - 应对敌方追猎者的闪烁能力",
+    "strategy_description": "利用掠夺者的震荡弹和Marine的机动性，限制追猎者的闪烁接近，保持安全距离",
+    "tactic_category": "mobility_control_coordination",
+    "linkage_type": "support_dps_coordination",
+    "execution_type": "mobile_defense",
+    "prerequisites": {
+      "min_units": 4,
+      "required_units": [
+        "Marine",
+        "Marauder"
+      ],
+      "optional_units": [
+        "Medivac"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 2.0,
+      "survival_rate_increase": 0.6,
+      "threat_elimination_speed": 2.5
+    },
+    "execution_flow": [
+      "marauder_concussive_shell(Marauder, advancing_stalkers)",
+      "marine_kite(Marine, blinking_stalkers)",
+      "maintain_formation_distance(all_units, 3.0)",
+      "medivac_follow(Medivac, infantry_squad)",
+      "focus_fire_on_blinking_target(all_units, recently_blinked_stalker)"
+    ],
+    "evidence": [
+      "掠夺者的震荡弹可以减缓追猎者的移动速度",
+      "Marine的高机动性可以有效风筝追猎者",
+      "保持适当的阵型可以减少被闪烁攻击的风险"
+    ],
+    "confidence": 0.93
+  },
+  {
+    "function_id": "TERRAN_SYNERGY_8",
+    "function_type": "interaction",
+    "name": "terran_spread_formation_vs_colossus",
+    "description": "分散站位对抗范围伤害 - 减少巨像范围攻击的影响",
+    "strategy_description": "保持单位分散，避免被巨像的范围攻击同时命中多个单位，提高整体生存能力",
+    "tactic_category": "formation_control_coordination",
+    "linkage_type": "support_dps_coordination",
+    "execution_type": "spread_formation",
+    "prerequisites": {
+      "min_units": 5,
+      "required_units": [
+        "Marine",
+        "Marauder"
+      ],
+      "optional_units": [
+        "Medivac",
+        "SiegeTank"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 1.8,
+      "survival_rate_increase": 0.7,
+      "threat_elimination_speed": 2.2
+    },
+    "execution_flow": [
+      "spread_units(all_units, 4.0)",
+      "avoid_colossus_attack_lines(all_units)",
+      "maintain_staggered_formation(all_units)",
+      "focus_fire_on_colossus(all_units, enemy_colossus)",
+      "medivac_heal_spread_units(Medivac, all_units)"
+    ],
+    "evidence": [
+      "分散站位可以减少被巨像范围攻击命中的单位数量",
+      "错开的阵型可以提高整体生存能力",
+      "保持距离可以降低受到的伤害"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "function_id": "TERRAN_SYNERGY_10",
+    "function_type": "interaction",
+    "name": "terran_tank_siege_defense",
+    "description": "坦克阵地防御 - 利用坦克远程火力进行防御",
+    "strategy_description": "坦克部署在有利位置，MM部队提供掩护，形成强大的防御阵地",
+    "tactic_category": "long_short_range_coordination",
+    "linkage_type": "long_short_range_coordination",
+    "execution_type": "fortified_position",
+    "prerequisites": {
+      "min_units": 6,
+      "required_units": [
+        "Marine",
+        "Marauder",
+        "SiegeTank",
+        "Medivac"
+      ],
+      "optional_units": []
+    },
+    "tactical_effects": {
+      "damage_multiplier": 2.5,
+      "survival_rate_increase": 0.7,
+      "threat_elimination_speed": 3.0
+    },
+    "execution_flow": [
+      "siege_tank_deploy(SiegeTank, defensive_position)",
+      "infantry_screen(Marine, Marauder, siege_tanks)",
+      "medivac_heal(Medivac, injured_units)",
+      "focus_fire_on_heavy_units(all_units, enemy_siege_tank)",
+      "maintain_defensive_line(all_units)"
+    ],
+    "evidence": [
+      "坦克的远程火力可以有效压制敌方部队",
+      "防御阵地可以提高部队的生存能力",
+      "MM部队可以保护坦克免受敌方单位接近"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "function_id": "TERRAN_SYNERGY_11",
+    "function_type": "interaction",
+    "name": "terran_medivac_marine_drop_micro",
+    "description": "医疗运输机-陆战队员投送微操 - 装载->飞行跨越->卸载->攻击->再装载撤退的复杂序列",
+    "strategy_description": "医疗运输机装载陆战队员，飞越地形障碍，精确卸载到目标区域，配合攻击后快速重新装载撤退，形成机动打击能力",
+    "tactic_category": "heterogeneous_coordination",
+    "linkage_type": "transport_dps_coordination",
+    "execution_type": "hit_and_run",
+    "custom_tag": "自定义 (Custom)",
+    "drop_micro_tag": "需自制 (Drop_Micro)",
+    "prerequisites": {
+      "min_units": 3,
+      "required_units": [
+        "Marine",
+        "Medivac"
+      ],
+      "optional_units": [],
+      "ideal_composition": {
+        "Marine": 8,
+        "Marauder": 3,
+        "Medivac": 2,
+        "SiegeTank": 1
+      }
+    },
+    "tactical_effects": {
+      "damage_multiplier": 3.5,
+      "survival_rate_increase": 0.8,
+      "mobility_enhancement": 4.5,
+      "terrain_override_capability": 5.0
+    },
+    "execution_flow": [
+      "medivac_load_units(Medivac, Marine, 3)",
+      "medivac_fly_over_terrain(Medivac, impassable_areas)",
+      "medivac_precise_unload(Medivac, target_engagement_zone)",
+      "marine_combat_micro(Marine, enemy_units)",
+      "medivac_retreat_positioning(Medivac, safe_zone)",
+      "medivac_reload_units(Medivac, Marine)",
+      "medivac_withdraw(Medivac, friendly_base)"
+    ],
+    "strategy_parameters": {
+      "hierarchical_learning": true,
+      "complex_sequence_decision": true,
+      "terrain_aware_navigation": true,
+      "timing_sensitive_execution": true
+    },
+    "evidence": [
+      "医疗运输机提供的机动性可以克服地形障碍",
+      "投送微操可以创造局部兵力优势",
+      "快速撤退可以减少伤亡并保持部队战斗力",
+      "分层强化学习适合处理此类复杂动作序列"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "function_id": "ATTACK_0",
+    "function_type": "interaction",
+    "name": "focus_fire_on_highest_threat",
+    "description": "集中火力攻击最高威胁的敌方单位",
+    "strategy_description": "优先攻击对我方威胁最大的敌方单位，如高伤害或高优先级目标",
+    "tactic_category": "offense",
+    "source_unit": "all_friendly",
+    "target_unit": "highest_threat_enemy",
+    "linkage_type": "interaction",
+    "execution_type": "attack",
+    "parameters": [],
+    "execution_flow": [
+      "set_target(all_friendly, highest_threat_enemy)",
+      "attack(all_friendly, highest_threat_enemy)"
+    ],
+    "evidence": [
+      "集中火力可以快速消除敌方威胁",
+      "优先攻击高价值目标可以提高战斗效率"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "function_id": "ABILITY_0",
+    "function_type": "interaction",
+    "name": "use_stim_pack_on_marines",
+    "description": "在陆战队员上使用兴奋剂",
+    "strategy_description": "使用陆战队员的兴奋剂能力提高攻击力和移动速度",
+    "tactic_category": "offense",
+    "source_unit": "Marine",
+    "target_unit": "self",
+    "linkage_type": "interaction",
+    "execution_type": "ability",
+    "parameters": [],
+    "execution_flow": [
+      "use_stim_pack_ability(Marine)"
+    ],
+    "evidence": [
+      "兴奋剂可以大幅提高陆战队员的战斗力",
+      "适合在关键战斗中使用"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "function_id": "ABILITY_1",
+    "function_type": "interaction",
+    "name": "use_medivac_heal",
+    "description": "使用医疗运输机治疗受伤单位",
+    "strategy_description": "使用医疗运输机的治疗能力恢复受伤单位的生命值",
+    "tactic_category": "support",
+    "source_unit": "Medivac",
+    "target_unit": "low_health_units",
+    "linkage_type": "interaction",
+    "execution_type": "ability",
+    "parameters": [],
+    "execution_flow": [
+      "use_heal_ability(Medivac, low_health_units)"
+    ],
+    "evidence": [
+      "医疗运输机的治疗能力可以大幅提高部队的生存能力",
+      "可以在战斗中持续恢复受伤单位的生命值"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "function_id": "COMBINATION_0",
+    "function_type": "combination",
+    "name": "mm_combo",
+    "description": "MM组合攻击",
+    "strategy_description": "陆战队员和掠夺者组合攻击，陆战队员提供主要火力，掠夺者提供控制",
+    "tactic_category": "offense",
+    "units": [
+      "Marine",
+      "Marauder"
+    ],
+    "linkage_type": "combination",
+    "execution_type": "concurrent",
+    "parameters": [],
+    "execution_flow": [
+      "use_stim_pack(Marine, Marauder)",
+      "focus_fire(Marine, highest_threat_enemy)",
+      "concussive_shell(Marauder, enemy_units)",
+      "attack(Marauder, highest_threat_enemy)"
+    ],
+    "evidence": [
+      "MM组合是人族经典的地面战斗战术",
+      "兴奋剂配合震荡弹可以有效控制敌人",
+      "适合应对各种地面威胁"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "function_id": "TERRAN_UNIT_0",
+    "function_type": "interaction",
+    "name": "marine_stim_kite",
+    "description": "Marine兴奋剂风筝函数",
+    "strategy_description": "实现攻击+移动的风筝战术，优化兴奋剂使用时机和移动路径",
+    "tactic_category": "offense",
+    "linkage_type": "interaction",
+    "execution_type": "hit_and_run",
+    "prerequisites": {
+      "min_units": 1,
+      "required_units": [
+        "Marine"
+      ],
+      "optional_units": []
+    },
+    "tactical_effects": {
+      "damage_multiplier": 1.8,
+      "survival_rate_increase": 0.5,
+      "threat_elimination_speed": 2.2
+    },
+    "execution_flow": [
+      "assess_enemy_threat(Marine, enemy_units)",
+      "activate_stim_at_optimal_time(Marine)",
+      "execute_stutter_step(Marine, enemy_units)",
+      "maintain_safe_distance(Marine, enemy_units)",
+      "retreat_when_necessary(Marine, safe_position)"
+    ],
+    "evidence": [
+      "兴奋剂可以提高Marine的攻击力和移动速度",
+      "风筝战术可以在保持安全的同时持续输出伤害",
+      "优化兴奋剂使用时机可以最大化其效果"
+    ],
+    "confidence": 0.93
+  },
+  {
+    "function_id": "TERRAN_UNIT_1",
+    "function_type": "interaction",
+    "name": "marauder_concussive_shell",
+    "description": "Marauder震荡弹控制函数",
+    "strategy_description": "针对撤退敌人的减速策略，优化震荡弹使用时机和目标选择",
+    "tactic_category": "defense",
+    "linkage_type": "interaction",
+    "execution_type": "ability",
+    "prerequisites": {
+      "min_units": 1,
+      "required_units": [
+        "Marauder"
+      ],
+      "optional_units": []
+    },
+    "tactical_effects": {
+      "damage_multiplier": 1.2,
+      "survival_rate_increase": 0.4,
+      "threat_elimination_speed": 1.8
+    },
+    "execution_flow": [
+      "identify_retreating_enemies(Marauder, enemy_units)",
+      "prioritize_targets_for_slow(Marauder, retreating_enemies)",
+      "execute_concussive_shell(Marauder, priority_targets)",
+      "maintain_firing_position(Marauder, optimal_range)",
+      "coordinate_with_marines(Marauder, friendly_marines)"
+    ],
+    "evidence": [
+      "震荡弹可以有效减缓敌人的移动速度",
+      "针对撤退敌人使用震荡弹可以延长攻击时间",
+      "与Marine配合可以最大化伤害输出"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "function_id": "TERRAN_UNIT_2",
+    "function_type": "interaction",
+    "name": "medivac_heal_support",
+    "description": "Medivac治疗支援函数",
+    "strategy_description": "优化治疗目标优先级，确保关键单位得到及时治疗",
+    "tactic_category": "support",
+    "linkage_type": "interaction",
+    "execution_type": "coordinated_advance",
+    "prerequisites": {
+      "min_units": 1,
+      "required_units": [
+        "Medivac"
+      ],
+      "optional_units": [
+        "Marine",
+        "Marauder"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 1.0,
+      "survival_rate_increase": 0.8,
+      "threat_elimination_speed": 1.5
+    },
+    "execution_flow": [
+      "monitor_unit_health(Medivac, friendly_units)",
+      "prioritize_healing_targets(Medivac, health_thresholds)",
+      "position_for_optimal_healing(Medivac, friendly_units)",
+      "execute_heal_ability(Medivac, priority_targets)",
+      "reposition_to_avoid_threats(Medivac, enemy_units)"
+    ],
+    "evidence": [
+      "Medivac的治疗能力可以大幅提高部队的生存能力",
+      "优化治疗目标优先级可以最大化治疗效果",
+      "合理的站位可以提高Medivac的生存能力"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "function_id": "TERRAN_UNIT_3",
+    "function_type": "interaction",
+    "name": "siege_tank_positioning",
+    "description": "Siege Tank siege/un siege管理函数",
+    "strategy_description": "优化站位和模式切换，最大化坦克的远程火力优势",
+    "tactic_category": "support",
+    "linkage_type": "interaction",
+    "execution_type": "fortified_position",
+    "prerequisites": {
+      "min_units": 1,
+      "required_units": [
+        "SiegeTank"
+      ],
+      "optional_units": [
+        "Marine",
+        "Marauder"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 2.5,
+      "survival_rate_increase": 0.6,
+      "threat_elimination_speed": 2.8
+    },
+    "execution_flow": [
+      "identify_siege_position(SiegeTank, high_ground_positions)",
+      "move_to_optimal_position(SiegeTank, siege_position)",
+      "deploy_siege_mode(SiegeTank)",
+      "focus_fire_on_priority_targets(SiegeTank, enemy_units)",
+      "unsiege_for_repositioning(SiegeTank, new_position)"
+    ],
+    "evidence": [
+      "Siege Tank在攻城模式下具有强大的远程火力",
+      "优化站位可以最大化攻击范围和生存能力",
+      "合理的模式切换可以适应不同的战场情况"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "function_id": "TERRAN_COMBO_0",
+    "function_type": "interaction",
+    "name": "terran_mmm_optimal_combo",
+    "description": "优化的MMM组合函数",
+    "strategy_description": "Marine+Marauder+Medivac最佳协同，优化各单位配合",
+    "tactic_category": "heterogeneous_coordination",
+    "linkage_type": "support_dps_coordination",
+    "execution_type": "coordinated_advance",
+    "prerequisites": {
+      "min_units": 5,
+      "required_units": [
+        "Marine",
+        "Marauder",
+        "Medivac"
+      ],
+      "optional_units": []
+    },
+    "tactical_effects": {
+      "damage_multiplier": 2.4,
+      "survival_rate_increase": 0.7,
+      "threat_elimination_speed": 3.0
+    },
+    "execution_flow": [
+      "marine_frontline_advance(Marine, enemy_position)",
+      "marauder_support_with_slow(Marauder, enemy_units)",
+      "medivac_heal_critical_units(Medivac, injured_units)",
+      "coordinated_focus_fire(all_units, priority_targets)",
+      "maintain_formation(all_units, optimal_spacing)"
+    ],
+    "evidence": [
+      "MMM组合是人族经典的地面推进战术",
+      "Medivac的治疗能力可以大幅提高部队的生存能力",
+      "优化各单位配合可以最大化整体战斗力"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "function_id": "TERRAN_COMBO_1",
+    "function_type": "interaction",
+    "name": "terran_mm_tank_combo",
+    "description": "MM+Tank组合函数",
+    "strategy_description": "步兵配合坦克的推进战术，优化步兵掩护和坦克火力",
+    "tactic_category": "long_short_range_coordination",
+    "linkage_type": "interaction",
+    "execution_type": "fortified_position",
+    "prerequisites": {
+      "min_units": 6,
+      "required_units": [
+        "Marine",
+        "Marauder",
+        "SiegeTank"
+      ],
+      "optional_units": [
+        "Medivac"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 2.6,
+      "survival_rate_increase": 0.6,
+      "threat_elimination_speed": 3.2
+    },
+    "execution_flow": [
+      "tank_deploy_in_safe_position(SiegeTank, high_ground)",
+      "infantry_screen_around_tanks(Marine, Marauder, SiegeTank)",
+      "tank_focus_fire_on_heavy_targets(SiegeTank, enemy_armored_units)",
+      "infantry_clean_up_light_units(Marine, Marauder, enemy_light_units)",
+      "medivac_support_if_available(Medivac, injured_units)"
+    ],
+    "evidence": [
+      "坦克的远程火力可以有效压制敌方部队",
+      "步兵可以保护坦克免受敌方单位接近",
+      "两者配合可以应对各种地面威胁"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "function_id": "TERRAN_COMBO_2",
+    "function_type": "interaction",
+    "name": "terran_air_ground_coordination",
+    "description": "地空协同函数",
+    "strategy_description": "地面部队与空中单位配合，形成立体打击",
+    "tactic_category": "air_ground_coordination",
+    "linkage_type": "interaction",
+    "execution_type": "combined_assault",
+    "prerequisites": {
+      "min_units": 4,
+      "required_units": [
+        "Marine",
+        "Marauder",
+        "Medivac"
+      ],
+      "optional_units": [
+        "Viking"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 2.3,
+      "survival_rate_increase": 0.6,
+      "threat_elimination_speed": 2.8
+    },
+    "execution_flow": [
+      "viking_air_support(Viking, enemy_air_units)",
+      "ground_unit_advance(Marine, Marauder, enemy_position)",
+      "medivac_transport_support(Medivac, ground_units)",
+      "coordinated_attack_from_multiple_angles(all_units, enemy_units)",
+      "maintain_air_ground_communication(all_units)"
+    ],
+    "evidence": [
+      "地空协同可以发挥立体打击优势",
+      "Medivac的机动性可以提高地面部队的灵活性",
+      "Viking可以提供对空防御和支援"
+    ],
+    "confidence": 0.93
+  },
+  {
+    "function_id": "MMM_SCENE_0",
+    "function_type": "interaction",
+    "name": "terran_mmm_push_tactics",
+    "description": "MMM推进战术执行函数",
+    "strategy_description": "优化推进路线和时机，实现最有效的MMM推进",
+    "tactic_category": "offense",
+    "linkage_type": "interaction",
+    "execution_type": "coordinated_advance",
+    "prerequisites": {
+      "min_units": 5,
+      "required_units": [
+        "Marine",
+        "Marauder",
+        "Medivac"
+      ],
+      "optional_units": []
+    },
+    "tactical_effects": {
+      "damage_multiplier": 2.2,
+      "survival_rate_increase": 0.6,
+      "threat_elimination_speed": 2.8
+    },
+    "execution_flow": [
+      "analyze_terrain_and_enemy_position(all_units, battlefield)",
+      "plan_optimal_advance_route(all_units, route)",
+      "execute_staged_advance(all_units, waypoints)",
+      "engage_enemy_at_advantageous_position(all_units, engagement_point)",
+      "consolidate_gains_and_reposition(all_units, new_position)"
+    ],
+    "evidence": [
+      "优化推进路线可以减少部队受到的伤害",
+      "分阶段推进可以保持部队的战斗力",
+      "在有利位置交战可以提高胜率"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "function_id": "MMM_SCENE_1",
+    "function_type": "interaction",
+    "name": "terran_mmm_defensive_formation",
+    "description": "MMM防御阵型函数",
+    "strategy_description": "应对敌方进攻的防御阵型，优化单位站位和配合",
+    "tactic_category": "defense",
+    "linkage_type": "interaction",
+    "execution_type": "fortified_position",
+    "prerequisites": {
+      "min_units": 5,
+      "required_units": [
+        "Marine",
+        "Marauder",
+        "Medivac"
+      ],
+      "optional_units": []
+    },
+    "tactical_effects": {
+      "damage_multiplier": 1.8,
+      "survival_rate_increase": 0.8,
+      "threat_elimination_speed": 2.0
+    },
+    "execution_flow": [
+      "identify_defensive_position(all_units, chokepoints)",
+      "arrange_units_in_defensive_formation(all_units, formation)",
+      "marauder_position_for_slow(all_units, enemy_approaches)",
+      "medivac_position_for_optimal_healing(all_units, friendly_units)",
+      "repel_enemy_attack(all_units, enemy_units)"
+    ],
+    "evidence": [
+      "合理的防御阵型可以提高部队的生存能力",
+      "Marauder的震荡弹可以有效减缓敌人的进攻",
+      "Medivac的治疗能力可以提高部队的持续作战能力"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "function_id": "MMM_SCENE_2",
+    "function_type": "interaction",
+    "name": "terran_mmm_flanking_maneuver",
+    "description": "MMM侧翼包抄战术函数",
+    "strategy_description": "实现多方向进攻，打乱敌方阵型",
+    "tactic_category": "offense",
+    "linkage_type": "interaction",
+    "execution_type": "coordinated_advance",
+    "prerequisites": {
+      "min_units": 6,
+      "required_units": [
+        "Marine",
+        "Marauder",
+        "Medivac"
+      ],
+      "optional_units": []
+    },
+    "tactical_effects": {
+      "damage_multiplier": 2.5,
+      "survival_rate_increase": 0.5,
+      "threat_elimination_speed": 3.2
+    },
+    "execution_flow": [
+      "split_forces_into_multiple_groups(all_units, groups)",
+      "execute_flanking_movement(groups, enemy_flanks)",
+      "coordinate_attack_timing(groups, synchronized_attack)",
+      "focus_fire_on_key_enemy_units(all_units, priority_targets)",
+      "consolidate_after_victory(all_units, new_position)"
+    ],
+    "evidence": [
+      "侧翼包抄可以打乱敌方阵型",
+      "多方向进攻可以分散敌方注意力",
+      "同步攻击可以最大化打击效果"
+    ],
+    "confidence": 0.93
+  },
+  {
+    "function_id": "GENERAL_0",
+    "function_type": "interaction",
+    "name": "unit_group_management",
+    "description": "单位分组管理函数",
+    "strategy_description": "优化单位控制效率，实现更有效的单位管理",
+    "tactic_category": "support",
+    "linkage_type": "interaction",
+    "execution_type": "coordinated_advance",
+    "prerequisites": {
+      "min_units": 3,
+      "required_units": [],
+      "optional_units": [
+        "Marine",
+        "Marauder",
+        "Medivac",
+        "SiegeTank",
+        "Zealot",
+        "Stalker",
+        "Phoenix"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 1.0,
+      "survival_rate_increase": 0.3,
+      "threat_elimination_speed": 1.5
+    },
+    "execution_flow": [
+      "analyze_unit_composition(all_units, composition)",
+      "group_units_by_role(all_units, roles)",
+      "assign_control_groups(all_units, groups)",
+      "coordinate_group_commands(groups, commands)",
+      "adjust_groups_based_on_battlefield_changes(groups, changes)"
+    ],
+    "evidence": [
+      "优化单位分组可以提高控制效率",
+      "按角色分组可以实现更有效的战术执行",
+      "灵活调整分组可以适应不同的战场情况"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "function_id": "GENERAL_1",
+    "function_type": "interaction",
+    "name": "target_priority_assessment",
+    "description": "目标优先级评估函数",
+    "strategy_description": "基于威胁程度和价值排序，实现最优目标选择",
+    "tactic_category": "support",
+    "linkage_type": "interaction",
+    "execution_type": "attack",
+    "prerequisites": {
+      "min_units": 1,
+      "required_units": [],
+      "optional_units": []
+    },
+    "tactical_effects": {
+      "damage_multiplier": 1.2,
+      "survival_rate_increase": 0.4,
+      "threat_elimination_speed": 2.0
+    },
+    "execution_flow": [
+      "analyze_enemy_units(all_units, enemy_units)",
+      "calculate_threat_levels(enemy_units, threat_factors)",
+      "prioritize_targets_based_on_threat(enemy_units, priorities)",
+      "assign_targets_to_units(all_units, priority_targets)",
+      "update_target_priorities_dynamically(enemy_units, changes)"
+    ],
+    "evidence": [
+      "优先攻击高威胁单位可以提高战斗效率",
+      "合理的目标分配可以最大化伤害输出",
+      "动态调整目标优先级可以适应战场变化"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "function_id": "GENERAL_2",
+    "function_type": "interaction",
+    "name": "tactical_retreat",
+    "description": "战术撤退函数",
+    "strategy_description": "在不利情况下安全撤退，减少伤亡",
+    "tactic_category": "defense",
+    "linkage_type": "interaction",
+    "execution_type": "mobile_defense",
+    "prerequisites": {
+      "min_units": 1,
+      "required_units": [],
+      "optional_units": []
+    },
+    "tactical_effects": {
+      "damage_multiplier": 0.5,
+      "survival_rate_increase": 0.8,
+      "threat_elimination_speed": 0.5
+    },
+    "execution_flow": [
+      "assess_battle_situation(all_units, situation)",
+      "determine_retreat_necessity(all_units, necessity)",
+      "plan_retreat_route(all_units, route)",
+      "execute_orderly_retreat(all_units, route)",
+      "establish_defensive_position_after_retreat(all_units, position)"
+    ],
+    "evidence": [
+      "战术撤退可以减少伤亡",
+      "有序撤退可以保持部队的战斗力",
+      "撤退后建立防御阵地可以防止敌人追击"
+    ],
+    "confidence": 0.91
+  },
+  {
+    "function_id": "GENERAL_3",
+    "function_type": "interaction",
+    "name": "terrain_advantage_utilization",
+    "description": "地形优势利用函数",
+    "strategy_description": "优化高地、隘口等地形的战术运用",
+    "tactic_category": "support",
+    "linkage_type": "interaction",
+    "execution_type": "fortified_position",
+    "prerequisites": {
+      "min_units": 1,
+      "required_units": [],
+      "optional_units": []
+    },
+    "tactical_effects": {
+      "damage_multiplier": 1.5,
+      "survival_rate_increase": 0.6,
+      "threat_elimination_speed": 1.8
+    },
+    "execution_flow": [
+      "analyze_terrain_features(all_units, terrain)",
+      "identify_advantageous_positions(terrain, positions)",
+      "move_to_terrain_advantage(all_units, advantage_position)",
+      "utilize_terrain_for_defense(all_units, defensive_terrain)",
+      "adapt_tactics_to_terrain(all_units, terrain_features)"
+    ],
+    "evidence": [
+      "高地等地形可以提供攻击优势",
+      "隘口等地形可以用于防御",
+      "合理利用地形可以提高部队的战斗力"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "function_id": "MMM_SCENE_3",
+    "function_type": "interaction",
+    "name": "terran_8m3m1m1t_combo",
+    "description": "8marine+3marauder+1medivac+1tank组合优化函数",
+    "strategy_description": "针对特定单位组合的优化战术，发挥各单位优势",
+    "tactic_category": "heterogeneous_coordination",
+    "linkage_type": "support_dps_coordination",
+    "execution_type": "coordinated_advance",
+    "prerequisites": {
+      "min_units": 13,
+      "required_units": [
+        "Marine",
+        "Marine",
+        "Marine",
+        "Marine",
+        "Marine",
+        "Marine",
+        "Marine",
+        "Marine",
+        "Marauder",
+        "Marauder",
+        "Marauder",
+        "Medivac",
+        "SiegeTank"
+      ],
+      "optional_units": []
+    },
+    "tactical_effects": {
+      "damage_multiplier": 2.5,
+      "survival_rate_increase": 0.6,
+      "threat_elimination_speed": 3.2
+    },
+    "execution_flow": [
+      "siege_tank_positioning(SiegeTank, high_ground_position)",
+      "marine_frontline_advance(Marine, enemy_position)",
+      "marauder_support_with_slow(Marauder, enemy_units)",
+      "medivac_heal_support(Medivac, friendly_units)",
+      "coordinated_focus_fire(all_units, priority_targets)",
+      "maintain_formation(all_units, optimal_spacing)"
+    ],
+    "evidence": [
+      "8marine提供强大的火力输出",
+      "3marauder提供控制和坦克能力",
+      "1medivac提供持续治疗",
+      "1tank提供远程压制火力",
+      "各单位配合可以应对各种威胁"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "function_id": "MMM_SCENE_02",
+    "function_type": "interaction",
+    "name": "terran_mmm2_multi_medivac_tactics",
+    "description": "MMM2多医疗运输机战术函数",
+    "strategy_description": "针对敌方多医疗运输机的应对策略",
+    "tactic_category": "heterogeneous_coordination",
+    "linkage_type": "support_dps_coordination",
+    "execution_type": "coordinated_advance",
+    "prerequisites": {
+      "min_units": 13,
+      "required_units": [
+        "Marine",
+        "Marauder",
+        "Medivac",
+        "SiegeTank"
+      ],
+      "optional_units": []
+    },
+    "tactical_effects": {
+      "damage_multiplier": 2.3,
+      "survival_rate_increase": 0.5,
+      "threat_elimination_speed": 3.0
+    },
+    "execution_flow": [
+      "identify_enemy_medivacs(all_units, enemy_medivacs)",
+      "prioritize_anti_air_targets(all_units, enemy_medivacs)",
+      "siege_tank_long_range_support(SiegeTank, enemy_positions)",
+      "marine_stim_kite(Marine, enemy_units)",
+      "marauder_concussive_shell(Marauder, retreating_enemies)",
+      "medivac_heal_critical_units(Medivac, friendly_units)"
+    ],
+    "evidence": [
+      "优先攻击敌方医疗运输机可以削弱其治疗能力",
+      "坦克的远程火力可以有效压制敌方部队",
+      "兴奋剂风筝战术可以提高Marine的生存能力",
+      "震荡弹可以控制敌方单位的移动"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "function_id": "MMM_SCENE_4",
+    "function_type": "interaction",
+    "name": "terran_mmm_adaptive_tactics",
+    "description": "MMM适应性战术函数",
+    "strategy_description": "根据敌方单位组合自动调整战术，优化单位配合",
+    "tactic_category": "heterogeneous_coordination",
+    "linkage_type": "interaction",
+    "execution_type": "coordinated_advance",
+    "prerequisites": {
+      "min_units": 5,
+      "required_units": [
+        "Marine",
+        "Marauder",
+        "Medivac"
+      ],
+      "optional_units": [
+        "SiegeTank"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 2.2,
+      "survival_rate_increase": 0.6,
+      "threat_elimination_speed": 2.8
+    },
+    "execution_flow": [
+      "analyze_enemy_composition(all_units, enemy_units)",
+      "select_optimal_tactic(all_units, enemy_composition)",
+      "execute_adaptive_maneuver(all_units, selected_tactic)",
+      "adjust_based_on_battle_progress(all_units, battle_state)",
+      "coordinate_final_assault(all_units, enemy_position)"
+    ],
+    "evidence": [
+      "适应性战术可以应对各种敌人组合",
+      "根据战场情况调整可以提高战斗效率",
+      "灵活的战术选择可以创造局部优势"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "function_id": "MMM_SCENE_01",
+    "function_type": "interaction",
+    "name": "terran_mmm2_anti_medivac_focus",
+    "description": "MMM2反医疗运输机焦点攻击函数",
+    "strategy_description": "专门针对敌方医疗运输机的焦点攻击策略，快速削弱敌方治疗能力",
+    "tactic_category": "air_ground_coordination",
+    "linkage_type": "interaction",
+    "execution_type": "focused_assault",
+    "prerequisites": {
+      "min_units": 8,
+      "required_units": [
+        "Marine",
+        "Marauder",
+        "Medivac"
+      ],
+      "optional_units": [
+        "SiegeTank"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 2.5,
+      "survival_rate_increase": 0.5,
+      "threat_elimination_speed": 3.2
+    },
+    "execution_flow": [
+      "detect_enemy_medivacs(all_units, enemy_medivacs)",
+      "assign_anti_air_units(all_units, enemy_medivacs)",
+      "execute_focused_attack(all_units, enemy_medivacs)",
+      "switch_targets_when_necessary(all_units, next_priority)",
+      "maintain_pressure_on_enemy_healing(all_units, enemy_medivacs)"
+    ],
+    "evidence": [
+      "优先攻击医疗运输机可以快速削弱敌方治疗能力",
+      "集中火力可以快速摧毁敌方医疗运输机",
+      "削弱敌方治疗能力可以提高我方部队的生存优势"
+    ],
+    "confidence": 0.96
+  }
+]

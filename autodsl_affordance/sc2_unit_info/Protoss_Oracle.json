@@ -1,0 +1,70 @@
+{
+  "Type": "Air Unit",
+  "Description": "The Oracle is a versatile Protoss spellcaster from the Stargate that excels at worker harassment, scouting, and battlefield control. While fragile, its high mobility and diverse spell kit make it valuable throughout the game. The Oracle can temporarily reveal cloaked units, trap enemies in stasis, and unleash devastating beam attacks on light targets.",
+  "Built From": "Stargate",
+  "Requirements": "Stargate",
+  "Cost": {
+    "mineral": 150,
+    "vespene": 150,
+    "game_time": 37,
+    "supply": 3
+  },
+  "Hotkey": "O",
+  "Attack": {
+    "Targets": "Ground",
+    "Damage": "15 (Pulsar Beam)",
+    "DPS": "22.1 (Base), 33.7 (vs Light)",
+    "Cooldown": "0.45 (Pulsar Beam attack speed)",
+    "Bonus": "+7 vs Light",
+    "Bonus DPS": "+11.6 vs Light",
+    "Range": "4"
+  },
+  "Unit stats": {
+    "Defense": "100 60 0 (+1)",
+    "Attributes": "Mechanical, Armored, Psionic",
+    "Sight": "10",
+    "Speed": "5.6",
+    "Cargo size": "N/A"
+  },
+  "Strong against": [
+    "SCV",
+    "Drone",
+    "Probe",
+    "Zergling",
+    "Marine"
+  ],
+  "Weak against": [
+    "Marine (in numbers)",
+    "Phoenix",
+    "Viking",
+    "Mutalisk",
+    "Hydralisk"
+  ],
+  "Ability": [
+    {
+      "Name": "Pulsar Beam",
+      "Hotkey": "E",
+      "Energy Cost": "25 activation + 3 per second",
+      "Description": "Activates a powerful beam that deals 15 damage (+7 vs Light) to ground units. Must be toggled on/off."
+    },
+    {
+      "Name": "Revelation",
+      "Hotkey": "R",
+      "Energy Cost": "50",
+      "Description": "Reveals a target area and all units within it for 30 seconds, providing detection."
+    },
+    {
+      "Name": "Stasis Ward",
+      "Hotkey": "W",
+      "Energy Cost": "75",
+      "Description": "Creates an invisible ward that activates after 3.5 seconds, freezing all air and ground units in a large radius for 12 seconds. Frozen units are invulnerable."
+    }
+  ],
+  "Upgrade": "No upgrade found",
+  "Competitive Usage": {
+    "General": "The Oracle is primarily used for early-game worker harassment and mid-game scouting/support. Its Pulsar Beam can quickly eliminate worker lines, while Revelation provides crucial detection and vision. Stasis Ward excels at area denial and trapping enemy armies. Oracles require careful micro to avoid anti-air and should be used for hit-and-run attacks rather than direct engagements.",
+    "Vs. Protoss": "Effective for early worker harassment and scouting tech choices. Revelation detects Dark Templar and Observers, while Stasis Ward can trap key units like Immortals or Disruptors. Vulnerable to Phoenix and Stalker focus fire.",
+    "Vs. Terran": "Excellent against Terran mineral lines, but must avoid Marines and Missile Turrets. Revelation reveals cloaked Banshees and Widow Mines. Stasis Ward can freeze bio balls or tank lines during engagements. Often used in Oracle openers into Phoenix follow-ups.",
+    "Vs. Zerg": "Devastating against drone lines, though Queens and Spore Crawlers pose significant threats. Revelation scouts tech and army movements while detecting burrowed units. Stasis Ward can trap Ling/Bane armies or Roach/Hydra compositions. Typically paired with Phoenix to handle Mutalisks and corrupt enemy Queens."
+  }
+}

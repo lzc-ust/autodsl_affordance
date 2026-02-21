@@ -1,0 +1,62 @@
+{
+  "Type": "Ground Unit",
+  "Description": "The Reaper is a highly mobile Terran raiding unit specializing in early-game scouting and worker harassment. With exceptional speed, cliff-jumping capability, and out-of-combat health regeneration, it excels at hit-and-run tactics against undefended bases. While fragile and gas-intensive, its unique mobility makes it invaluable for gathering intelligence and applying early pressure.",
+  "Built From": "Barracks",
+  "Requirements": "Barracks",
+  "Cost": {
+    "mineral": 50,
+    "vespene": 50,
+    "game_time": 32,
+    "supply": 1
+  },
+  "Hotkey": "R",
+  "Attack": {
+    "Targets": "Ground",
+    "Damage": "4 (+1) × 2 pistols",
+    "DPS": "12.5 (Base)",
+    "Cooldown": "0.64",
+    "Bonus": "None",
+    "Bonus DPS": "None",
+    "Range": "5"
+  },
+  "Unit stats": {
+    "Defense": "60 0 0 (+1)",
+    "Attributes": "Biological, Light",
+    "Sight": "9",
+    "Speed": "5.25",
+    "Cargo size": "1"
+  },
+  "Strong against": [
+    "Probe",
+    "SCV",
+    "Drone",
+    "Zergling",
+    "Sentinel"
+  ],
+  "Weak against": [
+    "Stalker",
+    "Marauder",
+    "Roach",
+    "Queen",
+    "Marine",
+    "Hellion"
+  ],
+  "Ability": {
+    "Name": "Combat Drugs",
+    "Description": "Passive ability that regenerates 2 health per second after being out of combat for 10 seconds. Allows Reapers to sustain through harassment missions."
+  },
+  "Upgrade": {
+    "Name": "Reaper Speed",
+    "Mineral Cost": 100,
+    "Vespene Cost": 100,
+    "Research Time": 79,
+    "Researched From": "Barracks Tech Lab",
+    "Effect": "Increases Reaper movement speed from 4.13 to 5.25"
+  },
+  "Competitive Usage": {
+    "General": "Reapers are primarily used for early-game scouting and limited harassment. Their cliff-jumping ability provides unparalleled map vision and intelligence gathering. While capable of worker harassment, their high gas cost and fragility make them poor for mass production. Typically, 1-3 Reapers are built for scouting before transitioning to more cost-effective units. The health regeneration allows them to survive minor skirmishes and continue scouting.",
+    "Vs. Protoss": "Excellent for scouting tech choices and identifying all-ins. Can harass probes and delay natural expansions. Effective against early Zealots and can kite Stalkers with proper micro. Vulnerable to Adept shades and Phoenix pursuit. Often used in Reaper-FE openings to secure economic advantage while gathering intelligence.",
+    "Vs. Terran": "Limited use in TvT due to Marine superiority and vulnerability to Hellion splash. Can scout enemy tech and base layout but struggles against mass Marine defenses. Occasionally used for early worker harassment if opponent's wall is incomplete. Generally outclassed by other early-game options in the mirror matchup.",
+    "Vs. Zerg": "Valuable for scouting Zerg tech paths and creep spread. Can pressure drones and force Zergling production. Effective against slow Zerglings but vulnerable to Queen transfuse and Spore Crawlers. Often used in 3-Reaper openings to apply early pressure before transitioning to Hellion or bio play."
+  }
+}

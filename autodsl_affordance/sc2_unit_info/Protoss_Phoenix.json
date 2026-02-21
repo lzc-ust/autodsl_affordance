@@ -1,0 +1,65 @@
+{
+  "Type": "Air Unit",
+  "Description": "The Phoenix is a highly mobile Protoss interceptor specializing in air superiority and tactical disruption. Built from the Stargate, it excels at hit-and-run tactics and can attack while moving, making it deadly against light air units. Its Graviton Beam ability allows it to lift ground units, temporarily removing them from combat.",
+  "Built From": "Stargate",
+  "Requirements": "Stargate",
+  "Cost": {
+    "mineral": 150,
+    "vespene": 100,
+    "game_time": 25,
+    "supply": 2
+  },
+  "Hotkey": "P",
+  "Attack": {
+    "Targets": "Air",
+    "Damage": "5 (+1) × 2 beams",
+    "DPS": "15.4 (Base), 28.1 (vs Light Air)",
+    "Cooldown": "0.65",
+    "Bonus": "+5 vs Light",
+    "Bonus DPS": "+12.7 vs Light Air",
+    "Range": "5 (7 with Anion Pulse-Crystals)"
+  },
+  "Unit stats": {
+    "Defense": "120 60 0 (+1)",
+    "Attributes": "Light, Mechanical",
+    "Sight": "10",
+    "Speed": "5.95",
+    "Cargo size": "N/A"
+  },
+  "Strong against": [
+    "Mutalisk",
+    "Banshee",
+    "Medivac",
+    "Void Ray",
+    "Overlord",
+    "Queen"
+  ],
+  "Weak against": [
+    "Corruptor",
+    "Viking",
+    "Hydralisk",
+    "Marine",
+    "Archon",
+    "Tempest"
+  ],
+  "Ability": {
+    "Name": "Graviton Beam",
+    "Hotkey": "G",
+    "Energy Cost": "50",
+    "Description": "Lifts a ground unit into the air for 8 seconds, making it invulnerable to ground attacks but vulnerable to air attacks. The lifted unit cannot act."
+  },
+  "Upgrade": {
+    "Name": "Anion Pulse-Crystals",
+    "Mineral Cost": 150,
+    "Vespene Cost": 150,
+    "Research Time": 57,
+    "Researched From": "Fleet Beacon",
+    "Effect": "Increases Phoenix attack range from 5 to 7"
+  },
+  "Competitive Usage": {
+    "General": "The Phoenix excels at map control, harassment, and air superiority. Its ability to attack while moving makes it ideal for hit-and-run tactics against worker lines and light air units. Graviton Beam provides crucial utility by disabling key ground threats like Siege Tanks, Immortals, and Queens. Phoenix fleets require careful micro to maximize their mobility advantage while avoiding concentrated anti-air fire.",
+    "Vs. Protoss": "Effective against Robotics-based compositions, able to lift Immortals and Disruptors while attacking Colossi directly. Phoenix wars often determine air superiority in PvP, with Anion Pulse-Crystals being a critical upgrade. Can harass worker lines and snipe key tech units, but vulnerable to Archons and Stalker focus fire.",
+    "Vs. Terran": "Excellent for denying Medivac drops and harassing mineral lines. Can lift Siege Tanks and Liberators to disable Terran siege positions. The bonus damage against light air makes them effective against Vikings and Banshees. Often used in Phoenix-Adept compositions for multi-pronged harassment.",
+    "Vs. Zerg": "Dominant against Mutalisk compositions and effective for picking off Overlords to deny vision and supply. Can lift Queens and Roaches during engagements. Typically paired with Oracles or Void Rays to handle Spore Crawlers and Hydralisks. Requires critical mass (4+) to effectively engage Queens and static defense."
+  }
+}

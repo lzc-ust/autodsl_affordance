@@ -1,0 +1,288 @@
+{
+  "graph_id": "844bc67a-3a40-4544-a2a4-80c92de1afde",
+  "nodes": {
+    "TerranMarine": {
+      "node_id": "TerranMarine",
+      "class_name": "TerranMarine",
+      "unique_class_name": "TerranMarine",
+      "inheritance_chain": [
+        "Unit",
+        "StandardUnit",
+        "TerranUnit",
+        "TerranGroundUnit",
+        "TerranInfantryUnit",
+        "TerranMarine"
+      ],
+      "parent_class": "TerranInfantryUnit",
+      "inheritance_depth": 6,
+      "attributes": [
+        {
+          "name": "unique_class_name",
+          "data_type": "str",
+          "default_value": "Terran_Marine",
+          "description": "",
+          "is_required": false
+        },
+        {
+          "name": "unit_type",
+          "data_type": "str",
+          "default_value": "Terran Ground Unit",
+          "description": "",
+          "is_required": false
+        },
+        {
+          "name": "description",
+          "data_type": "str",
+          "default_value": "人族基础步兵单位，具备远程攻击和兴奋剂能力",
+          "description": "",
+          "is_required": false
+        },
+        {
+          "name": "game_id",
+          "data_type": "str",
+          "default_value": "",
+          "description": "",
+          "is_required": false
+        },
+        {
+          "name": "owner",
+          "data_type": "str",
+          "default_value": "Neutral",
+          "description": "",
+          "is_required": false
+        },
+        {
+          "name": "position",
+          "data_type": "Position",
+          "default_value": {
+            "__type__": "Position",
+            "x": 0,
+            "y": 0
+          },
+          "description": "",
+          "is_required": false
+        },
+        {
+          "name": "is_alive",
+          "data_type": "bool",
+          "default_value": true,
+          "description": "",
+          "is_required": false
+        },
+        {
+          "name": "selection_priority",
+          "data_type": "int",
+          "default_value": 1,
+          "description": "",
+          "is_required": false
+        },
+        {
+          "name": "llm_interface",
+          "data_type": "dict",
+          "default_value": {
+            "natural_language_aliases": [
+              "陆战队员",
+              "marine",
+              "机枪兵",
+              "MM"
+            ],
+            "role_description": "人族基础步兵单位，具备远程攻击和兴奋剂能力",
+            "tactical_keywords": [
+              "基础输出",
+              "对空对地",
+              "兴奋剂",
+              "数量压制"
+            ],
+            "primary_role": [
+              "基础输出",
+              "防空",
+              "前线作战"
+            ],
+            "common_tactics": [
+              "配合掠夺者",
+              "使用兴奋剂",
+              "数量压制"
+            ],
+            "race_keywords": [
+              "人族",
+              "Terran",
+              "机械化",
+              "工程"
+            ],
+            "visual_characteristics": [
+              "金属装甲",
+              "工业设计",
+              "实用主义"
+            ],
+            "production_keywords": [
+              "步兵单位",
+              "兵营单位"
+            ],
+            "tactical_role": [
+              "基础作战",
+              "多功能"
+            ]
+          },
+          "description": "",
+          "is_required": false
+        },
+        {
+          "name": "visual_recognition",
+          "data_type": "dict",
+          "default_value": {
+            "unit_size": "small",
+            "color_scheme": [
+              "blue",
+              "red",
+              "yellow"
+            ],
+            "silhouette": " infantry with helmet and rifle",
+            "animation_characteristics": [
+              "running movement",
+              "rifle firing"
+            ],
+            "movement_pattern": "地面移动",
+            "terrain_interaction": "受地形影响"
+          },
+          "description": "",
+          "is_required": false
+        },
+        {
+          "name": "tactical_context",
+          "data_type": "dict",
+          "default_value": {
+            "formation_preferences": [
+              "spread",
+              "bunker defense"
+            ],
+            "engagement_distances": [
+              "medium",
+              "close"
+            ],
+            "micro_maneuvers": [
+              "stimpack burst",
+              "focus fire"
+            ]
+          },
+          "description": "",
+          "is_required": false
+        },
+        {
+          "name": "race",
+          "data_type": "str",
+          "default_value": "Terran",
+          "description": "",
+          "is_required": false
+        },
+        {
+          "name": "development_mode",
+          "data_type": "bool",
+          "default_value": false,
+          "description": "",
+          "is_required": false
+        },
+        {
+          "name": "json_loader",
+          "data_type": "UnitJsonLoader",
+          "default_value": {
+            "__type__": "UnitJsonLoader",
+            "data": {
+              "target_instance": {
+                "__type__": "TerranMarine",
+                "data": {
+                  "unique_class_name": "Terran_Marine",
+                  "unit_type": "Terran Ground Unit",
+                  "description": "人族基础步兵单位，具备远程攻击和兴奋剂能力",
+                  "game_id": "",
+                  "owner": "Neutral",
+                  "position": {
+                    "__type__": "Position",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "is_alive": true,
+                  "selection_priority": 1,
+                  "llm_interface": {
+                    "natural_language_aliases": [
+                      "陆战队员",
+                      "marine",
+                      "机枪兵",
+                      "MM"
+                    ],
+                    "role_description": "人族基础步兵单位，具备远程攻击和兴奋剂能力",
+                    "tactical_keywords": [
+                      "基础输出",
+                      "对空对地",
+                      "兴奋剂",
+                      "数量压制"
+                    ],
+                    "primary_role": [
+                      "基础输出",
+                      "防空",
+                      "前线作战"
+                    ],
+                    "common_tactics": [
+                      "配合掠夺者",
+                      "使用兴奋剂",
+                      "数量压制"
+                    ],
+                    "race_keywords": [
+                      "人族",
+                      "Terran",
+                      "机械化",
+                      "工程"
+                    ],
+                    "visual_characteristics": [
+                      "金属装甲",
+                      "工业设计",
+                      "实用主义"
+                    ],
+                    "production_keywords": [
+                      "步兵单位",
+                      "兵营单位"
+                    ],
+                    "tactical_role": [
+                      "基础作战",
+                      "多功能"
+                    ]
+                  },
+                  "visual_recognition": {
+                    "unit_size": "small",
+                    "color_scheme": [
+                      "blue",
+                      "red",
+                      "yellow"
+                    ],
+                    "silhouette": " infantry with helmet and rifle",
+                    "animation_characteristics": [
+                      "running movement",
+                      "rifle firing"
+                    ],
+                    "movement_pattern": "地面移动",
+                    "terrain_interaction": "受地形影响"
+                  },
+                  "tactical_context": {
+                    "formation_preferences": [
+                      "spread",
+                      "bunker defense"
+                    ],
+                    "engagement_distances": [
+                      "medium",
+                      "close"
+                    ],
+                    "micro_maneuvers": [
+                      "stimpack burst",
+                      "focus fire"
+                    ]
+                  },
+                  "_inheritance_chain": [
+                    "Unit",
+                    "StandardUnit",
+                    "TerranUnit",
+                    "TerranGroundUnit",
+                    "TerranInfantryUnit",
+                    "TerranMarine"
+                  ],
+                  "race": "Terran",
+                  "development_mode": false,
+                  "json_loader": 

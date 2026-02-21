@@ -1,0 +1,57 @@
+{
+  "Type": "Ground Unit",
+  "Description": "The Disruptor is a specialized Protoss mechanical unit that deals massive area damage through its Purification Nova ability. Unlike traditional units, it lacks a standard auto-attack and relies entirely on its activated ability for combat effectiveness. The Nova projectile moves independently and can be controlled after activation, making the Disruptor a high-skill-cap unit that rewards precise micro-management.",
+  "Built From": "Robotics Facility",
+  "Requirements": "Robotics Bay",
+  "Cost": {
+    "mineral": 150,
+    "vespene": 150,
+    "game_time": 36,
+    "supply": 4
+  },
+  "Hotkey": "D",
+  "Attack": {
+    "Targets": "Ground (via Purification Nova)",
+    "Damage": "145 (+25 vs Shields)",
+    "DPS": "N/A (Ability-based)",
+    "Cooldown": "21 (Purification Nova cooldown)",
+    "Bonus": "+25 vs Shields",
+    "Bonus DPS": "N/A",
+    "Range": "1.5 (activation), 13 (Nova movement)"
+  },
+  "Unit stats": {
+    "Defense": "100 100 1 (+1)",
+    "Attributes": "Armored, Mechanical",
+    "Sight": "9",
+    "Speed": "3.15",
+    "Cargo size": "4"
+  },
+  "Strong against": [
+    "Marine",
+    "Marauder",
+    "Hydralisk",
+    "Roach",
+    "Stalker",
+    "Zealot"
+  ],
+  "Weak against": [
+    "Phoenix",
+    "Marine (with good micro)",
+    "Zergling (with good micro)",
+    "Tempest",
+    "Viper"
+  ],
+  "Ability": {
+    "Name": "Purification Nova",
+    "Hotkey": "E",
+    "Cooldown": "21",
+    "Description": "Launches a controllable Nova projectile that explodes after 1.35 seconds, dealing 145 damage (+25 vs Shields) in a large radius. Affects both enemy and friendly units. The Nova moves at speed 4.13 and can be redirected."
+  },
+  "Upgrade": "No upgrade found",
+  "Competitive Usage": {
+    "General": "The Disruptor serves as Protoss's highest burst-damage area-of-effect unit, capable of instantly wiping out entire squads of ground units. Its effectiveness depends entirely on player micro - well-controlled Novas can decide battles, while poorly managed ones can devastate friendly armies. Disruptors pair excellently with Warp Prisms for mobile harassment and with time-warp or force-field abilities to trap enemy units. They require careful positioning and should be kept behind frontline units when not activating Novas.",
+    "Vs. Protoss": "A core unit in PvP, particularly in Disruptor vs Disruptor micro battles. Effective against all ground units except when countered by Phoenix Graviton Beam (which can lift Disruptors after Nova activation). Stalkers can Blink away from Novas, making the matchup highly skill-dependent. Disruptors can punish clumped Gateway armies and break defensive positions.",
+    "Vs. Terran": "Excellent against bio compositions and mech units like Siege Tanks. Can one-shot Marines and significantly damage Marauders. The Nova's range allows it to threaten sieged tanks without taking return fire. However, requires careful management against Terran mobility and must be protected from air units like Liberators and Vikings.",
+    "Vs. Zerg": "Effective against Roach/Ravager/Hydralisk compositions, especially when Zerg armies are forced to engage in chokepoints. Vulnerable to Zergling surrounds and Viper Abducts. The Nova's travel time makes it less reliable against speed-upgraded Zerg units on creep. Often used in combination with Colossus or Archon to cover different threat ranges."
+  }
+}

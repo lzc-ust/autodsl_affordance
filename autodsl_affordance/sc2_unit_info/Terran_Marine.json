@@ -1,0 +1,76 @@
+{
+  "Type": "Ground Unit",
+  "Description": "The Marine is the versatile backbone of the Terran army, serving as a cost-effective anti-air and anti-ground infantry unit. With rapid production from Barracks and excellent scaling through upgrades and support, Marines form the core of most Terran bio compositions. Their high DPS when upgraded and stimmed makes them formidable, though their light armor and low health require careful positioning and support.",
+  "Built From": "Barracks",
+  "Requirements": "Barracks",
+  "Cost": {
+    "mineral": 50,
+    "vespene": 0,
+    "game_time": 18,
+    "supply": 1
+  },
+  "Hotkey": "A",
+  "Attack": {
+    "Targets": "Ground / Air",
+    "Damage": "6 (+1)",
+    "DPS": "9.8 (Base), 14.7 (Stimpack)",
+    "Cooldown": "0.61",
+    "Bonus": "None",
+    "Bonus DPS": "None",
+    "Range": "5"
+  },
+  "Unit stats": {
+    "Defense": "45 0 0 (+1)",
+    "Attributes": "Biological, Light",
+    "Sight": "9",
+    "Speed": "3.15",
+    "Cargo size": "1"
+  },
+  "Strong against": [
+    "Mutalisk",
+    "Corruptor",
+    "Void Ray",
+    "Oracle",
+    "Phoenix",
+    "Hydralisk"
+  ],
+  "Weak against": [
+    "Baneling",
+    "Colossus",
+    "Siege Tank",
+    "Psionic Storm",
+    "Hellion",
+    "Disruptor"
+  ],
+  "Ability": {
+    "Name": "Stimpack",
+    "Hotkey": "T",
+    "Health Cost": "10 HP",
+    "Duration": "11 seconds",
+    "Description": "Increases movement speed by 50% and attack speed by 62% for 11 seconds. Can be used while moving."
+  },
+  "Upgrade": [
+    {
+      "Name": "Stimpack Research",
+      "Mineral Cost": 100,
+      "Vespene Cost": 100,
+      "Research Time": 121,
+      "Researched From": "Barracks Tech Lab",
+      "Effect": "Unlocks Stimpack ability for Marines and Marauders"
+    },
+    {
+      "Name": "Combat Shield",
+      "Mineral Cost": 100,
+      "Vespene Cost": 100,
+      "Research Time": 71,
+      "Researched From": "Barracks Tech Lab",
+      "Effect": "Increases Marine health by 10 HP"
+    }
+  ],
+  "Competitive Usage": {
+    "General": "Marines are the most versatile and scalable unit in the Terran arsenal. Their effectiveness dramatically increases with Stimpack, Combat Shields, and weapon upgrades. They excel when supported by Medivacs for healing and Marauders/Hellbats for tanking. Proper splitting against area damage and stutter-step micro are essential for maximizing their potential. Marine-Medivac drops provide powerful harassment options throughout the game.",
+    "Vs. Protoss": "Core unit in bio compositions against Protoss. Extremely effective before Protoss obtains area damage from Colossi or High Templar. Vulnerable to splash damage, requiring Viking support against Colossi and Ghost support against High Templar. Marine drops can punish Protoss expansions and force army separation.",
+    "Vs. Terran": "Fundamental in TvT bio mirrors and against mech compositions. Combat Shields provide an early advantage over Stimpack-only Marines. Require careful positioning against Siege Tanks and Hellion splash. Marine-tank-medivac compositions dominate the matchup, with micro determining engagement outcomes.",
+    "Vs. Zerg": "The primary damage dealer in TvZ bio play. Excellent against Mutalisks and Hydralisks but require splitting against Banelings. Scale incredibly well with upgrades, becoming increasingly powerful in the late game. Must be supported by Widow Mines, Tanks, or Liberators against Zerg's area damage options."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "Type": "Ground Unit", 
+  "Description": "The Siege Tank is a versatile Terran mechanical unit produced from Factories with Tech Labs. It provides crucial area denial and positional control through its transformative Siege Mode, which dramatically increases range and adds splash damage at the cost of mobility. The tank is fundamental to Terran mech compositions and frequently supplements bio armies for added firepower.",
+  "Built From": "Factory (requires Tech Lab)",
+  "Requirements": "Factory, Tech Lab, Armory (for Smart Servos)",
+  "Cost": {
+    "mineral": 150,
+    "vespene": 125,
+    "game_time": 45,
+    "supply": 3
+  },
+  "Hotkey": "T",
+  "Attack": {
+    "Targets": "Ground",
+    "Damage": "15 (Tank Mode), 35 (+15 vs Armored) (Siege Mode)",
+    "DPS": "~10.7 (Tank Mode), ~25.0 (Siege Mode vs Armored)",
+    "Cooldown": "1.4 (both modes)",
+    "Bonus": "+15 vs Armored (Siege Mode only)",
+    "Bonus DPS": "+10.7 vs Armored (Siege Mode)",
+    "Range": "7 (Tank Mode), 13 (Siege Mode)"
+  },
+  "Unit stats": {
+    "Defense": "175 0 1 (+1)",
+    "Attributes": "Mechanical, Armored",
+    "Sight": "11 (Tank Mode), 13 (Siege Mode)",
+    "Speed": "3.15 (Tank Mode), 0 (Siege Mode)",
+    "Cargo size": "4"
+  },
+  "Strong against": [
+    "Roach",
+    "Stalker",
+    "Hydralisk",
+    "Marine",
+    "Zergling"
+  ],
+  "Weak against": [
+    "Immortal",
+    "Void Ray",
+    "Mutalisk",
+    "Disruptor",
+    "Liberator"
+  ],
+  "Ability": [
+    {
+      "Name": "Siege Mode",
+      "Hotkey": "E",
+      "Cooldown": "3 seconds (1.5 with Smart Servos)",
+      "Description": "Transforms into immobile siege mode with 13 range and splash damage. Attacks deal bonus damage to Armored units."
+    },
+    {
+      "Name": "Unsiege", 
+      "Hotkey": "D",
+      "Cooldown": "3 seconds (1.5 with Smart Servos)",
+      "Description": "Returns to mobile Tank Mode with 7 range and single-target damage."
+    }
+  ],
+  "Upgrade": {
+    "Name": "Smart Servos",
+    "Mineral Cost": 100,
+    "Vespene Cost": 100,
+    "Research Time": 57,
+    "Researched From": "Tech Lab (Factory)",
+    "Effect": "Reduces transformation time between Tank Mode and Siege Mode by 50% (from 3 to 1.5 seconds)"
+  },
+  "Competitive Usage": {
+    "General": "Siege Tanks excel at area denial and positional warfare. They control chokepoints, defend expansions, and enable methodical pushes. When sieged, they create zones that ground armies cannot enter without taking devastating splash damage. Tanks require vision spotters (like Scan, Marines, or Sensor Towers) and screening units (Hellbats, Marines) for protection against flanking maneuvers and air units.",
+    "Vs. Terran": "Essential in TvT 'tank wars,' where positioning and vision determine engagements. Tank lines with air superiority (Vikings) and liberator support dominate ground maps. Smart Servos is crucial for repositioning during tank duels.",
+    "Vs. Protoss": "Effective against gateway unit compositions and can pressure Protoss expansions. Vulnerable to Immortal focus fire, Disruptor shots, and air unit harassment. Often paired with Widow Mines and Vikings for comprehensive defense.",
+    "Vs. Zerg": "Core to mech compositions against Zerg. Devastating against Ling/Bane armies and Roach/Ravager timings. Requires Hellbat support and careful positioning to avoid being overrun by flanking maneuvers or busted by Vipers with Abduct or Blinding Cloud."
+  }
+}

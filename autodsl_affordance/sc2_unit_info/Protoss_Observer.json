@@ -1,0 +1,61 @@
+{
+  "Type": "Air Unit",
+  "Description": "The Observer is a permanently cloaked Protoss detection unit built from the Robotics Facility. It provides crucial vision and detection capabilities while remaining invisible to enemies without detection. With its large sight radius and stealth, the Observer serves as Protoss's primary scouting and information-gathering tool throughout the game.",
+  "Built From": "Robotics Facility",
+  "Requirements": "Robotics Facility",
+  "Cost": {
+    "mineral": 25,
+    "vespene": 75,
+    "game_time": 21,
+    "supply": 1
+  },
+  "Hotkey": "O",
+  "Attack": {
+    "Targets": "None",
+    "Damage": "None",
+    "DPS": "None",
+    "Cooldown": "None",
+    "Bonus": "None",
+    "Bonus DPS": "None",
+    "Range": "None"
+  },
+  "Unit stats": {
+    "Defense": "40 20 0 (+1)",
+    "Attributes": "Light, Mechanical, Detector",
+    "Sight": "11",
+    "Speed": "2.82",
+    "Cargo size": "N/A"
+  },
+  "Strong against": [
+    "Dark Templar",
+    "Banshee",
+    "Burrowed units",
+    "Widow Mine"
+  ],
+  "Weak against": [
+    "Photon Cannon",
+    "Missile Turret",
+    "Spore Crawler",
+    "Overseer",
+    "Raven",
+    "Scan"
+  ],
+  "Ability": {
+    "Name": "Permanent Cloak",
+    "Description": "The Observer is permanently cloaked and can only be seen by enemy detection"
+  },
+  "Upgrade": {
+    "Name": "Gravitic Boosters",
+    "Mineral Cost": 100,
+    "Vespene Cost": 100,
+    "Research Time": 57,
+    "Researched From": "Robotics Bay",
+    "Effect": "Increases Observer movement speed from 2.82 to 4.23"
+  },
+  "Competitive Usage": {
+    "General": "The Observer is typically the first unit produced from the Robotics Facility in most matchups. Its primary roles include scouting enemy tech and army composition, providing detection against cloaked and burrowed units, and granting vision for high-ground attacks and map control. Multiple Observers should be positioned at key attack paths, enemy bases, and with the main army for redundancy. The Gravitic Boosters upgrade significantly enhances their scouting and escape capabilities.",
+    "Vs. Protoss": "Essential for detecting Dark Templar harassment and scouting enemy tech choices. Should be positioned to watch for Warp Prism movements and army positioning. Caution is needed when scouting opponents who also have Observers, as they can reveal your own scout.",
+    "Vs. Terran": "Crucial for detecting cloaked Banshees and Widow Mines. Observers should accompany the army to prevent surprise attacks and provide vision for engaging Siege Tank lines. Positioning Observers near potential drop paths and expansions helps defend against multi-pronged Terran aggression.",
+    "Vs. Zerg": "Vital for detecting burrowed units like Banelings, Roaches, Lurkers, and Infestors. Observers are used to scout Zerg tech transitions and monitor base saturation. They also help control creep spread by spotting and enabling the destruction of Creep Tumors. Should be kept with the army to prevent devastating surrounds from hidden units."
+  }
+}

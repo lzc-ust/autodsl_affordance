@@ -1,0 +1,1128 @@
+[
+  {
+    "function_id": "ADVANCED_SYNERGY_0",
+    "function_type": "interaction",
+    "name": "protoss_air_ground_blitz",
+    "description": "地空协同闪电战 - 凤凰与地面部队配合",
+    "strategy_description": "凤凰空中抬升关键地面单位，地面部队趁机输出，形成立体打击效果",
+    "tactic_category": "heterogeneous_coordination",
+    "linkage_type": "air_ground_synergy",
+    "execution_type": "attack",
+    "prerequisites": {
+      "min_units": 4,
+      "required_units": [
+        "Phoenix",
+        "Zealot"
+      ],
+      "optional_units": [
+        "Stalker",
+        "Sentry"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 2.0,
+      "survival_rate_increase": 0.3,
+      "threat_elimination_speed": 2.5
+    },
+    "execution_flow": [
+      "use_graviton_beam(Phoenix, highest_threat_enemy)",
+      "use_force_field(Sentry, enemy_retreat_route)",
+      "charge_attack(Zealot, lifted_target)",
+      "blink_strike(Stalker, exposed_enemy)",
+      "aerial_support(Phoenix, enemy_formation)"
+    ],
+    "evidence": [
+      "地空协同可以发挥立体打击优势",
+      "凤凰抬升关键单位可以创造局部优势",
+      "力场控制配合冲锋可以最大化伤害输出"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "function_id": "ADVANCED_SYNERGY_1",
+    "function_type": "interaction",
+    "name": "protoss_ability_combo_assault",
+    "description": "技能组合突击 - 高阶圣堂武士与哨兵配合",
+    "strategy_description": "哨兵力场控制敌方走位，高阶圣堂武士释放心灵风暴，地面部队配合冲锋收割",
+    "tactic_category": "offense",
+    "linkage_type": "ability_unit_coordination",
+    "execution_type": "attack",
+    "prerequisites": {
+      "min_units": 4,
+      "required_units": [
+        "HighTemplar",
+        "Sentry"
+      ],
+      "optional_units": [
+        "Zealot",
+        "Stalker"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 2.2,
+      "survival_rate_increase": 0.4,
+      "threat_elimination_speed": 3.0
+    },
+    "execution_flow": [
+      "place_force_field(Sentry, enemy_cluster)",
+      "cast_psi_storm(HighTemplar, forced_enemies)",
+      "charge_attack(Zealot, storm_affected_targets)",
+      "blink_strike(Stalker, weakened_enemies)",
+      "follow_up_attack(all_units, survivors)"
+    ],
+    "evidence": [
+      "力场配合心灵风暴可以造成大量范围伤害",
+      "技能组合可以快速清除密集敌人",
+      "地面部队跟进收割可以最大化战果"
+    ],
+    "confidence": 0.93
+  },
+  {
+    "function_id": "ADVANCED_SYNERGY_2",
+    "function_type": "interaction",
+    "name": "protoss_armor_type_coordination",
+    "description": "装甲类型协同 - 不朽者与追猎者配合",
+    "strategy_description": "不朽者针对敌方装甲单位，追猎者处理轻甲单位和空中单位，形成完整的反制体系",
+    "tactic_category": "offense",
+    "linkage_type": "armor_matching_coordination",
+    "execution_type": "attack",
+    "prerequisites": {
+      "min_units": 3,
+      "required_units": [
+        "Immortal",
+        "Stalker"
+      ],
+      "optional_units": [
+        "Zealot"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 1.8,
+      "survival_rate_increase": 0.5,
+      "threat_elimination_speed": 2.0
+    },
+    "execution_flow": [
+      "immortal_focus_fire(Immortal, armored_enemies)",
+      "stalker_target_switching(Stalker, light_air_units)",
+      "zealot_tank_damage(Zealot, absorb_focus)",
+      "coordinated_assault(all_units, priority_targets)"
+    ],
+    "evidence": [
+      "不朽者对装甲单位有额外伤害加成",
+      "追猎者机动性强适合处理轻甲和空中单位",
+      "不同装甲类型单位配合可以应对各种敌人"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "function_id": "ADVANCED_SYNERGY_4",
+    "function_type": "interaction",
+    "name": "protoss_long_short_range_combo",
+    "description": "远近程组合 - 巨像与狂热者配合",
+    "strategy_description": "巨像提供远程范围伤害，狂热者吸引火力并限制敌人接近，形成完美的攻防体系",
+    "tactic_category": "offense",
+    "linkage_type": "long_short_range_coordination",
+    "execution_type": "attack",
+    "prerequisites": {
+      "min_units": 3,
+      "required_units": [
+        "Colossus",
+        "Zealot"
+      ],
+      "optional_units": [
+        "Stalker"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 1.7,
+      "survival_rate_increase": 0.4,
+      "threat_elimination_speed": 1.9
+    },
+    "execution_flow": [
+      "zealot_charge_forward(Zealot, enemy_frontline)",
+      "colossus_elevated_position(Colossus, optimal_firing_range)",
+      "colossus_heat_beam(Colossus, enemy_density_area)",
+      "stalker_blink_support(Stalker, flanking_enemies)",
+      "maintain_frontline_integrity(Zealot)"
+    ],
+    "evidence": [
+      "巨像的远程范围伤害可以有效清理密集敌人",
+      "狂热者可以保护巨像免受敌方近距离单位攻击",
+      "远近程配合可以适应各种战场距离"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "function_id": "ADVANCED_SYNERGY_5",
+    "function_type": "interaction",
+    "name": "protoss_2s3z_combined_assault",
+    "description": "2s3z组合协同突击 - 追猎者与狂热者配合",
+    "strategy_description": "2个追猎者提供远程输出和机动性，3个狂热者冲锋吸引火力并限制敌人，形成灵活高效的战斗组合",
+    "tactic_category": "offense",
+    "linkage_type": "long_short_range_coordination",
+    "execution_type": "attack",
+    "prerequisites": {
+      "min_units": 5,
+      "required_units": [
+        "Stalker",
+        "Stalker",
+        "Zealot",
+        "Zealot",
+        "Zealot"
+      ],
+      "optional_units": []
+    },
+    "tactical_effects": {
+      "damage_multiplier": 1.8,
+      "survival_rate_increase": 0.5,
+      "threat_elimination_speed": 2.2
+    },
+    "execution_flow": [
+      "zealot_charge_initiation(Zealot, highest_threat_enemy)",
+      "stalker_blink_flanking(Stalker, enemy_flank_position)",
+      "zealot_frontline_hold(Zealot, enemy_advance)",
+      "stalker_focus_fire(Stalker, priority_targets)",
+      "coordinated_retreat_and_reposition(all_units, optimal_position)",
+      "final_assault(all_units, remaining_enemies)"
+    ],
+    "evidence": [
+      "追猎者的远程输出配合狂热者的近战冲锋形成多层次攻击",
+      "闪烁能力提供出色的机动性，便于调整战术位置",
+      "狂热者吸收伤害，保护脆弱的追猎者免受集火",
+      "协同攻击可以快速消灭敌方单位，保持战场优势"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "function_id": "ADVANCED_SYNERGY_6",
+    "function_type": "interaction",
+    "name": "protoss_3s3z_combined_assault",
+    "description": "3s3z组合协同突击 - 追猎者与狂热者配合",
+    "strategy_description": "3个追猎者提供更强的远程输出和机动性，3个狂热者冲锋吸引火力并限制敌人，形成更强大的战斗组合",
+    "tactic_category": "offense",
+    "linkage_type": "long_short_range_coordination",
+    "execution_type": "attack",
+    "prerequisites": {
+      "min_units": 6,
+      "required_units": [
+        "Stalker",
+        "Stalker",
+        "Stalker",
+        "Zealot",
+        "Zealot",
+        "Zealot"
+      ],
+      "optional_units": []
+    },
+    "tactical_effects": {
+      "damage_multiplier": 2.0,
+      "survival_rate_increase": 0.6,
+      "threat_elimination_speed": 2.5
+    },
+    "execution_flow": [
+      "zealot_charge_initiation(Zealot, highest_threat_enemy)",
+      "stalker_blink_flanking(Stalker, enemy_flank_position)",
+      "zealot_frontline_hold(Zealot, enemy_advance)",
+      "stalker_focus_fire(Stalker, priority_targets)",
+      "coordinated_retreat_and_reposition(all_units, optimal_position)",
+      "stalker_blink_pursuit(Stalker, retreating_enemies)",
+      "final_assault(all_units, remaining_enemies)"
+    ],
+    "evidence": [
+      "更多追猎者提供更强的远程火力输出",
+      "闪烁能力提供出色的机动性，便于调整战术位置",
+      "狂热者吸收伤害，保护脆弱的追猎者免受集火",
+      "协同攻击可以快速消灭敌方单位，保持战场优势"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "function_id": "ATTACK_0",
+    "function_type": "interaction",
+    "name": "focus_fire_on_highest_threat",
+    "description": "集中火力攻击最高威胁的敌方单位",
+    "strategy_description": "优先攻击对我方威胁最大的敌方单位，如高伤害或高优先级目标",
+    "tactic_category": "offense",
+    "source_unit": "all_friendly",
+    "target_unit": "highest_threat_enemy",
+    "linkage_type": "interaction",
+    "execution_type": "attack",
+    "parameters": [],
+    "execution_flow": [
+      "set_target(all_friendly, highest_threat_enemy)",
+      "attack(all_friendly, highest_threat_enemy)"
+    ],
+    "evidence": [
+      "集中火力可以快速消除敌方威胁",
+      "优先攻击高价值目标可以提高战斗效率"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "function_id": "ATTACK_1",
+    "function_type": "interaction",
+    "name": "attack_lowest_health_enemy",
+    "description": "攻击最低生命值的敌方单位",
+    "strategy_description": "优先攻击生命值最低的敌方单位，快速减少敌方数量",
+    "tactic_category": "offense",
+    "source_unit": "all_friendly",
+    "target_unit": "lowest_health_enemy",
+    "linkage_type": "interaction",
+    "execution_type": "attack",
+    "parameters": [],
+    "execution_flow": [
+      "set_target(all_friendly, lowest_health_enemy)",
+      "attack(all_friendly, lowest_health_enemy)"
+    ],
+    "evidence": [
+      "攻击低生命值单位可以快速减少敌方数量",
+      "可以有效打破敌方阵型"
+    ],
+    "confidence": 0.85
+  },
+  {
+    "function_id": "ABILITY_0",
+    "function_type": "interaction",
+    "name": "use_force_field_on_enemy",
+    "description": "在敌人面前使用力场",
+    "strategy_description": "使用Sentry的力场能力阻挡敌方单位的前进",
+    "tactic_category": "defense",
+    "source_unit": "Sentry",
+    "target_unit": "enemy_frontline",
+    "linkage_type": "interaction",
+    "execution_type": "ability",
+    "parameters": [],
+    "execution_flow": [
+      "use_force_field_ability(Sentry, enemy_frontline)"
+    ],
+    "evidence": [
+      "力场可以有效阻挡敌方单位的前进",
+      "可以分割敌方阵型，创造局部优势"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "function_id": "ABILITY_1",
+    "function_type": "interaction",
+    "name": "use_blink_on_stalkers",
+    "description": "在Stalker上使用闪烁能力",
+    "strategy_description": "使用Stalker的闪烁能力接近敌人或躲避攻击",
+    "tactic_category": "offense",
+    "source_unit": "Stalker",
+    "target_unit": "enemy_in_range",
+    "linkage_type": "interaction",
+    "execution_type": "ability",
+    "parameters": [],
+    "execution_flow": [
+      "use_blink_ability(Stalker, enemy_in_range)"
+    ],
+    "evidence": [
+      "闪烁可以让Stalker快速接近敌人",
+      "可以躲避敌方的攻击，提高生存能力"
+    ],
+    "confidence": 0.85
+  },
+  {
+    "function_id": "ABILITY_2",
+    "function_type": "interaction",
+    "name": "use_charge_on_zealots",
+    "description": "在Zealot上使用冲锋能力",
+    "strategy_description": "使用Zealot的冲锋能力快速接近敌人",
+    "tactic_category": "offense",
+    "source_unit": "Zealot",
+    "target_unit": "enemy_in_range",
+    "linkage_type": "interaction",
+    "execution_type": "ability",
+    "parameters": [],
+    "execution_flow": [
+      "use_charge_ability(Zealot, enemy_in_range)"
+    ],
+    "evidence": [
+      "冲锋可以让Zealot快速接近敌人",
+      "可以在短时间内对敌人造成大量伤害"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "function_id": "COMBINATION_0",
+    "function_type": "combination",
+    "name": "zealot_stalker_combo",
+    "description": "Zealot和Stalker组合攻击",
+    "strategy_description": "Zealot和Stalker组合攻击，Zealot在前吸收伤害，Stalker在后输出",
+    "tactic_category": "offense",
+    "units": [
+      "Zealot",
+      "Stalker"
+    ],
+    "linkage_type": "combination",
+    "execution_type": "concurrent",
+    "parameters": [],
+    "execution_flow": [
+      "use_charge_ability(Zealot, highest_threat_enemy)",
+      "use_blink_ability(Stalker, highest_threat_enemy)",
+      "attack(Zealot, highest_threat_enemy)",
+      "attack(Stalker, highest_threat_enemy)"
+    ],
+    "evidence": [
+      "Zealot和Stalker组合是Protoss经典的地面战斗战术",
+      "Zealot可以吸收伤害，Stalker可以提供远程输出",
+      "冲锋和闪烁能力可以提高组合的机动性和爆发力"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "function_id": "SUPPORT_0",
+    "function_type": "interaction",
+    "name": "high_templar_psi_storm",
+    "description": "高阶圣堂武士使用心灵风暴",
+    "strategy_description": "高阶圣堂武士在敌方密集区域使用心灵风暴",
+    "tactic_category": "offense",
+    "source_unit": "HighTemplar",
+    "target_unit": "enemy_density_area",
+    "linkage_type": "interaction",
+    "execution_type": "ability",
+    "parameters": [],
+    "execution_flow": [
+      "use_psi_storm_ability(HighTemplar, enemy_density_area)"
+    ],
+    "evidence": [
+      "心灵风暴可以对密集的敌方单位造成大量伤害",
+      "可以有效削弱敌方部队"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "function_id": "COMBINATION_1",
+    "function_type": "combination",
+    "name": "deathball_combo",
+    "description": "Protoss死亡球组合",
+    "strategy_description": "多种单位组合攻击，发挥协同效应",
+    "tactic_category": "offense",
+    "units": [
+      "Zealot",
+      "Stalker",
+      "Immortal",
+      "Colossus"
+    ],
+    "linkage_type": "combination",
+    "execution_type": "concurrent",
+    "parameters": [],
+    "execution_flow": [
+      "attack(Zealot, highest_threat_enemy)",
+      "attack(Stalker, highest_threat_enemy)",
+      "attack(Immortal, armored_enemy)",
+      "attack(Colossus, enemy_density_area)"
+    ],
+    "evidence": [
+      "死亡球组合是Protoss后期强大的地面部队",
+      "各种单位可以发挥协同效应",
+      "可以应对各种敌方单位组合"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "function_id": "TARGET_0",
+    "function_type": "interaction",
+    "name": "prioritize_armored_targets",
+    "description": "优先攻击装甲目标",
+    "strategy_description": "优先攻击敌方装甲单位，利用Immortal等单位的装甲伤害加成",
+    "tactic_category": "offense",
+    "source_unit": "all_friendly",
+    "target_unit": "armored_enemy",
+    "linkage_type": "interaction",
+    "execution_type": "attack",
+    "parameters": [],
+    "execution_flow": [
+      "set_target(all_friendly, armored_enemy)",
+      "attack(all_friendly, armored_enemy)"
+    ],
+    "evidence": [
+      "装甲单位通常具有更高的威胁",
+      "利用装甲伤害加成可以提高攻击效率"
+    ],
+    "confidence": 0.85
+  },
+  {
+    "function_id": "TARGET_1",
+    "function_type": "interaction",
+    "name": "prioritize_light_targets",
+    "description": "优先攻击轻甲目标",
+    "strategy_description": "优先攻击敌方轻甲单位，利用Stalker等单位的轻甲伤害加成",
+    "tactic_category": "offense",
+    "source_unit": "all_friendly",
+    "target_unit": "light_enemy",
+    "linkage_type": "interaction",
+    "execution_type": "attack",
+    "parameters": [],
+    "execution_flow": [
+      "set_target(all_friendly, light_enemy)",
+      "attack(all_friendly, light_enemy)"
+    ],
+    "evidence": [
+      "轻甲单位通常数量较多",
+      "利用轻甲伤害加成可以提高攻击效率"
+    ],
+    "confidence": 0.8
+  },
+  {
+    "function_id": "PROTOSS_UNIT_0",
+    "function_type": "interaction",
+    "name": "zealot_charge_attack",
+    "description": "Zealot冲锋攻击函数",
+    "strategy_description": "优化冲锋时机和目标选择，实现最有效的冲锋攻击",
+    "tactic_category": "offense",
+    "linkage_type": "interaction",
+    "execution_type": "attack",
+    "prerequisites": {
+      "min_units": 1,
+      "required_units": [
+        "Zealot"
+      ],
+      "optional_units": []
+    },
+    "tactical_effects": {
+      "damage_multiplier": 1.5,
+      "survival_rate_increase": 0.2,
+      "threat_elimination_speed": 1.8
+    },
+    "execution_flow": [
+      "identify_charge_target(Zealot, highest_priority_enemy)",
+      "calculate_charge_distance(Zealot, target)",
+      "execute_charge(Zealot, target)",
+      "attack_after_charge(Zealot, target)",
+      "reposition_after_attack(Zealot, optimal_position)"
+    ],
+    "evidence": [
+      "冲锋可以让Zealot快速接近敌人",
+      "优化冲锋时机可以最大化伤害输出",
+      "冲锋后重新定位可以提高生存能力"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "function_id": "PROTOSS_UNIT_1",
+    "function_type": "interaction",
+    "name": "stalker_blink_strike",
+    "description": "Stalker闪烁攻击函数",
+    "strategy_description": "实现闪烁+攻击的核心DPS循环，优化闪烁时机和目标选择",
+    "tactic_category": "offense",
+    "linkage_type": "interaction",
+    "execution_type": "attack",
+    "prerequisites": {
+      "min_units": 1,
+      "required_units": [
+        "Stalker"
+      ],
+      "optional_units": []
+    },
+    "tactical_effects": {
+      "damage_multiplier": 1.8,
+      "survival_rate_increase": 0.4,
+      "threat_elimination_speed": 2.0
+    },
+    "execution_flow": [
+      "identify_blink_target(Stalker, highest_priority_enemy)",
+      "calculate_blink_position(Stalker, target)",
+      "execute_blink(Stalker, optimal_position)",
+      "attack_after_blink(Stalker, target)",
+      "maintain_blink_cooldown(Stalker)"
+    ],
+    "evidence": [
+      "闪烁可以让Stalker快速接近或远离敌人",
+      "闪烁+攻击的组合可以最大化DPS输出",
+      "合理的闪烁时机可以提高生存能力"
+    ],
+    "confidence": 0.93
+  },
+  {
+    "function_id": "PROTOSS_UNIT_2",
+    "function_type": "interaction",
+    "name": "phoenix_graviton_lift",
+    "description": "Phoenix引力射线抬升函数",
+    "strategy_description": "针对高价值目标的抬升策略，优化抬升时机和目标选择",
+    "tactic_category": "offense",
+    "linkage_type": "interaction",
+    "execution_type": "ability",
+    "prerequisites": {
+      "min_units": 1,
+      "required_units": [
+        "Phoenix"
+      ],
+      "optional_units": []
+    },
+    "tactical_effects": {
+      "damage_multiplier": 1.2,
+      "survival_rate_increase": 0.3,
+      "threat_elimination_speed": 2.2
+    },
+    "execution_flow": [
+      "identify_lift_target(Phoenix, highest_value_enemy)",
+      "calculate_lift_range(Phoenix, target)",
+      "execute_graviton_beam(Phoenix, target)",
+      "maintain_lift_duration(Phoenix, target)",
+      "coordinate_with_ground_units(Phoenix, lifted_target)"
+    ],
+    "evidence": [
+      "引力射线可以抬升敌方地面单位，使其无法攻击",
+      "抬升高价值目标可以创造局部优势",
+      "与地面单位配合可以最大化抬升效果"
+    ],
+    "confidence": 0.91
+  },
+  {
+    "function_id": "PROTOSS_UNIT_3",
+    "function_type": "interaction",
+    "name": "immortal_barrier_management",
+    "description": "Immortal屏障管理函数",
+    "strategy_description": "优化屏障激活时机，最大化屏障的保护效果",
+    "tactic_category": "defense",
+    "linkage_type": "interaction",
+    "execution_type": "ability",
+    "prerequisites": {
+      "min_units": 1,
+      "required_units": [
+        "Immortal"
+      ],
+      "optional_units": []
+    },
+    "tactical_effects": {
+      "damage_multiplier": 1.0,
+      "survival_rate_increase": 0.6,
+      "threat_elimination_speed": 1.5
+    },
+    "execution_flow": [
+      "monitor_barrier_status(Immortal)",
+      "predict_enemy_attack(Immortal, enemy_units)",
+      "position_for_barrier_activation(Immortal, optimal_position)",
+      "activate_barrier_timing(Immortal, enemy_attack)",
+      "maintain_distance_from_high_damage_enemies(Immortal)"
+    ],
+    "evidence": [
+      "Immortal的屏障可以吸收大量伤害",
+      "优化屏障激活时机可以最大化其保护效果",
+      "合理的站位可以提高Immortal的生存能力"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "function_id": "PROTOSS_UNIT_4",
+    "function_type": "interaction",
+    "name": "archon_aoe_control",
+    "description": "Archon范围伤害控制函数",
+    "strategy_description": "最大化AOE效果的站位策略，优化攻击目标和位置",
+    "tactic_category": "offense",
+    "linkage_type": "interaction",
+    "execution_type": "attack",
+    "prerequisites": {
+      "min_units": 1,
+      "required_units": [
+        "Archon"
+      ],
+      "optional_units": []
+    },
+    "tactical_effects": {
+      "damage_multiplier": 2.0,
+      "survival_rate_increase": 0.2,
+      "threat_elimination_speed": 1.8
+    },
+    "execution_flow": [
+      "identify_aoe_targets(Archon, enemy_clusters)",
+      "position_for_max_aoe_effect(Archon, optimal_position)",
+      "attack_enemy_cluster(Archon, target_cluster)",
+      "maintain_safe_distance(Archon, enemy_units)",
+      "reposition_after_attack(Archon, next_optimal_position)"
+    ],
+    "evidence": [
+      "Archon的范围伤害对密集敌人效果显著",
+      "优化站位可以最大化AOE覆盖范围",
+      "保持安全距离可以提高Archon的生存能力"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "function_id": "PROTOSS_COMBO_0",
+    "function_type": "interaction",
+    "name": "protoss_ground_assault",
+    "description": "地面部队协同攻击函数",
+    "strategy_description": "Zealot+Stalker+Immortal组合攻击，发挥各单位优势",
+    "tactic_category": "heterogeneous_coordination",
+    "linkage_type": "interaction",
+    "execution_type": "coordinated_advance",
+    "prerequisites": {
+      "min_units": 3,
+      "required_units": [
+        "Zealot",
+        "Stalker",
+        "Immortal"
+      ],
+      "optional_units": []
+    },
+    "tactical_effects": {
+      "damage_multiplier": 2.2,
+      "survival_rate_increase": 0.5,
+      "threat_elimination_speed": 2.5
+    },
+    "execution_flow": [
+      "immortal_frontline_advance(Immortal, enemy_position)",
+      "zealot_charge_support(Zealot, high_priority_targets)",
+      "stalker_blink_flanking(Stalker, enemy_flanks)",
+      "coordinated_focus_fire(all_units, priority_targets)",
+      "maintain_defensive_formation(all_units)"
+    ],
+    "evidence": [
+      "Immortal作为前排可以吸收伤害",
+      "Zealot的冲锋可以快速接近敌人",
+      "Stalker的闪烁可以进行侧翼攻击",
+      "三者配合可以应对各种地面威胁"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "function_id": "PROTOSS_COMBO_1",
+    "function_type": "interaction",
+    "name": "protoss_air_superiority",
+    "description": "空中优势控制函数",
+    "strategy_description": "Phoenix+其他空中单位组合，控制制空权",
+    "tactic_category": "air_ground_coordination",
+    "linkage_type": "air_ground_synergy",
+    "execution_type": "coordinated_advance",
+    "prerequisites": {
+      "min_units": 2,
+      "required_units": [
+        "Phoenix"
+      ],
+      "optional_units": [
+        "VoidRay",
+        "Carrier"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 1.8,
+      "survival_rate_increase": 0.4,
+      "threat_elimination_speed": 2.2
+    },
+    "execution_flow": [
+      "phoenix_scout_airspace(Phoenix, enemy_air_units)",
+      "voidray_engage_heavy_targets(VoidRay, enemy_armored_air)",
+      "carrier_support(Carrier, enemy_air_clusters)",
+      "coordinated_air_attack(all_air_units, enemy_air_forces)",
+      "maintain_air_superiority(all_air_units)"
+    ],
+    "evidence": [
+      "Phoenix的机动性适合侦察和骚扰",
+      "VoidRay对装甲单位有额外伤害",
+      "Carrier可以提供持续的空中火力",
+      "空中单位组合可以有效控制制空权"
+    ],
+    "confidence": 0.93
+  },
+  {
+    "function_id": "PROTOSS_COMBO_2",
+    "function_type": "interaction",
+    "name": "protoss_all_in_attack",
+    "description": "全兵种协同进攻函数",
+    "strategy_description": "地面+空中单位协同作战，形成立体攻击",
+    "tactic_category": "heterogeneous_coordination",
+    "linkage_type": "interaction",
+    "execution_type": "combined_assault",
+    "prerequisites": {
+      "min_units": 5,
+      "required_units": [
+        "Zealot",
+        "Stalker",
+        "Phoenix"
+      ],
+      "optional_units": [
+        "Immortal",
+        "Archon",
+        "VoidRay"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 2.5,
+      "survival_rate_increase": 0.6,
+      "threat_elimination_speed": 3.0
+    },
+    "execution_flow": [
+      "air_unit_scouting(Phoenix, enemy_position)",
+      "ground_unit_advance(Zealot, Stalker, Immortal, enemy_frontline)",
+      "air_unit_support(Phoenix, VoidRay, ground_units)",
+      "archon_aoe_support(Archon, enemy_clusters)",
+      "coordinated_final_assault(all_units, enemy_base)"
+    ],
+    "evidence": [
+      "地空协同可以发挥立体打击优势",
+      "多种单位组合可以应对各种敌方单位",
+      "协同进攻可以创造局部兵力优势",
+      "立体攻击可以分散敌方防御注意力"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "function_id": "VLMATTENTION_0",
+    "function_type": "interaction",
+    "name": "protoss_focus_fire_control",
+    "description": "集中火力控制函数",
+    "strategy_description": "针对敌方高威胁单位的集中火力控制",
+    "tactic_category": "offense",
+    "linkage_type": "interaction",
+    "execution_type": "attack",
+    "prerequisites": {
+      "min_units": 3,
+      "required_units": [
+        "Stalker",
+        "Phoenix"
+      ],
+      "optional_units": [
+        "Zealot",
+        "Immortal"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 2.0,
+      "survival_rate_increase": 0.4,
+      "threat_elimination_speed": 2.8
+    },
+    "execution_flow": [
+      "identify_high_threat_enemies(all_units, enemy_units)",
+      "prioritize_targets_based_on_threat(all_units, threat_levels)",
+      "assign_units_to_targets(all_units, priority_targets)",
+      "execute_focus_fire(all_units, current_target)",
+      "switch_target_when_necessary(all_units, next_priority_target)"
+    ],
+    "evidence": [
+      "集中火力可以快速消除敌方威胁",
+      "优先攻击高威胁单位可以提高战斗效率",
+      "合理的目标分配可以最大化伤害输出"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "function_id": "VLMATTENTION_1",
+    "function_type": "interaction",
+    "name": "protoss_formation_adjustment",
+    "description": "阵型调整函数",
+    "strategy_description": "根据敌方单位分布优化阵型",
+    "tactic_category": "formation_control_coordination",
+    "linkage_type": "interaction",
+    "execution_type": "spread_formation",
+    "prerequisites": {
+      "min_units": 3,
+      "required_units": [
+        "Zealot",
+        "Stalker"
+      ],
+      "optional_units": [
+        "Immortal",
+        "Phoenix"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 1.5,
+      "survival_rate_increase": 0.6,
+      "threat_elimination_speed": 1.8
+    },
+    "execution_flow": [
+      "analyze_enemy_formation(all_units, enemy_positions)",
+      "determine_optimal_formation(all_units, enemy_formation)",
+      "position_frontline_units(Zealot, Immortal, front_position)",
+      "position_backline_units(Stalker, Phoenix, back_position)",
+      "adjust_formation_based_on_enemy_movement(all_units, enemy_movement)"
+    ],
+    "evidence": [
+      "优化阵型可以提高部队的整体战斗力",
+      "合理的站位可以减少受到的伤害",
+      "根据敌方阵型调整可以创造局部优势"
+    ],
+    "confidence": 0.93
+  },
+  {
+    "function_id": "VLMATTENTION_2",
+    "function_type": "interaction",
+    "name": "protoss_kiting_tactics",
+    "description": "风筝战术执行函数",
+    "strategy_description": "针对不同敌方单位的风筝策略",
+    "tactic_category": "mobility_control_coordination",
+    "linkage_type": "support_dps_coordination",
+    "execution_type": "hit_and_run",
+    "prerequisites": {
+      "min_units": 2,
+      "required_units": [
+        "Stalker"
+      ],
+      "optional_units": [
+        "Phoenix"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 1.8,
+      "survival_rate_increase": 0.7,
+      "threat_elimination_speed": 2.0
+    },
+    "execution_flow": [
+      "identify_kiteable_enemies(all_units, enemy_units)",
+      "execute_stutter_step(Stalker, enemy_units)",
+      "use_blink_for_repositioning(Stalker, optimal_position)",
+      "phoenix_attack_while_moving(Phoenix, enemy_units)",
+      "maintain_safe_distance(all_units, enemy_units)"
+    ],
+    "evidence": [
+      "风筝战术可以在保持安全的同时持续输出伤害",
+      "Stalker的闪烁能力适合执行风筝战术",
+      "Phoenix的攻击移动能力可以有效风筝敌人"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "function_id": "VLMATTENTION_3",
+    "function_type": "interaction",
+    "name": "protoss_air_ground_synergy",
+    "description": "地空协同战术执行函数",
+    "strategy_description": "凤凰与地面部队的协同作战",
+    "tactic_category": "heterogeneous_coordination",
+    "linkage_type": "air_ground_synergy",
+    "execution_type": "combined_assault",
+    "prerequisites": {
+      "min_units": 4,
+      "required_units": [
+        "Phoenix",
+        "Zealot"
+      ],
+      "optional_units": [
+        "Stalker",
+        "Immortal"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 2.2,
+      "survival_rate_increase": 0.5,
+      "threat_elimination_speed": 2.8
+    },
+    "execution_flow": [
+      "phoenix_graviton_lift(Phoenix, highest_threat_enemy)",
+      "zealot_charge_attack(Zealot, lifted_target)",
+      "stalker_blink_strike(Stalker, exposed_enemy)",
+      "immortal_focus_fire(Immortal, armored_enemy)",
+      "phoenix_aerial_support(Phoenix, enemy_formation)"
+    ],
+    "evidence": [
+      "地空协同可以发挥立体打击优势",
+      "凤凰抬升关键单位可以创造局部优势",
+      "地面部队跟进攻击可以最大化战果"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "function_id": "VLMATTENTION_4",
+    "function_type": "interaction",
+    "name": "protoss_archon_centered_combo",
+    "description": "执政官为中心的组合战术",
+    "strategy_description": "利用Archon的范围伤害，配合其他单位形成以执政官为中心的战斗组合",
+    "tactic_category": "heterogeneous_coordination",
+    "linkage_type": "interaction",
+    "execution_type": "coordinated_advance",
+    "prerequisites": {
+      "min_units": 4,
+      "required_units": [
+        "Archon",
+        "Stalker"
+      ],
+      "optional_units": [
+        "Zealot",
+        "Immortal",
+        "Phoenix"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 2.3,
+      "survival_rate_increase": 0.4,
+      "threat_elimination_speed": 2.6
+    },
+    "execution_flow": [
+      "archon_positioning(Archon, enemy_density_area)",
+      "zealot_protect_archon(Zealot, Archon)",
+      "stalker_support_fire(Stalker, enemy_units)",
+      "immortal_frontline_tank(Immortal, enemy_advance)",
+      "phoenix_anti_air_support(Phoenix, enemy_air_units)",
+      "archon_aoe_engage(Archon, enemy_clusters)"
+    ],
+    "evidence": [
+      "Archon的范围伤害对密集敌人效果显著",
+      "其他单位可以保护脆弱的Archon",
+      "以Archon为中心的组合可以有效应对混合敌人"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "function_id": "VLMATTENTION_5",
+    "function_type": "interaction",
+    "name": "protoss_adaptive_combat",
+    "description": "适应性战斗策略函数",
+    "strategy_description": "根据敌方单位组合自动调整战斗策略，优化单位协同",
+    "tactic_category": "heterogeneous_coordination",
+    "linkage_type": "interaction",
+    "execution_type": "coordinated_advance",
+    "prerequisites": {
+      "min_units": 3,
+      "required_units": [
+        "Stalker",
+        "Zealot"
+      ],
+      "optional_units": [
+        "Phoenix",
+        "Immortal",
+        "Archon"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 1.9,
+      "survival_rate_increase": 0.6,
+      "threat_elimination_speed": 2.4
+    },
+    "execution_flow": [
+      "analyze_enemy_composition(all_units, enemy_units)",
+      "select_optimal_strategy(all_units, enemy_composition)",
+      "execute_adaptive_tactics(all_units, selected_strategy)",
+      "adjust_based_on_battle_progress(all_units, battle_state)",
+      "coordinate_final_push(all_units, enemy_position)"
+    ],
+    "evidence": [
+      "适应性策略可以应对各种敌人组合",
+      "根据战场情况调整可以提高战斗效率",
+      "灵活的战术选择可以创造局部优势"
+    ],
+    "confidence": 0.93
+  },
+  {
+    "function_id": "ADVANCED_HETEROGENEOUS_0",
+    "function_type": "interaction",
+    "name": "protoss_heterogeneous_synergy_assault",
+    "description": "异构单位协同突击 - 充分发挥不同单位的优势组合",
+    "strategy_description": "Phoenix抬升关键敌人，Immortal抗线，Zealot冲锋，Stalker侧翼，Archon清场，形成完整的异构协同攻击体系",
+    "tactic_category": "heterogeneous_coordination",
+    "linkage_type": "interaction",
+    "execution_type": "combined_assault",
+    "prerequisites": {
+      "min_units": 3,
+      "required_units": [
+        "Zealot",
+        "Stalker",
+        "Phoenix"
+      ],
+      "optional_units": [
+        "Immortal",
+        "Archon"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 2.5,
+      "survival_rate_increase": 0.6,
+      "threat_elimination_speed": 3.0
+    },
+    "execution_flow": [
+      "use_graviton_beam(Phoenix, highest_threat_enemy)",
+      "immortal_advance(Immortal, enemy_frontline)",
+      "charge_attack(Zealot, lifted_target)",
+      "blink_strike(Stalker, exposed_enemy)",
+      "archon_aoe_position(Archon, enemy_density_area)",
+      "coordinated_attack(all_units, lifted_target)",
+      "maintain_combat_formation(all_units)"
+    ],
+    "evidence": [
+      "异构单位协同可以发挥各单位的优势",
+      "Phoenix抬升可以创造局部优势",
+      "Immortal抗线可以保护其他单位",
+      "Archon的AOE可以有效清理密集敌人",
+      "完整的协同体系可以应对各种战场情况"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "function_id": "ADVANCED_HETEROGENEOUS_1",
+    "function_type": "interaction",
+    "name": "protoss_adaptive_combat_formations",
+    "description": "适应性战斗阵型 - 根据战场动态自动调整阵型",
+    "strategy_description": "根据敌方单位类型和位置，动态调整我方单位阵型，优化各单位的位置和职责",
+    "tactic_category": "formation_control_coordination",
+    "linkage_type": "interaction",
+    "execution_type": "spread_formation",
+    "prerequisites": {
+      "min_units": 2,
+      "required_units": [
+        "Zealot",
+        "Stalker"
+      ],
+      "optional_units": [
+        "Phoenix",
+        "Immortal",
+        "Archon"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 1.8,
+      "survival_rate_increase": 0.7,
+      "threat_elimination_speed": 2.2
+    },
+    "execution_flow": [
+      "analyze_enemy_composition_and_position(all_units, enemy_units)",
+      "position_immortal_frontline(Immortal, optimal_front_position)",
+      "deploy_zealot_flanks(Zealot, immortal_sides)",
+      "position_stalker_backline(Stalker, optimal_range_position)",
+      "assign_phoenix_air_support(Phoenix, patrol_area)",
+      "place_archon_aoe_position(Archon, enemy_density_area)",
+      "adjust_formation_dynamically(all_units, enemy_movement)"
+    ],
+    "evidence": [
+      "优化阵型可以提高部队的整体战斗力",
+      "合理的站位可以减少受到的伤害",
+      "根据敌方阵型调整可以创造局部优势",
+      "动态阵型调整可以适应战场变化",
+      "各单位在最佳位置可以最大化输出"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "function_id": "ADVANCED_HETEROGENEOUS_2",
+    "function_type": "interaction",
+    "name": "protoss_tactical_ability_coordination",
+    "description": "战术技能协同 - 优化各单位技能释放时机",
+    "strategy_description": "精确协调各单位技能释放，最大化技能组合效果，提升整体战术效益",
+    "tactic_category": "heterogeneous_coordination",
+    "linkage_type": "ability_unit_coordination",
+    "execution_type": "sequential",
+    "prerequisites": {
+      "min_units": 2,
+      "required_units": [
+        "Zealot",
+        "Stalker"
+      ],
+      "optional_units": [
+        "Phoenix",
+        "Immortal",
+        "Archon"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 2.3,
+      "survival_rate_increase": 0.5,
+      "threat_elimination_speed": 2.8
+    },
+    "execution_flow": [
+      "identify_priority_targets(all_units, enemy_units)",
+      "timed_graviton_beam(Phoenix, highest_value_target)",
+      "coordinated_charge(Zealot, lifted_target)",
+      "precision_blink(Stalker, exposed_flank)",
+      "barrier_activation_timing(Immortal, enemy_focus_fire)",
+      "archon_aoe_synchronization(Archon, enemy_clusters)",
+      "ability_cooldown_management(all_units)"
+    ],
+    "evidence": [
+      "技能协同可以最大化伤害输出",
+      "精确的技能释放时机可以创造优势",
+      "技能组合可以快速消灭敌方单位",
+      "冷却时间管理可以保持持续压力",
+      "战术技能协同可以提升整体战斗效率"
+    ],
+    "confidence": 0.93
+  }
+]

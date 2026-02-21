@@ -1,0 +1,72 @@
+{
+  "Type": "Ground Unit",
+  "Description": "The Roach is a durable Zerg ground unit that serves as the backbone of many mid-game compositions. With high health and rapid regeneration, it excels at absorbing damage and sustaining through extended engagements. Its ranged attack and armored classification make it effective against light units while remaining vulnerable to anti-armor specialists.",
+  "Built From": "Larva (requires Roach Warren)",
+  "Requirements": "Roach Warren",
+  "Cost": {
+    "mineral": 75,
+    "vespene": 25,
+    "game_time": 19,
+    "supply": 2
+  },
+  "Hotkey": "R",
+  "Attack": {
+    "Targets": "Ground",
+    "Damage": "16 (+2)",
+    "DPS": "13.3 (+1.67)",
+    "Cooldown": "1.2",
+    "Bonus": "None",
+    "Bonus DPS": "None",
+    "Range": "4"
+  },
+  "Unit stats": {
+    "Defense": "145 0 1 (+1)",
+    "Attributes": "Armored, Biological",
+    "Sight": "9",
+    "Speed": "3.15",
+    "Cargo size": "2"
+  },
+  "Strong against": [
+    "Hellion",
+    "Zealot",
+    "Zergling",
+    "Marine",
+    "Adept"
+  ],
+  "Weak against": [
+    "Marauder",
+    "Immortal",
+    "Stalker",
+    "Siege Tank",
+    "Colossus"
+  ],
+  "Ability": {
+    "Name": "Burrow",
+    "Hotkey": "R",
+    "Description": "Allows the Roach to burrow underground, becoming invisible to enemies without detection. While burrowed, regenerates 10 health per second."
+  },
+  "Upgrade": [
+    {
+      "Name": "Glial Reconstitution",
+      "Mineral Cost": 100,
+      "Vespene Cost": 100,
+      "Research Time": 57,
+      "Researched From": "Roach Warren",
+      "Effect": "Increases Roach movement speed from 3.15 to 4.2"
+    },
+    {
+      "Name": "Tunneling Claws",
+      "Mineral Cost": 100,
+      "Vespene Cost": 100,
+      "Research Time": 57,
+      "Researched From": "Roach Warren",
+      "Effect": "Allows Roaches to move while burrowed at 2.0 speed"
+    }
+  ],
+  "Competitive Usage": {
+    "General": "Roaches provide Zerg with a durable, cost-effective frontline that scales well with upgrades. Their high health pool and regeneration make them excellent for sustaining through skirmishes and defending against early aggression. Roach-based compositions often transition into Ravagers for additional utility and range. Effective timing attacks can be executed with Roach Speed and +1 upgrades.",
+    "Vs. Protoss": "Excellent against Gateway unit compositions, particularly Adepts and Zealots. The high health pool withstands early pressure while regeneration minimizes losses between engagements. Vulnerable to Immortals and well-positioned Disruptors. Often used in Roach-Ravager timings to break Protoss defenses before Colossus or Storm become available.",
+    "Vs. Terran": "Core unit in early-game timing attacks against both bio and mech. Roach Speed with +1 upgrades creates powerful push opportunities before Siege Tanks mass. Effective against Hellions and Widow Mines. Becomes less effective in late-game against mass Tank or Marauder compositions. Burrow movement enables sneaky flanking maneuvers.",
+    "Vs. Zerg": "Provides stability in ZvZ by countering Ling-Bane aggression. Roach wars often determine mid-game map control and expansion timing. The armored tag makes them vulnerable to Ravager focus fire. Speed upgrade is crucial for engaging and disengaging effectively. Often transitions into Hydra or Lurker tech for late-game dominance."
+  }
+}

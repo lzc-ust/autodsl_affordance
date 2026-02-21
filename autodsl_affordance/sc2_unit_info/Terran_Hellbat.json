@@ -1,0 +1,65 @@
+{
+  "Type": "Ground Unit",
+  "Description": "The Hellbat is a heavily armored Terran infantry unit that excels at close-range combat against light ground forces. Created by transforming a Hellion at an Armory or built directly from Factories, it trades the Hellion's speed for significantly increased durability and splash damage. Its flamethrower attack deals area damage in a cone pattern, making it exceptionally effective against clustered light units.",
+  "Built From": "Factory (transformed from Hellion)",
+  "Requirements": "Armory",
+  "Cost": {
+    "mineral": 100,
+    "vespene": 0,
+    "game_time": 21,
+    "supply": 2
+  },
+  "Hotkey": "R (Transform from Hellion)",
+  "Attack": {
+    "Targets": "Ground",
+    "Damage": "18 (+2) (Splash)",
+    "DPS": "12.6 (+1.4)",
+    "Cooldown": "1.43",
+    "Bonus": "+12 vs Light (with Infernal Pre-Igniter)",
+    "Bonus DPS": "+8.4 vs Light (with Infernal Pre-Igniter)",
+    "Range": "2"
+  },
+  "Unit stats": {
+    "Defense": "135 0 0 (+1)",
+    "Attributes": "Biological, Light, Mechanical",
+    "Sight": "10",
+    "Speed": "3.15",
+    "Cargo size": "4"
+  },
+  "Strong against": [
+    "Zergling",
+    "Zealot",
+    "Marine",
+    "Adept",
+    "Probe",
+    "SCV",
+    "Drone"
+  ],
+  "Weak against": [
+    "Marauder",
+    "Stalker",
+    "Baneling",
+    "Roach",
+    "Immortal"
+  ],
+  "Ability": {
+    "Name": "Transform to Hellion",
+    "Hotkey": "R",
+    "Cooldown": "3 seconds",
+    "Description": "Transforms the Hellbat back into a Hellion, gaining speed but losing durability and changing attack type"
+  },
+  "Upgrade": {
+    "Name": "Infernal Pre-Igniter",
+    "Mineral Cost": 100,
+    "Vespene Cost": 100,
+    "Research Time": 79,
+    "Researched From": "Factory Tech Lab",
+    "Effect": "Increases Hellion/Hellbat damage by +10 against Light units"
+  },
+  "Competitive Usage": {
+    "General": "Hellbats serve as durable frontline units that excel against light infantry and worker harassment. Their cone-shaped splash damage makes them devastating against clustered units in chokepoints. They synergize well with high-damage units like Marines and Siege Tanks, providing a meat shield while dealing area damage. Hellbat drops with Medivacs are particularly effective for base harassment due to their durability and worker-clearing capability.",
+    "Vs. Protoss": "Effective against Gateway unit compositions, particularly Zealots and Adepts. Can pressure early expansions and force Stalker production. Vulnerable to Immortals and well-positioned Colossi. Often used in early-game timing attacks before Protoss can establish a robust anti-armor defense.",
+    "Vs. Terran": "Useful for defending against bio pushes and Marine timings. Their splash damage punishes clumped infantry, while their durability allows them to absorb significant firepower. Hellbat-Medivac combinations can counter-attack exposed bases when the opponent moves out. However, Marauders remain a hard counter due to their bonus damage.",
+    "Vs. Zerg": "Core unit in mech compositions against Zerg. Excellent at clearing Zerglings and protecting Siege Tanks from surrounds. A single Hellbat can survive multiple Baneling hits, making them valuable for protecting bio armies. Hellbat drops are devastating against drone lines, though vulnerable to Queen and Spore Crawler defense. Requires careful splitting against Baneling heavy compositions."
+  }
+}

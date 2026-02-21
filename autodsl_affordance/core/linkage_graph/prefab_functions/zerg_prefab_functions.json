@@ -1,0 +1,299 @@
+[
+  {
+    "function_id": "ZERG_SYNERGY_0",
+    "function_type": "interaction",
+    "name": "zerg_air_ground_swarm",
+    "description": "地空虫群协同 - 飞龙与跳虫配合",
+    "strategy_description": "跳虫快速接近敌人吸引火力，飞龙从空中提供支援，形成立体攻击网，利用机动性和数量优势包围敌人",
+    "tactic_category": "heterogeneous_coordination",
+    "linkage_type": "air_ground_synergy",
+    "execution_type": "attack",
+    "prerequisites": {
+      "min_units": 6,
+      "required_units": [
+        "Zergling",
+        "Mutalisk"
+      ],
+      "optional_units": [
+        "Baneling"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 2.0,
+      "survival_rate_increase": 0.4,
+      "threat_elimination_speed": 3.2
+    },
+    "execution_flow": [
+      "zergling_charge(Zergling, enemy_frontline)",
+      "mutalisk_flank(Mutalisk, enemy_side)",
+      "baneling_explode(Baneling, enemy_clusters)",
+      "mutalisk_attack_air(Mutalisk, enemy_air_units)",
+      "zergling_surround(Zergling, isolated_enemies)"
+    ],
+    "evidence": [
+      "地空协同可以发挥立体打击优势",
+      "跳虫和飞龙的机动性可以快速包围敌人",
+      "数量优势可以压倒敌方防御"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "function_id": "ZERG_SYNERGY_1",
+    "function_type": "interaction",
+    "name": "zerg_roach_hydra_combined",
+    "description": "蟑螂刺蛇组合 - 蟑螂与刺蛇配合",
+    "strategy_description": "蟑螂作为前排吸收伤害，刺蛇在后提供远程火力，利用蟑螂的再生能力和刺蛇的射程优势形成持续压制",
+    "tactic_category": "long_short_range_coordination",
+    "linkage_type": "long_short_range_coordination",
+    "execution_type": "attack",
+    "prerequisites": {
+      "min_units": 5,
+      "required_units": [
+        "Roach",
+        "Hydralisk"
+      ],
+      "optional_units": [
+        "Queen"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 2.2,
+      "survival_rate_increase": 0.6,
+      "threat_elimination_speed": 2.5
+    },
+    "execution_flow": [
+      "roach_advance(Roach, front_line)",
+      "hydralisk_position(Hydralisk, optimal_range)",
+      "queen_transfuse(Queen, injured_roach)",
+      "roach_burrow(Roach, enemy_attack)",
+      "hydralisk_focus_fire(Hydralisk, priority_targets)"
+    ],
+    "evidence": [
+      "蟑螂的高生命值和再生能力适合作为前排",
+      "刺蛇的远程攻击可以在安全距离输出",
+      "女王的输血可以增强蟑螂的生存能力"
+    ],
+    "confidence": 0.93
+  },
+  {
+    "function_id": "ZERG_SYNERGY_2",
+    "function_type": "interaction",
+    "name": "zerg_ultralisk_support",
+    "description": "雷兽支援协同 - 雷兽与远程单位配合",
+    "strategy_description": "雷兽作为肉盾吸引火力并摧毁敌方前排，远程单位在后方提供支援，利用雷兽的体型和伤害优势突破敌方防线",
+    "tactic_category": "armor_type_coordination",
+    "linkage_type": "armor_matching_coordination",
+    "execution_type": "frontal_assault",
+    "prerequisites": {
+      "min_units": 4,
+      "required_units": [
+        "Ultralisk",
+        "Hydralisk"
+      ],
+      "optional_units": [
+        "Mutalisk"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 2.5,
+      "survival_rate_increase": 0.7,
+      "threat_elimination_speed": 2.8
+    },
+    "execution_flow": [
+      "ultralisk_charge(Ultralisk, enemy_frontline)",
+      "hydralisk_support(Hydralisk, ultralisk_flanks)",
+      "mutalisk_air_cover(Mutalisk, enemy_air_units)",
+      "ultralisk_cleave_attack(Ultralisk, enemy_clusters)",
+      "tactical_retreat(hydralisks, enemy_counter)"
+    ],
+    "evidence": [
+      "雷兽是虫族最强大的地面单位",
+      "远程单位可以在雷兽吸引火力时输出",
+      "雷兽的范围攻击可以同时打击多个敌人"
+    ],
+    "confidence": 0.92
+  },
+  {
+    "function_id": "ZERG_SYNERGY_3",
+    "function_type": "interaction",
+    "name": "zerg_stealth_ambush",
+    "description": "隐形伏击协同 - 爆虫与巢虫领主配合",
+    "strategy_description": "巢虫领主从高空提供远程压力，爆虫进行隐形接近并爆炸，利用敌方注意力分散创造优势",
+    "tactic_category": "stealth_synergy",
+    "linkage_type": "ability_unit_coordination",
+    "execution_type": "ambush_attack",
+    "prerequisites": {
+      "min_units": 3,
+      "required_units": [
+        "Baneling",
+        "BroodLord"
+      ],
+      "optional_units": [
+        "Lurker"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 2.8,
+      "survival_rate_increase": 0.5,
+      "threat_elimination_speed": 3.0
+    },
+    "execution_flow": [
+      "broodlord_advance(BroodLord, high_ground)",
+      "baneling_burrow(Baneling, enemy_path)",
+      "lurker_burrow(Lurker, defensive_position)",
+      "broodling_attack(BroodLord, enemy_units)",
+      "baneling_explode(Baneling, enemy_group)"
+    ],
+    "evidence": [
+      "隐形单位可以发起出其不意的攻击",
+      "爆虫的爆炸伤害对密集敌人效果显著",
+      "巢虫领主的远程攻击可以压制敌方"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "function_id": "ZERG_SYNERGY_4",
+    "function_type": "interaction",
+    "name": "zerg_queen_defense",
+    "description": "女王防御协同 - 女王与战斗单位配合",
+    "strategy_description": "女王提供治疗和防御支持，战斗单位进行攻击，利用女王的输血和孵化幼虫能力增强部队持续作战能力",
+    "tactic_category": "offense",
+    "linkage_type": "support_dps_coordination",
+    "execution_type": "attack",
+    "prerequisites": {
+      "min_units": 4,
+      "required_units": [
+        "Queen",
+        "Zergling"
+      ],
+      "optional_units": [
+        "Roach"
+      ]
+    },
+    "tactical_effects": {
+      "damage_multiplier": 1.8,
+      "survival_rate_increase": 0.8,
+      "threat_elimination_speed": 2.0
+    },
+    "execution_flow": [
+      "queen_position(Queen, defensive_point)",
+      "zergling_scout(Zergling, enemy_approach)",
+      "queen_transfuse(Queen, injured_units)",
+      "roach_burrow(Roach, enemy_attack)",
+      "queen_spawn_larva(Queen, nearby_hatchery)"
+    ],
+    "evidence": [
+      "女王的输血可以大幅提高单位生存能力",
+      "女王是虫族的多功能防御单位",
+      "战斗单位配合女王可以形成有效的防御体系"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "function_id": "ZERG_SYNERGY_5",
+    "function_type": "interaction",
+    "name": "zerg_zergling_baneling_combo",
+    "description": "跳虫爆虫组合 - 跳虫与爆虫配合",
+    "strategy_description": "跳虫快速接近敌人吸引火力并分散敌方注意力，爆虫寻找时机进行爆炸，利用两者的配合造成大量伤害并突破敌方防线",
+    "tactic_category": "offense",
+    "linkage_type": "ability_unit_coordination",
+    "execution_type": "attack",
+    "prerequisites": {
+      "min_units": 6,
+      "required_units": [
+        "Zergling",
+        "Baneling"
+      ],
+      "optional_units": []
+    },
+    "tactical_effects": {
+      "damage_multiplier": 2.5,
+      "survival_rate_increase": 0.3,
+      "threat_elimination_speed": 3.5
+    },
+    "execution_flow": [
+      "zergling_charge(Zergling, enemy_frontline)",
+      "baneling_approach(Baneling, enemy_clusters)",
+      "zergling_surround(Zergling, enemy_units)",
+      "baneling_explode(Baneling, high_priority_targets)",
+      "zergling_cleanup(Zergling, remaining_enemies)",
+      "tactical_retreat_survivors(all_units, enemy_counter)"
+    ],
+    "evidence": [
+      "跳虫爆虫组合是虫族经典的早期突袭战术",
+      "爆虫的爆炸伤害对密集敌人效果显著",
+      "跳虫的速度和数量可以有效分散敌方注意力",
+      "两者配合可以快速突破敌方防线"
+    ],
+    "confidence": 0.96
+  },
+  {
+    "function_id": "ATTACK_0",
+    "function_type": "interaction",
+    "name": "focus_fire_on_highest_threat",
+    "description": "集中火力攻击最高威胁的敌方单位",
+    "strategy_description": "优先攻击对我方威胁最大的敌方单位，如高伤害或高优先级目标",
+    "tactic_category": "offense",
+    "source_unit": "all_friendly",
+    "target_unit": "highest_threat_enemy",
+    "linkage_type": "interaction",
+    "execution_type": "attack",
+    "parameters": [],
+    "execution_flow": [
+      "set_target(all_friendly, highest_threat_enemy)",
+      "attack(all_friendly, highest_threat_enemy)"
+    ],
+    "evidence": [
+      "集中火力可以快速消除敌方威胁",
+      "优先攻击高价值目标可以提高战斗效率"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "function_id": "ABILITY_0",
+    "function_type": "interaction",
+    "name": "use_queen_transfuse",
+    "description": "使用女王的输血能力",
+    "strategy_description": "使用女王的输血能力恢复受伤单位的生命值",
+    "tactic_category": "support",
+    "source_unit": "Queen",
+    "target_unit": "low_health_units",
+    "linkage_type": "interaction",
+    "execution_type": "ability",
+    "parameters": [],
+    "execution_flow": [
+      "use_transfuse_ability(Queen, low_health_units)"
+    ],
+    "evidence": [
+      "女王的输血可以大幅提高单位生存能力",
+      "适合在关键战斗中使用"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "function_id": "COMBINATION_0",
+    "function_type": "combination",
+    "name": "zerg_ling_bane_combo",
+    "description": "跳虫爆虫组合攻击",
+    "strategy_description": "跳虫和爆虫组合攻击，跳虫吸引火力，爆虫进行爆炸攻击",
+    "tactic_category": "offense",
+    "units": [
+      "Zergling",
+      "Baneling"
+    ],
+    "linkage_type": "combination",
+    "execution_type": "concurrent",
+    "parameters": [],
+    "execution_flow": [
+      "zergling_charge(Zergling, enemy_frontline)",
+      "baneling_explode(Baneling, enemy_clusters)",
+      "zergling_surround(Zergling, remaining_enemies)"
+    ],
+    "evidence": [
+      "跳虫爆虫组合是虫族经典的早期突袭战术",
+      "爆虫的爆炸伤害对密集敌人效果显著",
+      "跳虫的速度和数量可以有效分散敌方注意力"
+    ],
+    "confidence": 0.95
+  }
+]

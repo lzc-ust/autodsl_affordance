@@ -1,0 +1,68 @@
+{
+  "Type": "Air Unit",
+  "Description": "The Medivac is a versatile Terran support vessel that combines the roles of dropship and mobile medic. It provides crucial healing to biological infantry and enables rapid troop deployment across the battlefield. With its Afterburners ability for emergency speed boosts, the Medivac is essential for sustaining bio armies and executing multi-pronged harassment.",
+  "Built From": "Starport",
+  "Requirements": "Starport",
+  "Cost": {
+    "mineral": 100,
+    "vespene": 100,
+    "game_time": 30,
+    "supply": 2
+  },
+  "Hotkey": "V",
+  "Attack": {
+    "Targets": "None",
+    "Damage": "None",
+    "DPS": "None",
+    "Cooldown": "None",
+    "Bonus": "None",
+    "Bonus DPS": "None",
+    "Range": "N/A"
+  },
+  "Unit stats": {
+    "Defense": "150 0 1 (+1)",
+    "Attributes": "Armored, Mechanical",
+    "Sight": "11",
+    "Speed": "3.5",
+    "Cargo size": "8"
+  },
+  "Strong against": [
+    "No direct combat",
+    "Excellent support for Bio units"
+  ],
+  "Weak against": [
+    "Phoenix",
+    "Viking",
+    "Mutalisk",
+    "Stalker",
+    "Hydralisk"
+  ],
+  "Ability": [
+    {
+      "Name": "Heal",
+      "Hotkey": "E (Autocast)",
+      "Energy Cost": "1 energy per 0.63 health healed",
+      "Description": "Automatically heals nearby biological units at 12.6 health per second. Prioritizes damaged units and those in combat."
+    },
+    {
+      "Name": "Ignite Afterburners",
+      "Hotkey": "B",
+      "Cooldown": "14 seconds",
+      "Description": "Increases movement speed from 3.5 to 5.95 for 4 seconds. Essential for escaping danger or rapid positioning."
+    }
+  ],
+  "Upgrade": {
+    "Name": "High Capacity Fuel Tanks",
+    "Mineral Cost": 100,
+    "Vespene Cost": 100,
+    "Research Time": 79,
+    "Researched From": "Starport Tech Lab",
+    "Effect": "Increases Afterburners duration from 4 to 7 seconds"
+  },
+  "Competitive Usage": {
+    "General": "Medivacs are the cornerstone of Terran bio play, providing essential healing for Stimpacked armies and enabling powerful drop harassment. They allow Terran armies to sustain through extended engagements and recover quickly between fights. Proper Medivac management involves preserving energy for critical heals, using Afterburners to escape threats, and executing multi-prong attacks to overwhelm opponents.",
+    "Vs. Protoss": "Crucial for healing bio armies against Protoss ground forces. Enables devastating drops against undefended bases and tech structures. Vulnerable to Phoenix graviton beam and Stalker focus fire. Afterburners help escape from Oracle and Phoenix pursuit. Often used in 2-Medivac timing attacks for early pressure.",
+    "Vs. Terran": "Essential in bio vs bio mirrors for sustaining Marine-Marauder engagements. Enables tank drops for cliff positioning and base harassment. Vulnerable to Viking superiority and Cyclone lock-ons. High Capacity Fuel Tanks upgrade significantly enhances drop survivability and tactical mobility.",
+    "Vs. Zerg": "Fundamental for bio compositions against Zerg, healing through Ling-Bane damage and Queen attacks. Enables Hellbat drops against drone lines and multi-prong harassment. Vulnerable to Mutalisk flocks and Spore Crawler defense. Proper energy management is critical for sustaining through Zerg's burst damage."
+  }
+}

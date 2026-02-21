@@ -1,0 +1,204 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Prefab Function Schema",
+  "description": "Schema for StarCraft 2 prefab functions",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "function_id",
+      "function_type",
+      "name",
+      "description",
+      "strategy_description",
+      "tactic_category",
+      "linkage_type",
+      "execution_type",
+      "execution_flow"
+    ],
+    "properties": {
+      "function_id": {
+        "type": "string",
+        "description": "Unique identifier for the prefab function",
+        "pattern": "^[A-Z_]+\\d+$",
+        "examples": ["TERRAN_INTERACTION_001", "PROTOSS_COMBINATION_002"]
+      },
+      "function_type": {
+        "type": "string",
+        "description": "Type of the prefab function based on linkage type",
+        "enum": ["interaction", "combination", "association", "invocation", "dependency"]
+      },
+      "name": {
+        "type": "string",
+        "description": "Name of the prefab function"
+      },
+      "description": {
+        "type": "string",
+        "description": "Description of the prefab function"
+      },
+      "strategy_description": {
+        "type": "string",
+        "description": "Detailed strategy description for the prefab function"
+      },
+      "tactic_category": {
+        "type": "string",
+        "description": "Tactical category of the prefab function",
+        "enum": ["offense", "defense", "support", "heterogeneous_coordination", "air_ground_coordination", "long_short_range_coordination", "stealth_synergy", "armor_type_coordination", "target_priority_coordination", "mobility_control_coordination", "formation_control_coordination"]
+      },
+      "linkage_type": {
+        "type": "string",
+        "description": "Type of linkage between units",
+        "enum": ["interaction", "combination", "association", "invocation", "dependency", "support_dps_coordination", "air_ground_synergy", "ability_unit_coordination", "long_short_range_coordination", "armor_matching_coordination", "transport_dps_coordination"]
+      },
+      "synergy_type": {
+        "type": "string",
+        "description": "Type of synergy between units (deprecated - use linkage_type instead)"
+      },
+      "execution_type": {
+        "type": "string",
+        "description": "Type of execution for the prefab function",
+        "enum": ["attack", "ability", "move", "coordinated_advance", "combined_assault", "fortified_position", "ambush_attack", "frontal_assault", "focused_assault", "mobile_defense", "spread_formation", "hit_and_run", "concurrent", "sequential", "parallel"]
+      },
+      "source_unit": {
+        "type": "string",
+        "description": "Source unit for the interaction"
+      },
+      "target_unit": {
+        "type": "string",
+        "description": "Target unit for the interaction"
+      },
+      "units": {
+        "type": "array",
+        "description": "List of units involved in the function",
+        "items": {
+          "type": "string"
+        }
+      },
+      "prerequisites": {
+        "type": "object",
+        "properties": {
+          "min_units": {
+            "type": "integer",
+            "description": "Minimum number of units required"
+          },
+          "required_units": {
+            "type": "array",
+            "description": "List of required units",
+            "items": {
+              "type": "string"
+            }
+          },
+          "optional_units": {
+            "type": "array",
+            "description": "List of optional units",
+            "items": {
+              "type": "string"
+            }
+          },
+          "ideal_composition": {
+            "type": "object",
+            "description": "Ideal unit composition",
+            "patternProperties": {
+              "^": {
+                "type": "integer"
+              }
+            }
+          }
+        }
+      },
+      "tactical_effects": {
+        "type": "object",
+        "properties": {
+          "damage_multiplier": {
+            "type": "number",
+            "description": "Damage multiplier for the function"
+          },
+          "survival_rate_increase": {
+            "type": "number",
+            "description": "Increase in survival rate"
+          },
+          "threat_elimination_speed": {
+            "type": "number",
+            "description": "Speed of threat elimination"
+          },
+          "mobility_enhancement": {
+            "type": "number",
+            "description": "Enhancement in mobility"
+          },
+          "terrain_override_capability": {
+            "type": "number",
+            "description": "Ability to override terrain obstacles"
+          }
+        }
+      },
+      "execution_flow": {
+        "type": "array",
+        "description": "Execution flow steps for the prefab function",
+        "items": {
+          "type": "string"
+        }
+      },
+      "parameters": {
+        "type": "array",
+        "description": "Parameters for the prefab function",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "evidence": {
+        "type": "array",
+        "description": "Evidence supporting the effectiveness of the prefab function",
+        "items": {
+          "type": "string"
+        }
+      },
+      "confidence": {
+        "type": "number",
+        "description": "Confidence level for the prefab function",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "compatibility": {
+        "type": "string",
+        "description": "Compatibility information for the prefab function"
+      },
+      "custom_tag": {
+        "type": "string",
+        "description": "Custom tag for the prefab function"
+      },
+      "drop_micro_tag": {
+        "type": "string",
+        "description": "Drop micro tag for the prefab function"
+      },
+      "strategy_parameters": {
+        "type": "object",
+        "description": "Strategy parameters for the prefab function",
+        "properties": {
+          "hierarchical_learning": {
+            "type": "boolean"
+          },
+          "complex_sequence_decision": {
+            "type": "boolean"
+          },
+          "terrain_aware_navigation": {
+            "type": "boolean"
+          },
+          "timing_sensitive_execution": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}
