@@ -1,32 +1,47 @@
 [
   {
     "scene": "MMM场景",
-    "experiment1": "qwen_20260213_160916_ability_map_8marine_3marauder_1medivac_1tank",
-    "experiment2": "qwen_20260213_172646_ability_map_8marine_3marauder_1medivac_1tank",
+    "experiment1": "qwen_20260213_160916_MMM",
+    "experiment2": "qwen_20260213_172646_MMM",
     "model_type_1": "VLM",
     "model_type_2": "VLM",
     "prefab_enabled_1": true,
     "prefab_enabled_2": true,
     "trajectory_similarity": {
+      "Marine_2": {
+        "dtw_similarity": 0.9480992236360243,
+        "path_overlap": 3.5625,
+        "average_distance": 49.23237918782544
+      },
+      "Medivac_1": {
+        "dtw_similarity": 0.9836286045978556,
+        "path_overlap": 2.2777777777777777,
+        "average_distance": 31.27409627917594
+      },
+      "Marine_6": {
+        "dtw_similarity": 0.9986011696206509,
+        "path_overlap": 4.384615384615385,
+        "average_distance": 2.3395240501147
+      },
       "Marine_1": {
         "dtw_similarity": 0.996872552622609,
         "path_overlap": 2.0833333333333335,
         "average_distance": 4.961658548868066
-      },
-      "Marauder_1": {
-        "dtw_similarity": 0.970683985211393,
-        "path_overlap": 2.1875,
-        "average_distance": 52.93385277241712
       },
       "Marine_8": {
         "dtw_similarity": 0.9508213333554052,
         "path_overlap": 2.1875,
         "average_distance": 77.30861909173609
       },
-      "Marine_3": {
-        "dtw_similarity": 0.9786643403846447,
-        "path_overlap": 3.076923076923077,
-        "average_distance": 39.93583212892023
+      "Marauder_3": {
+        "dtw_similarity": 0.9751258977962091,
+        "path_overlap": 2.066666666666667,
+        "average_distance": 48.879551081107614
+      },
+      "Marauder_2": {
+        "dtw_similarity": 0.9725020547641534,
+        "path_overlap": 2.8666666666666667,
+        "average_distance": 49.15282132098982
       },
       "Siege Tank_1": {
         "dtw_similarity": 0.956473868233398,
@@ -38,40 +53,25 @@
         "path_overlap": 3.0,
         "average_distance": 10.66867309023606
       },
-      "Marauder_3": {
-        "dtw_similarity": 0.9751258977962091,
-        "path_overlap": 2.066666666666667,
-        "average_distance": 48.879551081107614
-      },
-      "Marine_6": {
-        "dtw_similarity": 0.9986011696206509,
-        "path_overlap": 4.384615384615385,
-        "average_distance": 2.3395240501147
-      },
-      "Medivac_1": {
-        "dtw_similarity": 0.9836286045978556,
-        "path_overlap": 2.2777777777777777,
-        "average_distance": 31.27409627917594
-      },
-      "Marauder_2": {
-        "dtw_similarity": 0.9725020547641534,
-        "path_overlap": 2.8666666666666667,
-        "average_distance": 49.15282132098982
-      },
-      "Marine_7": {
-        "dtw_similarity": 0.9968832888330879,
-        "path_overlap": 3.5,
-        "average_distance": 5.319988597249865
-      },
-      "Marine_2": {
-        "dtw_similarity": 0.9480992236360243,
-        "path_overlap": 3.5625,
-        "average_distance": 49.23237918782544
+      "Marine_3": {
+        "dtw_similarity": 0.9786643403846447,
+        "path_overlap": 3.076923076923077,
+        "average_distance": 39.93583212892023
       },
       "Marine_4": {
         "dtw_similarity": 0.9642053445448779,
         "path_overlap": 3.8,
         "average_distance": 67.79755807256433
+      },
+      "Marauder_1": {
+        "dtw_similarity": 0.970683985211393,
+        "path_overlap": 2.1875,
+        "average_distance": 52.93385277241712
+      },
+      "Marine_7": {
+        "dtw_similarity": 0.9968832888330879,
+        "path_overlap": 3.5,
+        "average_distance": 5.319988597249865
       }
     },
     "key_node_match_rate": 0.9,
@@ -79,32 +79,47 @@
   },
   {
     "scene": "MMM场景",
-    "experiment1": "qwen_20260213_160916_ability_map_8marine_3marauder_1medivac_1tank",
-    "experiment2": "qwen_20260213_201018_ability_map_8marine_3marauder_1medivac_1tank",
+    "experiment1": "qwen_20260213_160916_MMM",
+    "experiment2": "qwen_20260213_201018_MMM",
     "model_type_1": "VLM",
     "model_type_2": "VLM",
     "prefab_enabled_1": true,
-    "prefab_enabled_2": true,
+    "prefab_enabled_2": false,
     "trajectory_similarity": {
+      "Marine_2": {
+        "dtw_similarity": 0.9346877374831425,
+        "path_overlap": 2.9166666666666665,
+        "average_distance": 49.23237918782544
+      },
+      "Medivac_1": {
+        "dtw_similarity": 0.9828174267034032,
+        "path_overlap": 4.333333333333333,
+        "average_distance": 28.29666008772195
+      },
+      "Marine_6": {
+        "dtw_similarity": 0.9973922977419895,
+        "path_overlap": 2.769230769230769,
+        "average_distance": 4.724790623703581
+      },
       "Marine_1": {
         "dtw_similarity": 0.994062401748353,
         "path_overlap": 2.25,
         "average_distance": 2.1222940963506822
-      },
-      "Marauder_1": {
-        "dtw_similarity": 0.9540202565489723,
-        "path_overlap": 2.125,
-        "average_distance": 96.46594455165669
       },
       "Marine_8": {
         "dtw_similarity": 0.9290529834182361,
         "path_overlap": 2.1875,
         "average_distance": 129.26544477020377
       },
-      "Marine_3": {
-        "dtw_similarity": 0.9511878626092769,
-        "path_overlap": 3.0,
-        "average_distance": 79.14439153056775
+      "Marauder_3": {
+        "dtw_similarity": 0.9765328727732482,
+        "path_overlap": 2.2857142857142856,
+        "average_distance": 47.807121626981875
+      },
+      "Marauder_2": {
+        "dtw_similarity": 0.9624782388588267,
+        "path_overlap": 2.6666666666666665,
+        "average_distance": 84.31134926559864
       },
       "Siege Tank_1": {
         "dtw_similarity": 0.9801297168918701,
@@ -116,40 +131,25 @@
         "path_overlap": 3.5,
         "average_distance": 11.339287899195055
       },
-      "Marauder_3": {
-        "dtw_similarity": 0.9765328727732482,
-        "path_overlap": 2.2857142857142856,
-        "average_distance": 47.807121626981875
-      },
-      "Marine_6": {
-        "dtw_similarity": 0.9973922977419895,
-        "path_overlap": 2.769230769230769,
-        "average_distance": 4.724790623703581
-      },
-      "Medivac_1": {
-        "dtw_similarity": 0.9828174267034032,
-        "path_overlap": 4.333333333333333,
-        "average_distance": 28.29666008772195
-      },
-      "Marauder_2": {
-        "dtw_similarity": 0.9624782388588267,
-        "path_overlap": 2.6666666666666665,
-        "average_distance": 84.31134926559864
-      },
-      "Marine_7": {
-        "dtw_similarity": 0.9734120240953014,
-        "path_overlap": 2.3333333333333335,
-        "average_distance": 45.383649963652886
-      },
-      "Marine_2": {
-        "dtw_similarity": 0.9346877374831425,
-        "path_overlap": 2.9166666666666665,
-        "average_distance": 49.23237918782544
+      "Marine_3": {
+        "dtw_similarity": 0.9511878626092769,
+        "path_overlap": 3.0,
+        "average_distance": 79.14439153056775
       },
       "Marine_4": {
         "dtw_similarity": 0.9792331224116321,
         "path_overlap": 3.533333333333333,
         "average_distance": 34.08938462639038
+      },
+      "Marauder_1": {
+        "dtw_similarity": 0.9540202565489723,
+        "path_overlap": 2.125,
+        "average_distance": 96.46594455165669
+      },
+      "Marine_7": {
+        "dtw_similarity": 0.9734120240953014,
+        "path_overlap": 2.3333333333333335,
+        "average_distance": 45.383649963652886
       }
     },
     "key_node_match_rate": 0.7,
@@ -157,32 +157,47 @@
   },
   {
     "scene": "MMM场景",
-    "experiment1": "qwen_20260213_160916_ability_map_8marine_3marauder_1medivac_1tank",
-    "experiment2": "qwen_20260214_095942_ability_map_8marine_3marauder_1medivac_1tank",
+    "experiment1": "qwen_20260213_160916_MMM",
+    "experiment2": "qwen_20260214_095942_MMM",
     "model_type_1": "VLM",
     "model_type_2": "VLM",
     "prefab_enabled_1": true,
-    "prefab_enabled_2": true,
+    "prefab_enabled_2": false,
     "trajectory_similarity": {
+      "Marine_2": {
+        "dtw_similarity": 1.0,
+        "path_overlap": 3.8333333333333335,
+        "average_distance": 0.0
+      },
+      "Medivac_1": {
+        "dtw_similarity": 0.9801022404431337,
+        "path_overlap": 1.8888888888888888,
+        "average_distance": 28.962306821845903
+      },
+      "Marine_6": {
+        "dtw_similarity": 0.9880108267665207,
+        "path_overlap": 2.769230769230769,
+        "average_distance": 21.722699785027192
+      },
       "Marine_1": {
         "dtw_similarity": 0.962146273876336,
         "path_overlap": 2.5384615384615383,
         "average_distance": 65.05903311155367
-      },
-      "Marauder_1": {
-        "dtw_similarity": 0.9546078472769158,
-        "path_overlap": 2.1875,
-        "average_distance": 95.23317354584958
       },
       "Marine_8": {
         "dtw_similarity": 0.9616576133039607,
         "path_overlap": 2.3125,
         "average_distance": 52.36266508188351
       },
-      "Marine_3": {
-        "dtw_similarity": 0.9687919014658405,
-        "path_overlap": 2.75,
-        "average_distance": 55.201158072805036
+      "Marauder_3": {
+        "dtw_similarity": 0.9555995638193819,
+        "path_overlap": 1.9285714285714286,
+        "average_distance": 87.78420435671012
+      },
+      "Marauder_2": {
+        "dtw_similarity": 0.9544865723028892,
+        "path_overlap": 2.6,
+        "average_distance": 86.93856664948846
       },
       "Siege Tank_1": {
         "dtw_similarity": 0.9844092633279576,
@@ -194,40 +209,25 @@
         "path_overlap": 2.7142857142857144,
         "average_distance": 16.915018473622577
       },
-      "Marauder_3": {
-        "dtw_similarity": 0.9555995638193819,
-        "path_overlap": 1.9285714285714286,
-        "average_distance": 87.78420435671012
-      },
-      "Marine_6": {
-        "dtw_similarity": 0.9880108267665207,
-        "path_overlap": 2.769230769230769,
-        "average_distance": 21.722699785027192
-      },
-      "Medivac_1": {
-        "dtw_similarity": 0.9801022404431337,
-        "path_overlap": 1.8888888888888888,
-        "average_distance": 28.962306821845903
-      },
-      "Marauder_2": {
-        "dtw_similarity": 0.9544865723028892,
-        "path_overlap": 2.6,
-        "average_distance": 86.93856664948846
-      },
-      "Marine_7": {
-        "dtw_similarity": 0.9861168345215162,
-        "path_overlap": 2.25,
-        "average_distance": 29.099142401035706
-      },
-      "Marine_2": {
-        "dtw_similarity": 1.0,
-        "path_overlap": 3.8333333333333335,
-        "average_distance": 0.0
+      "Marine_3": {
+        "dtw_similarity": 0.9687919014658405,
+        "path_overlap": 2.75,
+        "average_distance": 55.201158072805036
       },
       "Marine_4": {
         "dtw_similarity": 0.9632156768314123,
         "path_overlap": 2.066666666666667,
         "average_distance": 5.403738247200885
+      },
+      "Marauder_1": {
+        "dtw_similarity": 0.9546078472769158,
+        "path_overlap": 2.1875,
+        "average_distance": 95.23317354584958
+      },
+      "Marine_7": {
+        "dtw_similarity": 0.9861168345215162,
+        "path_overlap": 2.25,
+        "average_distance": 29.099142401035706
       }
     },
     "key_node_match_rate": 0.6,
@@ -235,32 +235,47 @@
   },
   {
     "scene": "MMM场景",
-    "experiment1": "qwen_20260213_172646_ability_map_8marine_3marauder_1medivac_1tank",
-    "experiment2": "qwen_20260213_201018_ability_map_8marine_3marauder_1medivac_1tank",
+    "experiment1": "qwen_20260213_172646_MMM",
+    "experiment2": "qwen_20260213_201018_MMM",
     "model_type_1": "VLM",
     "model_type_2": "VLM",
     "prefab_enabled_1": true,
-    "prefab_enabled_2": true,
+    "prefab_enabled_2": false,
     "trajectory_similarity": {
+      "Marine_2": {
+        "dtw_similarity": 0.9395487032770301,
+        "path_overlap": 4.1875,
+        "average_distance": 30.699371148101534
+      },
+      "Medivac_1": {
+        "dtw_similarity": 0.9796836940922946,
+        "path_overlap": 2.2777777777777777,
+        "average_distance": 29.277496422767925
+      },
+      "Marine_6": {
+        "dtw_similarity": 0.998487069667262,
+        "path_overlap": 2.769230769230769,
+        "average_distance": 2.741217494627273
+      },
       "Marine_1": {
         "dtw_similarity": 0.9909484705103291,
         "path_overlap": 2.25,
         "average_distance": 2.1222940963506822
-      },
-      "Marauder_1": {
-        "dtw_similarity": 0.9631806448088933,
-        "path_overlap": 2.0,
-        "average_distance": 67.59144154569992
       },
       "Marine_8": {
         "dtw_similarity": 0.9774778323893739,
         "path_overlap": 2.6153846153846154,
         "average_distance": 43.58191274119138
       },
-      "Marine_3": {
-        "dtw_similarity": 0.9785385898264753,
-        "path_overlap": 3.8461538461538463,
-        "average_distance": 39.5604987057954
+      "Marauder_3": {
+        "dtw_similarity": 0.9956233343673888,
+        "path_overlap": 2.2,
+        "average_distance": 6.8645752773730555
+      },
+      "Marauder_2": {
+        "dtw_similarity": 0.9824694953346552,
+        "path_overlap": 2.7333333333333334,
+        "average_distance": 42.5986652436441
       },
       "Siege Tank_1": {
         "dtw_similarity": 0.969771019614066,
@@ -272,40 +287,25 @@
         "path_overlap": 3.1538461538461537,
         "average_distance": 1.3437096247164249
       },
-      "Marauder_3": {
-        "dtw_similarity": 0.9956233343673888,
-        "path_overlap": 2.2,
-        "average_distance": 6.8645752773730555
-      },
-      "Marine_6": {
-        "dtw_similarity": 0.998487069667262,
-        "path_overlap": 2.769230769230769,
-        "average_distance": 2.741217494627273
-      },
-      "Medivac_1": {
-        "dtw_similarity": 0.9796836940922946,
-        "path_overlap": 2.2777777777777777,
-        "average_distance": 29.277496422767925
-      },
-      "Marauder_2": {
-        "dtw_similarity": 0.9824694953346552,
-        "path_overlap": 2.7333333333333334,
-        "average_distance": 42.5986652436441
-      },
-      "Marine_7": {
-        "dtw_similarity": 0.9704138400723766,
-        "path_overlap": 3.0,
-        "average_distance": 50.50132175298936
-      },
-      "Marine_2": {
-        "dtw_similarity": 0.9395487032770301,
-        "path_overlap": 4.1875,
-        "average_distance": 30.699371148101534
+      "Marine_3": {
+        "dtw_similarity": 0.9785385898264753,
+        "path_overlap": 3.8461538461538463,
+        "average_distance": 39.5604987057954
       },
       "Marine_4": {
         "dtw_similarity": 0.9459861289569517,
         "path_overlap": 3.8666666666666667,
         "average_distance": 102.30601502384486
+      },
+      "Marauder_1": {
+        "dtw_similarity": 0.9631806448088933,
+        "path_overlap": 2.0,
+        "average_distance": 67.59144154569992
+      },
+      "Marine_7": {
+        "dtw_similarity": 0.9704138400723766,
+        "path_overlap": 3.0,
+        "average_distance": 50.50132175298936
       }
     },
     "key_node_match_rate": 0.7777777777777778,
@@ -313,32 +313,47 @@
   },
   {
     "scene": "MMM场景",
-    "experiment1": "qwen_20260213_172646_ability_map_8marine_3marauder_1medivac_1tank",
-    "experiment2": "qwen_20260214_095942_ability_map_8marine_3marauder_1medivac_1tank",
+    "experiment1": "qwen_20260213_172646_MMM",
+    "experiment2": "qwen_20260214_095942_MMM",
     "model_type_1": "VLM",
     "model_type_2": "VLM",
     "prefab_enabled_1": true,
-    "prefab_enabled_2": true,
+    "prefab_enabled_2": false,
     "trajectory_similarity": {
+      "Marine_2": {
+        "dtw_similarity": 0.9480992236360243,
+        "path_overlap": 5.25,
+        "average_distance": 73.84856878173815
+      },
+      "Medivac_1": {
+        "dtw_similarity": 0.9834744946834336,
+        "path_overlap": 2.0,
+        "average_distance": 22.88974631195159
+      },
+      "Marine_6": {
+        "dtw_similarity": 0.9893506128286704,
+        "path_overlap": 2.6923076923076925,
+        "average_distance": 19.29519541608784
+      },
       "Marine_1": {
         "dtw_similarity": 0.9645017389630492,
         "path_overlap": 2.5384615384615383,
         "average_distance": 61.01070559502448
-      },
-      "Marauder_1": {
-        "dtw_similarity": 0.9621168841471308,
-        "path_overlap": 2.0,
-        "average_distance": 69.54424914417459
       },
       "Marine_8": {
         "dtw_similarity": 0.947648422672782,
         "path_overlap": 1.6428571428571428,
         "average_distance": 69.8766006676012
       },
-      "Marine_3": {
-        "dtw_similarity": 0.9911186095873089,
-        "path_overlap": 3.8461538461538463,
-        "average_distance": 14.883527105586886
+      "Marauder_3": {
+        "dtw_similarity": 0.9601194429544249,
+        "path_overlap": 1.7333333333333334,
+        "average_distance": 74.36282174320941
+      },
+      "Marauder_2": {
+        "dtw_similarity": 0.932479687557233,
+        "path_overlap": 2.6,
+        "average_distance": 126.2760685776233
       },
       "Siege Tank_1": {
         "dtw_similarity": 0.9671868293925713,
@@ -350,40 +365,25 @@
         "path_overlap": 2.076923076923077,
         "average_distance": 3.9166666666666665
       },
-      "Marauder_3": {
-        "dtw_similarity": 0.9601194429544249,
-        "path_overlap": 1.7333333333333334,
-        "average_distance": 74.36282174320941
-      },
-      "Marine_6": {
-        "dtw_similarity": 0.9893506128286704,
-        "path_overlap": 2.6923076923076925,
-        "average_distance": 19.29519541608784
-      },
-      "Medivac_1": {
-        "dtw_similarity": 0.9834744946834336,
-        "path_overlap": 2.0,
-        "average_distance": 22.88974631195159
-      },
-      "Marauder_2": {
-        "dtw_similarity": 0.932479687557233,
-        "path_overlap": 2.6,
-        "average_distance": 126.2760685776233
-      },
-      "Marine_7": {
-        "dtw_similarity": 0.9830422996736616,
-        "path_overlap": 2.9166666666666665,
-        "average_distance": 30.71927769416501
-      },
-      "Marine_2": {
-        "dtw_similarity": 0.9480992236360243,
-        "path_overlap": 5.25,
-        "average_distance": 73.84856878173815
+      "Marine_3": {
+        "dtw_similarity": 0.9911186095873089,
+        "path_overlap": 3.8461538461538463,
+        "average_distance": 14.883527105586886
       },
       "Marine_4": {
         "dtw_similarity": 0.959200077900965,
         "path_overlap": 2.6923076923076925,
         "average_distance": 79.15128312184655
+      },
+      "Marauder_1": {
+        "dtw_similarity": 0.9621168841471308,
+        "path_overlap": 2.0,
+        "average_distance": 69.54424914417459
+      },
+      "Marine_7": {
+        "dtw_similarity": 0.9830422996736616,
+        "path_overlap": 2.9166666666666665,
+        "average_distance": 30.71927769416501
       }
     },
     "key_node_match_rate": 0.6666666666666666,
@@ -391,32 +391,47 @@
   },
   {
     "scene": "MMM场景",
-    "experiment1": "qwen_20260213_201018_ability_map_8marine_3marauder_1medivac_1tank",
-    "experiment2": "qwen_20260214_095942_ability_map_8marine_3marauder_1medivac_1tank",
+    "experiment1": "qwen_20260213_201018_MMM",
+    "experiment2": "qwen_20260214_095942_MMM",
     "model_type_1": "VLM",
     "model_type_2": "VLM",
-    "prefab_enabled_1": true,
-    "prefab_enabled_2": true,
+    "prefab_enabled_1": false,
+    "prefab_enabled_2": false,
     "trajectory_similarity": {
+      "Marine_2": {
+        "dtw_similarity": 0.9346877374831425,
+        "path_overlap": 4.166666666666667,
+        "average_distance": 104.54793992983969
+      },
+      "Medivac_1": {
+        "dtw_similarity": 0.9905741974665553,
+        "path_overlap": 2.4375,
+        "average_distance": 16.877067236167445
+      },
+      "Marine_6": {
+        "dtw_similarity": 0.9897747510689472,
+        "path_overlap": 1.9166666666666667,
+        "average_distance": 17.10158439920316
+      },
       "Marine_1": {
         "dtw_similarity": 0.9785112859267618,
         "path_overlap": 2.769230769230769,
         "average_distance": 40.29006398851145
-      },
-      "Marauder_1": {
-        "dtw_similarity": 0.995096774803565,
-        "path_overlap": 2.4285714285714284,
-        "average_distance": 9.001136970760845
       },
       "Marine_8": {
         "dtw_similarity": 0.9432185526112696,
         "path_overlap": 1.6428571428571428,
         "average_distance": 102.14524984418594
       },
-      "Marine_3": {
-        "dtw_similarity": 0.9849410720720936,
-        "path_overlap": 3.5833333333333335,
-        "average_distance": 26.636363636363637
+      "Marauder_3": {
+        "dtw_similarity": 0.960494856763461,
+        "path_overlap": 1.9285714285714286,
+        "average_distance": 71.67134532203247
+      },
+      "Marauder_2": {
+        "dtw_similarity": 0.9318034524615585,
+        "path_overlap": 2.4,
+        "average_distance": 146.3352930405699
       },
       "Siege Tank_1": {
         "dtw_similarity": 0.9894353572177857,
@@ -428,40 +443,25 @@
         "path_overlap": 2.3846153846153846,
         "average_distance": 12.581119730369503
       },
-      "Marauder_3": {
-        "dtw_similarity": 0.960494856763461,
-        "path_overlap": 1.9285714285714286,
-        "average_distance": 71.67134532203247
-      },
-      "Marine_6": {
-        "dtw_similarity": 0.9897747510689472,
-        "path_overlap": 1.9166666666666667,
-        "average_distance": 17.10158439920316
-      },
-      "Medivac_1": {
-        "dtw_similarity": 0.9905741974665553,
-        "path_overlap": 2.4375,
-        "average_distance": 16.877067236167445
-      },
-      "Marauder_2": {
-        "dtw_similarity": 0.9318034524615585,
-        "path_overlap": 2.4,
-        "average_distance": 146.3352930405699
-      },
-      "Marine_7": {
-        "dtw_similarity": 0.9692187980580242,
-        "path_overlap": 2.0,
-        "average_distance": 66.08842186479502
-      },
-      "Marine_2": {
-        "dtw_similarity": 0.9346877374831425,
-        "path_overlap": 4.166666666666667,
-        "average_distance": 104.54793992983969
+      "Marine_3": {
+        "dtw_similarity": 0.9849410720720936,
+        "path_overlap": 3.5833333333333335,
+        "average_distance": 26.636363636363637
       },
       "Marine_4": {
         "dtw_similarity": 0.9459858856035448,
         "path_overlap": 2.933333333333333,
         "average_distance": 1.4545454545454546
+      },
+      "Marauder_1": {
+        "dtw_similarity": 0.995096774803565,
+        "path_overlap": 2.4285714285714284,
+        "average_distance": 9.001136970760845
+      },
+      "Marine_7": {
+        "dtw_similarity": 0.9692187980580242,
+        "path_overlap": 2.0,
+        "average_distance": 66.08842186479502
       }
     },
     "key_node_match_rate": 0.875,
@@ -469,82 +469,82 @@
   },
   {
     "scene": "MMM2场景",
-    "experiment1": "qwen_20260213_160916_ability_MMM2",
-    "experiment2": "qwen_20260213_172649_ability_MMM2",
+    "experiment1": "qwen_20260213_160916_MMM2",
+    "experiment2": "qwen_20260213_172649_MMM2",
     "model_type_1": "VLM",
     "model_type_2": "VLM",
     "prefab_enabled_1": true,
     "prefab_enabled_2": true,
     "trajectory_similarity": {
-      "Marine_1": {
-        "dtw_similarity": 0.9969771916842198,
-        "path_overlap": 2.1538461538461537,
-        "average_distance": 0.0
-      },
-      "Marauder_1": {
-        "dtw_similarity": 0.9614403087734517,
-        "path_overlap": 2.1333333333333333,
-        "average_distance": 75.84244080801723
-      },
-      "Marine_8": {
-        "dtw_similarity": 0.930682592689051,
-        "path_overlap": 2.7142857142857144,
-        "average_distance": 119.69831774713577
-      },
-      "Marine_3": {
-        "dtw_similarity": 0.9451534245572454,
-        "path_overlap": 2.076923076923077,
-        "average_distance": 81.94942453633699
-      },
-      "Siege Tank_1": {
-        "dtw_similarity": 0.9805796412895892,
-        "path_overlap": 1.7692307692307692,
-        "average_distance": 40.008319280677604
-      },
-      "Marine_5": {
-        "dtw_similarity": 0.9919058166770832,
-        "path_overlap": 2.5384615384615383,
-        "average_distance": 13.404945105478278
-      },
-      "Marauder_3": {
-        "dtw_similarity": 0.9889871541013167,
-        "path_overlap": 2.2142857142857144,
-        "average_distance": 19.979815707966377
-      },
-      "Medivac_2": {
-        "dtw_similarity": 0.9959292837750088,
-        "path_overlap": 7.0,
-        "average_distance": 7.2886898685566255
-      },
-      "Marine_6": {
-        "dtw_similarity": 0.996932965945633,
-        "path_overlap": 3.5833333333333335,
-        "average_distance": 5.129571132170798
+      "Marine_2": {
+        "dtw_similarity": 0.9546926787308128,
+        "path_overlap": 2.9166666666666665,
+        "average_distance": 77.60802605926843
       },
       "Medivac_1": {
         "dtw_similarity": 0.9853090507710996,
         "path_overlap": 2.9375,
         "average_distance": 26.72200072816832
       },
+      "Marine_6": {
+        "dtw_similarity": 0.996932965945633,
+        "path_overlap": 3.5833333333333335,
+        "average_distance": 5.129571132170798
+      },
+      "Marine_1": {
+        "dtw_similarity": 0.9969771916842198,
+        "path_overlap": 2.1538461538461537,
+        "average_distance": 0.0
+      },
+      "Marine_8": {
+        "dtw_similarity": 0.930682592689051,
+        "path_overlap": 2.7142857142857144,
+        "average_distance": 119.69831774713577
+      },
+      "Marauder_3": {
+        "dtw_similarity": 0.9889871541013167,
+        "path_overlap": 2.2142857142857144,
+        "average_distance": 19.979815707966377
+      },
       "Marauder_2": {
         "dtw_similarity": 0.9343389231875346,
         "path_overlap": 0.8,
         "average_distance": 125.7533120835667
       },
-      "Marine_7": {
-        "dtw_similarity": 0.9768202917395677,
-        "path_overlap": 3.1666666666666665,
-        "average_distance": 39.55391758971815
+      "Siege Tank_1": {
+        "dtw_similarity": 0.9805796412895892,
+        "path_overlap": 1.7692307692307692,
+        "average_distance": 40.008319280677604
       },
-      "Marine_2": {
-        "dtw_similarity": 0.9546926787308128,
-        "path_overlap": 2.9166666666666665,
-        "average_distance": 77.60802605926843
+      "Medivac_2": {
+        "dtw_similarity": 0.9959292837750088,
+        "path_overlap": 7.0,
+        "average_distance": 7.2886898685566255
+      },
+      "Marine_5": {
+        "dtw_similarity": 0.9919058166770832,
+        "path_overlap": 2.5384615384615383,
+        "average_distance": 13.404945105478278
+      },
+      "Marine_3": {
+        "dtw_similarity": 0.9451534245572454,
+        "path_overlap": 2.076923076923077,
+        "average_distance": 81.94942453633699
       },
       "Marine_4": {
         "dtw_similarity": 0.973882493376628,
         "path_overlap": 2.1538461538461537,
         "average_distance": 45.70324085345896
+      },
+      "Marauder_1": {
+        "dtw_similarity": 0.9614403087734517,
+        "path_overlap": 2.1333333333333333,
+        "average_distance": 75.84244080801723
+      },
+      "Marine_7": {
+        "dtw_similarity": 0.9768202917395677,
+        "path_overlap": 3.1666666666666665,
+        "average_distance": 39.55391758971815
       }
     },
     "key_node_match_rate": 0.7142857142857143,
@@ -552,82 +552,82 @@
   },
   {
     "scene": "MMM2场景",
-    "experiment1": "qwen_20260213_160916_ability_MMM2",
-    "experiment2": "qwen_20260213_201025_ability_MMM2",
+    "experiment1": "qwen_20260213_160916_MMM2",
+    "experiment2": "qwen_20260213_201025_MMM2",
     "model_type_1": "VLM",
     "model_type_2": "VLM",
     "prefab_enabled_1": true,
-    "prefab_enabled_2": true,
+    "prefab_enabled_2": false,
     "trajectory_similarity": {
-      "Marine_1": {
-        "dtw_similarity": 0.9233227046161498,
-        "path_overlap": 1.9230769230769231,
-        "average_distance": 70.27750922817633
-      },
-      "Marauder_1": {
-        "dtw_similarity": 0.9873122888240142,
-        "path_overlap": 2.6875,
-        "average_distance": 24.2480594222182
-      },
-      "Marine_8": {
-        "dtw_similarity": 0.9256655715451523,
-        "path_overlap": 3.125,
-        "average_distance": 146.6991812534989
-      },
-      "Marine_3": {
-        "dtw_similarity": 0.9657986091836419,
-        "path_overlap": 1.8461538461538463,
-        "average_distance": 43.516548576374944
-      },
-      "Siege Tank_1": {
-        "dtw_similarity": 0.9828094118340461,
-        "path_overlap": 1.6428571428571428,
-        "average_distance": 40.315752755301
-      },
-      "Marine_5": {
-        "dtw_similarity": 0.9977261251305115,
-        "path_overlap": 2.2142857142857144,
-        "average_distance": 4.235296757342679
-      },
-      "Marauder_3": {
-        "dtw_similarity": 0.9881967362830779,
-        "path_overlap": 1.8666666666666667,
-        "average_distance": 20.51526864680871
-      },
-      "Medivac_2": {
-        "dtw_similarity": 0.9927160021712371,
-        "path_overlap": 3.111111111111111,
-        "average_distance": 11.930929731612833
-      },
-      "Marine_6": {
-        "dtw_similarity": 0.9820593751235924,
-        "path_overlap": 3.642857142857143,
-        "average_distance": 35.006348630561924
+      "Marine_2": {
+        "dtw_similarity": 0.9546926787308128,
+        "path_overlap": 2.9166666666666665,
+        "average_distance": 77.60802605926843
       },
       "Medivac_1": {
         "dtw_similarity": 0.9830345260399711,
         "path_overlap": 2.4444444444444446,
         "average_distance": 22.532363067551042
       },
+      "Marine_6": {
+        "dtw_similarity": 0.9820593751235924,
+        "path_overlap": 3.642857142857143,
+        "average_distance": 35.006348630561924
+      },
+      "Marine_1": {
+        "dtw_similarity": 0.9233227046161498,
+        "path_overlap": 1.9230769230769231,
+        "average_distance": 70.27750922817633
+      },
+      "Marine_8": {
+        "dtw_similarity": 0.9256655715451523,
+        "path_overlap": 3.125,
+        "average_distance": 146.6991812534989
+      },
+      "Marauder_3": {
+        "dtw_similarity": 0.9881967362830779,
+        "path_overlap": 1.8666666666666667,
+        "average_distance": 20.51526864680871
+      },
       "Marauder_2": {
         "dtw_similarity": 0.96910246663806,
         "path_overlap": 1.8571428571428572,
         "average_distance": 62.096502740759725
       },
-      "Marine_7": {
-        "dtw_similarity": 0.980027467083892,
-        "path_overlap": 3.8461538461538463,
-        "average_distance": 40.29006398851145
+      "Siege Tank_1": {
+        "dtw_similarity": 0.9828094118340461,
+        "path_overlap": 1.6428571428571428,
+        "average_distance": 40.315752755301
       },
-      "Marine_2": {
-        "dtw_similarity": 0.9546926787308128,
-        "path_overlap": 2.9166666666666665,
-        "average_distance": 77.60802605926843
+      "Medivac_2": {
+        "dtw_similarity": 0.9927160021712371,
+        "path_overlap": 3.111111111111111,
+        "average_distance": 11.930929731612833
+      },
+      "Marine_5": {
+        "dtw_similarity": 0.9977261251305115,
+        "path_overlap": 2.2142857142857144,
+        "average_distance": 4.235296757342679
+      },
+      "Marine_3": {
+        "dtw_similarity": 0.9657986091836419,
+        "path_overlap": 1.8461538461538463,
+        "average_distance": 43.516548576374944
       },
       "Marine_4": {
         "dtw_similarity": 0.9724941919939055,
         "path_overlap": 1.8461538461538463,
         "average_distance": 48.09360060192518
+      },
+      "Marauder_1": {
+        "dtw_similarity": 0.9873122888240142,
+        "path_overlap": 2.6875,
+        "average_distance": 24.2480594222182
+      },
+      "Marine_7": {
+        "dtw_similarity": 0.980027467083892,
+        "path_overlap": 3.8461538461538463,
+        "average_distance": 40.29006398851145
       }
     },
     "key_node_match_rate": 0.5555555555555556,
@@ -635,82 +635,82 @@
   },
   {
     "scene": "MMM2场景",
-    "experiment1": "qwen_20260213_160916_ability_MMM2",
-    "experiment2": "qwen_20260214_095946_ability_MMM2",
+    "experiment1": "qwen_20260213_160916_MMM2",
+    "experiment2": "qwen_20260214_095946_MMM2",
     "model_type_1": "VLM",
     "model_type_2": "VLM",
     "prefab_enabled_1": true,
-    "prefab_enabled_2": true,
+    "prefab_enabled_2": false,
     "trajectory_similarity": {
-      "Marine_1": {
-        "dtw_similarity": 0.9563396682392711,
-        "path_overlap": 2.1538461538461537,
-        "average_distance": 70.6206877138265
-      },
-      "Marauder_1": {
-        "dtw_similarity": 0.9582332841557669,
-        "path_overlap": 2.1333333333333333,
-        "average_distance": 85.32713097132088
-      },
-      "Marine_8": {
-        "dtw_similarity": 0.9122106845111017,
-        "path_overlap": 2.2857142857142856,
-        "average_distance": 163.2571018425335
-      },
-      "Marine_3": {
-        "dtw_similarity": 0.9451534245572454,
-        "path_overlap": 1.6153846153846154,
-        "average_distance": 96.7034412808332
-      },
-      "Siege Tank_1": {
-        "dtw_similarity": 0.9859071219915537,
-        "path_overlap": 1.7692307692307692,
-        "average_distance": 29.033056049747454
-      },
-      "Marine_5": {
-        "dtw_similarity": 0.9798686374201129,
-        "path_overlap": 2.5384615384615383,
-        "average_distance": 34.4641788698191
-      },
-      "Marauder_3": {
-        "dtw_similarity": 0.9847295728668375,
-        "path_overlap": 2.0,
-        "average_distance": 28.207989862295857
-      },
-      "Medivac_2": {
-        "dtw_similarity": 0.9959292837750088,
-        "path_overlap": 7.0,
-        "average_distance": 7.2886898685566255
-      },
-      "Marine_6": {
-        "dtw_similarity": 0.9992264919874626,
-        "path_overlap": 3.1666666666666665,
-        "average_distance": 1.2936812246883354
+      "Marine_2": {
+        "dtw_similarity": 0.9479154551938545,
+        "path_overlap": 2.933333333333333,
+        "average_distance": 68.2679474893268
       },
       "Medivac_1": {
         "dtw_similarity": 0.9804815262150823,
         "path_overlap": 2.6875,
         "average_distance": 35.49366703296343
       },
+      "Marine_6": {
+        "dtw_similarity": 0.9992264919874626,
+        "path_overlap": 3.1666666666666665,
+        "average_distance": 1.2936812246883354
+      },
+      "Marine_1": {
+        "dtw_similarity": 0.9563396682392711,
+        "path_overlap": 2.1538461538461537,
+        "average_distance": 70.6206877138265
+      },
+      "Marine_8": {
+        "dtw_similarity": 0.9122106845111017,
+        "path_overlap": 2.2857142857142856,
+        "average_distance": 163.2571018425335
+      },
+      "Marauder_3": {
+        "dtw_similarity": 0.9847295728668375,
+        "path_overlap": 2.0,
+        "average_distance": 28.207989862295857
+      },
       "Marauder_2": {
         "dtw_similarity": 0.9839165614933876,
         "path_overlap": 2.2857142857142856,
         "average_distance": 28.74928916914426
       },
-      "Marine_7": {
-        "dtw_similarity": 0.9964272763296125,
-        "path_overlap": 3.3636363636363638,
-        "average_distance": 6.098367211363063
+      "Siege Tank_1": {
+        "dtw_similarity": 0.9859071219915537,
+        "path_overlap": 1.7692307692307692,
+        "average_distance": 29.033056049747454
       },
-      "Marine_2": {
-        "dtw_similarity": 0.9479154551938545,
-        "path_overlap": 2.933333333333333,
-        "average_distance": 68.2679474893268
+      "Medivac_2": {
+        "dtw_similarity": 0.9959292837750088,
+        "path_overlap": 7.0,
+        "average_distance": 7.2886898685566255
+      },
+      "Marine_5": {
+        "dtw_similarity": 0.9798686374201129,
+        "path_overlap": 2.5384615384615383,
+        "average_distance": 34.4641788698191
+      },
+      "Marine_3": {
+        "dtw_similarity": 0.9451534245572454,
+        "path_overlap": 1.6153846153846154,
+        "average_distance": 96.7034412808332
       },
       "Marine_4": {
         "dtw_similarity": 0.9614540054046494,
         "path_overlap": 2.533333333333333,
         "average_distance": 68.2737963400238
+      },
+      "Marauder_1": {
+        "dtw_similarity": 0.9582332841557669,
+        "path_overlap": 2.1333333333333333,
+        "average_distance": 85.32713097132088
+      },
+      "Marine_7": {
+        "dtw_similarity": 0.9964272763296125,
+        "path_overlap": 3.3636363636363638,
+        "average_distance": 6.098367211363063
       }
     },
     "key_node_match_rate": 0.75,
@@ -718,82 +718,82 @@
   },
   {
     "scene": "MMM2场景",
-    "experiment1": "qwen_20260213_172649_ability_MMM2",
-    "experiment2": "qwen_20260213_201025_ability_MMM2",
+    "experiment1": "qwen_20260213_172649_MMM2",
+    "experiment2": "qwen_20260213_201025_MMM2",
     "model_type_1": "VLM",
     "model_type_2": "VLM",
     "prefab_enabled_1": true,
-    "prefab_enabled_2": true,
+    "prefab_enabled_2": false,
     "trajectory_similarity": {
-      "Marine_1": {
-        "dtw_similarity": 0.975826892560641,
-        "path_overlap": 1.9090909090909092,
-        "average_distance": 40.50308630215727
-      },
-      "Marauder_1": {
-        "dtw_similarity": 0.9607760131366639,
-        "path_overlap": 1.75,
-        "average_distance": 73.8150757972488
-      },
-      "Marine_8": {
-        "dtw_similarity": 0.9797938957268885,
-        "path_overlap": 3.5,
-        "average_distance": 39.87679753250307
-      },
-      "Marine_3": {
-        "dtw_similarity": 0.9756011454415314,
-        "path_overlap": 2.909090909090909,
-        "average_distance": 43.516548576374944
-      },
-      "Siege Tank_1": {
-        "dtw_similarity": 0.9889630929132529,
-        "path_overlap": 2.0714285714285716,
-        "average_distance": 27.829198740610995
-      },
-      "Marine_5": {
-        "dtw_similarity": 0.990748139902792,
-        "path_overlap": 2.7857142857142856,
-        "average_distance": 12.897739496189786
-      },
-      "Marauder_3": {
-        "dtw_similarity": 0.9923098533642156,
-        "path_overlap": 2.466666666666667,
-        "average_distance": 12.151102326913348
-      },
-      "Medivac_2": {
-        "dtw_similarity": 0.9936611102867615,
-        "path_overlap": 3.5555555555555554,
-        "average_distance": 10.027167712529986
-      },
-      "Marine_6": {
-        "dtw_similarity": 0.9794304887912777,
-        "path_overlap": 3.5,
-        "average_distance": 40.13591976273272
+      "Marine_2": {
+        "dtw_similarity": 1.0,
+        "path_overlap": 3.909090909090909,
+        "average_distance": 0.0
       },
       "Medivac_1": {
         "dtw_similarity": 0.9825503343319217,
         "path_overlap": 2.7222222222222223,
         "average_distance": 28.878784566587825
       },
+      "Marine_6": {
+        "dtw_similarity": 0.9794304887912777,
+        "path_overlap": 3.5,
+        "average_distance": 40.13591976273272
+      },
+      "Marine_1": {
+        "dtw_similarity": 0.975826892560641,
+        "path_overlap": 1.9090909090909092,
+        "average_distance": 40.50308630215727
+      },
+      "Marine_8": {
+        "dtw_similarity": 0.9797938957268885,
+        "path_overlap": 3.5,
+        "average_distance": 39.87679753250307
+      },
+      "Marauder_3": {
+        "dtw_similarity": 0.9923098533642156,
+        "path_overlap": 2.466666666666667,
+        "average_distance": 12.151102326913348
+      },
       "Marauder_2": {
         "dtw_similarity": 0.930372589619662,
         "path_overlap": 1.0,
         "average_distance": 144.7781178744636
       },
-      "Marine_7": {
-        "dtw_similarity": 0.9978078811802759,
-        "path_overlap": 3.4615384615384617,
-        "average_distance": 4.053594866046464
+      "Siege Tank_1": {
+        "dtw_similarity": 0.9889630929132529,
+        "path_overlap": 2.0714285714285716,
+        "average_distance": 27.829198740610995
       },
-      "Marine_2": {
-        "dtw_similarity": 1.0,
-        "path_overlap": 3.909090909090909,
-        "average_distance": 0.0
+      "Medivac_2": {
+        "dtw_similarity": 0.9936611102867615,
+        "path_overlap": 3.5555555555555554,
+        "average_distance": 10.027167712529986
+      },
+      "Marine_5": {
+        "dtw_similarity": 0.990748139902792,
+        "path_overlap": 2.7857142857142856,
+        "average_distance": 12.897739496189786
+      },
+      "Marine_3": {
+        "dtw_similarity": 0.9756011454415314,
+        "path_overlap": 2.909090909090909,
+        "average_distance": 43.516548576374944
       },
       "Marine_4": {
         "dtw_similarity": 0.9980074560836146,
         "path_overlap": 1.6923076923076923,
         "average_distance": 5.025961667083547
+      },
+      "Marauder_1": {
+        "dtw_similarity": 0.9607760131366639,
+        "path_overlap": 1.75,
+        "average_distance": 73.8150757972488
+      },
+      "Marine_7": {
+        "dtw_similarity": 0.9978078811802759,
+        "path_overlap": 3.4615384615384617,
+        "average_distance": 4.053594866046464
       }
     },
     "key_node_match_rate": 0.5555555555555556,
@@ -801,82 +801,82 @@
   },
   {
     "scene": "MMM2场景",
-    "experiment1": "qwen_20260213_172649_ability_MMM2",
-    "experiment2": "qwen_20260214_095946_ability_MMM2",
+    "experiment1": "qwen_20260213_172649_MMM2",
+    "experiment2": "qwen_20260214_095946_MMM2",
     "model_type_1": "VLM",
     "model_type_2": "VLM",
     "prefab_enabled_1": true,
-    "prefab_enabled_2": true,
+    "prefab_enabled_2": false,
     "trajectory_similarity": {
-      "Marine_1": {
-        "dtw_similarity": 0.9558672627228957,
-        "path_overlap": 2.0,
-        "average_distance": 0.0
-      },
-      "Marauder_1": {
-        "dtw_similarity": 0.9915886038930019,
-        "path_overlap": 2.0,
-        "average_distance": 15.441291280984101
-      },
-      "Marine_8": {
-        "dtw_similarity": 0.979749961514863,
-        "path_overlap": 2.5,
-        "average_distance": 42.13883178378119
-      },
-      "Marine_3": {
-        "dtw_similarity": 1.0,
-        "path_overlap": 2.8181818181818183,
-        "average_distance": 0.0
-      },
-      "Siege Tank_1": {
-        "dtw_similarity": 0.9906615797147278,
-        "path_overlap": 2.230769230769231,
-        "average_distance": 19.238290390076017
-      },
-      "Marine_5": {
-        "dtw_similarity": 0.9760851842098422,
-        "path_overlap": 3.4615384615384617,
-        "average_distance": 42.90630836479466
-      },
-      "Marauder_3": {
-        "dtw_similarity": 0.9887462028371821,
-        "path_overlap": 2.642857142857143,
-        "average_distance": 20.416956288730027
-      },
-      "Medivac_2": {
-        "dtw_similarity": 1.0,
-        "path_overlap": 8.0,
-        "average_distance": 0.0
-      },
-      "Marine_6": {
-        "dtw_similarity": 0.9961594579330956,
-        "path_overlap": 3.0833333333333335,
-        "average_distance": 6.423252356859133
+      "Marine_2": {
+        "dtw_similarity": 0.947884183178715,
+        "path_overlap": 3.2,
+        "average_distance": 14.43251608906628
       },
       "Medivac_1": {
         "dtw_similarity": 0.9787477495286836,
         "path_overlap": 3.1875,
         "average_distance": 38.65663434821109
       },
+      "Marine_6": {
+        "dtw_similarity": 0.9961594579330956,
+        "path_overlap": 3.0833333333333335,
+        "average_distance": 6.423252356859133
+      },
+      "Marine_1": {
+        "dtw_similarity": 0.9558672627228957,
+        "path_overlap": 2.0,
+        "average_distance": 0.0
+      },
+      "Marine_8": {
+        "dtw_similarity": 0.979749961514863,
+        "path_overlap": 2.5,
+        "average_distance": 42.13883178378119
+      },
+      "Marauder_3": {
+        "dtw_similarity": 0.9887462028371821,
+        "path_overlap": 2.642857142857143,
+        "average_distance": 20.416956288730027
+      },
       "Marauder_2": {
         "dtw_similarity": 0.9420586748863149,
         "path_overlap": 0.8,
         "average_distance": 115.40150659239468
       },
-      "Marine_7": {
-        "dtw_similarity": 0.9772808363341511,
-        "path_overlap": 2.75,
-        "average_distance": 45.65228480108121
+      "Siege Tank_1": {
+        "dtw_similarity": 0.9906615797147278,
+        "path_overlap": 2.230769230769231,
+        "average_distance": 19.238290390076017
       },
-      "Marine_2": {
-        "dtw_similarity": 0.947884183178715,
-        "path_overlap": 3.2,
-        "average_distance": 14.43251608906628
+      "Medivac_2": {
+        "dtw_similarity": 1.0,
+        "path_overlap": 8.0,
+        "average_distance": 0.0
+      },
+      "Marine_5": {
+        "dtw_similarity": 0.9760851842098422,
+        "path_overlap": 3.4615384615384617,
+        "average_distance": 42.90630836479466
+      },
+      "Marine_3": {
+        "dtw_similarity": 1.0,
+        "path_overlap": 2.8181818181818183,
+        "average_distance": 0.0
       },
       "Marine_4": {
         "dtw_similarity": 0.9457897821840436,
         "path_overlap": 2.2666666666666666,
         "average_distance": 72.80259731013506
+      },
+      "Marauder_1": {
+        "dtw_similarity": 0.9915886038930019,
+        "path_overlap": 2.0,
+        "average_distance": 15.441291280984101
+      },
+      "Marine_7": {
+        "dtw_similarity": 0.9772808363341511,
+        "path_overlap": 2.75,
+        "average_distance": 45.65228480108121
       }
     },
     "key_node_match_rate": 0.75,
@@ -884,99 +884,104 @@
   },
   {
     "scene": "MMM2场景",
-    "experiment1": "qwen_20260213_201025_ability_MMM2",
-    "experiment2": "qwen_20260214_095946_ability_MMM2",
+    "experiment1": "qwen_20260213_201025_MMM2",
+    "experiment2": "qwen_20260214_095946_MMM2",
     "model_type_1": "VLM",
     "model_type_2": "VLM",
-    "prefab_enabled_1": true,
-    "prefab_enabled_2": true,
+    "prefab_enabled_1": false,
+    "prefab_enabled_2": false,
     "trajectory_similarity": {
-      "Marine_1": {
-        "dtw_similarity": 0.9758495754253951,
-        "path_overlap": 1.75,
-        "average_distance": 40.38620055671162
-      },
-      "Marauder_1": {
-        "dtw_similarity": 0.9598192772297396,
-        "path_overlap": 2.25,
-        "average_distance": 81.9044396507397
-      },
-      "Marine_8": {
-        "dtw_similarity": 0.9615507742488804,
-        "path_overlap": 3.0625,
-        "average_distance": 63.71571259110404
-      },
-      "Marine_3": {
-        "dtw_similarity": 0.9731612599856846,
-        "path_overlap": 2.4,
-        "average_distance": 48.3517206404166
-      },
-      "Siege Tank_1": {
-        "dtw_similarity": 0.9921648638582621,
-        "path_overlap": 2.142857142857143,
-        "average_distance": 22.022061401929786
-      },
-      "Marine_5": {
-        "dtw_similarity": 0.9793567005496916,
-        "path_overlap": 2.7857142857142856,
-        "average_distance": 33.8446947447291
-      },
-      "Marauder_3": {
-        "dtw_similarity": 0.9939602135903832,
-        "path_overlap": 2.466666666666667,
-        "average_distance": 8.93899430351478
-      },
-      "Medivac_2": {
-        "dtw_similarity": 0.9936611102867615,
-        "path_overlap": 3.5555555555555554,
-        "average_distance": 10.027167712529986
-      },
-      "Marine_6": {
-        "dtw_similarity": 0.9813963682557032,
-        "path_overlap": 3.142857142857143,
-        "average_distance": 36.30002985525026
+      "Marine_2": {
+        "dtw_similarity": 0.947884183178715,
+        "path_overlap": 3.2,
+        "average_distance": 14.43251608906628
       },
       "Medivac_1": {
         "dtw_similarity": 0.9785800927658103,
         "path_overlap": 1.9444444444444444,
         "average_distance": 29.729661643946706
       },
+      "Marine_6": {
+        "dtw_similarity": 0.9813963682557032,
+        "path_overlap": 3.142857142857143,
+        "average_distance": 36.30002985525026
+      },
+      "Marine_1": {
+        "dtw_similarity": 0.9758495754253951,
+        "path_overlap": 1.75,
+        "average_distance": 40.38620055671162
+      },
+      "Marine_8": {
+        "dtw_similarity": 0.9615507742488804,
+        "path_overlap": 3.0625,
+        "average_distance": 63.71571259110404
+      },
+      "Marauder_3": {
+        "dtw_similarity": 0.9939602135903832,
+        "path_overlap": 2.466666666666667,
+        "average_distance": 8.93899430351478
+      },
       "Marauder_2": {
         "dtw_similarity": 0.9662309450485811,
         "path_overlap": 2.142857142857143,
         "average_distance": 65.23530575904468
       },
-      "Marine_7": {
-        "dtw_similarity": 0.9770043932089486,
-        "path_overlap": 3.3076923076923075,
-        "average_distance": 46.38843119987451
+      "Siege Tank_1": {
+        "dtw_similarity": 0.9921648638582621,
+        "path_overlap": 2.142857142857143,
+        "average_distance": 22.022061401929786
       },
-      "Marine_2": {
-        "dtw_similarity": 0.947884183178715,
-        "path_overlap": 3.2,
-        "average_distance": 14.43251608906628
+      "Medivac_2": {
+        "dtw_similarity": 0.9936611102867615,
+        "path_overlap": 3.5555555555555554,
+        "average_distance": 10.027167712529986
+      },
+      "Marine_5": {
+        "dtw_similarity": 0.9793567005496916,
+        "path_overlap": 2.7857142857142856,
+        "average_distance": 33.8446947447291
+      },
+      "Marine_3": {
+        "dtw_similarity": 0.9731612599856846,
+        "path_overlap": 2.4,
+        "average_distance": 48.3517206404166
       },
       "Marine_4": {
         "dtw_similarity": 0.9462122814712558,
         "path_overlap": 1.9333333333333333,
         "average_distance": 100.06711228956003
+      },
+      "Marauder_1": {
+        "dtw_similarity": 0.9598192772297396,
+        "path_overlap": 2.25,
+        "average_distance": 81.9044396507397
+      },
+      "Marine_7": {
+        "dtw_similarity": 0.9770043932089486,
+        "path_overlap": 3.3076923076923075,
+        "average_distance": 46.38843119987451
       }
     },
     "key_node_match_rate": 0.7777777777777778,
     "sequence_similarity": 0.6875
   },
   {
-    "scene": "VLM注意力机制",
-    "experiment1": "qwen_20260213_160916_vlm_attention_1",
-    "experiment2": "qwen_20260213_172642_vlm_attention_1",
+    "scene": "P5vsT8",
+    "experiment1": "qwen_20260213_160916_P5vsT8",
+    "experiment2": "qwen_20260213_172642_P5vsT8",
     "model_type_1": "VLM",
     "model_type_2": "VLM",
-    "prefab_enabled_1": false,
-    "prefab_enabled_2": false,
+    "prefab_enabled_1": true,
+    "prefab_enabled_2": true,
     "trajectory_similarity": {
-      "Marine_1": {
+      "Medivac_1": {
+        "dtw_similarity": 0.9789975313672975,
+        "path_overlap": 3.25,
+        "average_distance": 12.909090909090908
+      },
+      "Viking Assault_1": {
         "dtw_similarity": 1.0,
-        "path_overlap": 1.0,
+        "path_overlap": 3.857142857142857,
         "average_distance": 0.0
       },
       "Zealot_1": {
@@ -984,34 +989,9 @@
         "path_overlap": 2.1666666666666665,
         "average_distance": 1.9090909090909092
       },
-      "Stalker_1": {
-        "dtw_similarity": 0.9881242195059419,
-        "path_overlap": 6.916666666666667,
-        "average_distance": 0.0
-      },
-      "Marauder_1": {
-        "dtw_similarity": 1.0,
-        "path_overlap": 2.2,
-        "average_distance": 0.0
-      },
-      "Viking Assault_1": {
-        "dtw_similarity": 1.0,
-        "path_overlap": 3.857142857142857,
-        "average_distance": 0.0
-      },
-      "Banshee_1": {
+      "Marine_1": {
         "dtw_similarity": 1.0,
         "path_overlap": 1.0,
-        "average_distance": 0.0
-      },
-      "Immortal_1": {
-        "dtw_similarity": 1.0,
-        "path_overlap": 6.25,
-        "average_distance": 0.0
-      },
-      "Ghost_1": {
-        "dtw_similarity": 1.0,
-        "path_overlap": 4.75,
         "average_distance": 0.0
       },
       "Reaper_1": {
@@ -1019,14 +999,9 @@
         "path_overlap": 4.428571428571429,
         "average_distance": 0.0
       },
-      "Hellbat_1": {
+      "Immortal_1": {
         "dtw_similarity": 1.0,
-        "path_overlap": 3.0,
-        "average_distance": 0.0
-      },
-      "Archon_1": {
-        "dtw_similarity": 1.0,
-        "path_overlap": 1.5,
+        "path_overlap": 6.25,
         "average_distance": 0.0
       },
       "Phoenix_1": {
@@ -1034,27 +1009,57 @@
         "path_overlap": 2.6666666666666665,
         "average_distance": 37.056633674990636
       },
-      "Medivac_1": {
-        "dtw_similarity": 0.9789975313672975,
-        "path_overlap": 3.25,
-        "average_distance": 12.909090909090908
+      "Ghost_1": {
+        "dtw_similarity": 1.0,
+        "path_overlap": 4.75,
+        "average_distance": 0.0
+      },
+      "Archon_1": {
+        "dtw_similarity": 1.0,
+        "path_overlap": 1.5,
+        "average_distance": 0.0
+      },
+      "Banshee_1": {
+        "dtw_similarity": 1.0,
+        "path_overlap": 1.0,
+        "average_distance": 0.0
+      },
+      "Hellbat_1": {
+        "dtw_similarity": 1.0,
+        "path_overlap": 3.0,
+        "average_distance": 0.0
+      },
+      "Marauder_1": {
+        "dtw_similarity": 1.0,
+        "path_overlap": 2.2,
+        "average_distance": 0.0
+      },
+      "Stalker_1": {
+        "dtw_similarity": 0.9881242195059419,
+        "path_overlap": 6.916666666666667,
+        "average_distance": 0.0
       }
     },
     "key_node_match_rate": 0.9285714285714286,
     "sequence_similarity": 0.8333333333333334
   },
   {
-    "scene": "VLM注意力机制",
-    "experiment1": "qwen_20260213_160916_vlm_attention_1",
-    "experiment2": "qwen_20260213_201016_vlm_attention_1",
+    "scene": "P5vsT8",
+    "experiment1": "qwen_20260213_160916_P5vsT8",
+    "experiment2": "qwen_20260213_201016_P5vsT8",
     "model_type_1": "VLM",
     "model_type_2": "VLM",
-    "prefab_enabled_1": false,
+    "prefab_enabled_1": true,
     "prefab_enabled_2": false,
     "trajectory_similarity": {
-      "Marine_1": {
+      "Medivac_1": {
+        "dtw_similarity": 0.9987257019049646,
+        "path_overlap": 3.8333333333333335,
+        "average_distance": 100.10490009272499
+      },
+      "Viking Assault_1": {
         "dtw_similarity": 1.0,
-        "path_overlap": 1.0,
+        "path_overlap": 3.142857142857143,
         "average_distance": 0.0
       },
       "Zealot_1": {
@@ -1062,34 +1067,9 @@
         "path_overlap": 0.36363636363636365,
         "average_distance": 47.45260915559336
       },
-      "Stalker_1": {
-        "dtw_similarity": 0.9897132630778306,
-        "path_overlap": 0.16666666666666666,
-        "average_distance": 9.256670590078443
-      },
-      "Marauder_1": {
-        "dtw_similarity": 0.9720395609688778,
-        "path_overlap": 0.4,
-        "average_distance": 54.053307021864995
-      },
-      "Viking Assault_1": {
-        "dtw_similarity": 1.0,
-        "path_overlap": 3.142857142857143,
-        "average_distance": 0.0
-      },
-      "Banshee_1": {
+      "Marine_1": {
         "dtw_similarity": 1.0,
         "path_overlap": 1.0,
-        "average_distance": 0.0
-      },
-      "Immortal_1": {
-        "dtw_similarity": 0.9371995888544049,
-        "path_overlap": 0.16666666666666666,
-        "average_distance": 67.76857610707401
-      },
-      "Ghost_1": {
-        "dtw_similarity": 1.0,
-        "path_overlap": 5.0,
         "average_distance": 0.0
       },
       "Reaper_1": {
@@ -1097,42 +1077,67 @@
         "path_overlap": 4.428571428571429,
         "average_distance": 0.0
       },
-      "Hellbat_1": {
-        "dtw_similarity": 0.9974350226514409,
-        "path_overlap": 2.3333333333333335,
-        "average_distance": 4.2
-      },
-      "Archon_1": {
-        "dtw_similarity": 0.9980088765534427,
-        "path_overlap": 1.5,
-        "average_distance": 2.0
+      "Immortal_1": {
+        "dtw_similarity": 0.9371995888544049,
+        "path_overlap": 0.16666666666666666,
+        "average_distance": 67.76857610707401
       },
       "Phoenix_1": {
         "dtw_similarity": 0.9974595408021437,
         "path_overlap": 2.6666666666666665,
         "average_distance": 41.669374114373234
       },
-      "Medivac_1": {
-        "dtw_similarity": 0.9987257019049646,
-        "path_overlap": 3.8333333333333335,
-        "average_distance": 100.10490009272499
+      "Ghost_1": {
+        "dtw_similarity": 1.0,
+        "path_overlap": 5.0,
+        "average_distance": 0.0
+      },
+      "Archon_1": {
+        "dtw_similarity": 0.9980088765534427,
+        "path_overlap": 1.5,
+        "average_distance": 2.0
+      },
+      "Banshee_1": {
+        "dtw_similarity": 1.0,
+        "path_overlap": 1.0,
+        "average_distance": 0.0
+      },
+      "Hellbat_1": {
+        "dtw_similarity": 0.9974350226514409,
+        "path_overlap": 2.3333333333333335,
+        "average_distance": 4.2
+      },
+      "Marauder_1": {
+        "dtw_similarity": 0.9720395609688778,
+        "path_overlap": 0.4,
+        "average_distance": 54.053307021864995
+      },
+      "Stalker_1": {
+        "dtw_similarity": 0.9897132630778306,
+        "path_overlap": 0.16666666666666666,
+        "average_distance": 9.256670590078443
       }
     },
     "key_node_match_rate": 0.6923076923076923,
     "sequence_similarity": 0.6666666666666667
   },
   {
-    "scene": "VLM注意力机制",
-    "experiment1": "qwen_20260213_160916_vlm_attention_1",
-    "experiment2": "qwen_20260214_095929_vlm_attention_1",
+    "scene": "P5vsT8",
+    "experiment1": "qwen_20260213_160916_P5vsT8",
+    "experiment2": "qwen_20260214_095929_P5vsT8",
     "model_type_1": "VLM",
     "model_type_2": "VLM",
-    "prefab_enabled_1": false,
+    "prefab_enabled_1": true,
     "prefab_enabled_2": false,
     "trajectory_similarity": {
-      "Marine_1": {
+      "Medivac_1": {
+        "dtw_similarity": 0.9917067832132413,
+        "path_overlap": 3.5454545454545454,
+        "average_distance": 16.012107773953787
+      },
+      "Viking Assault_1": {
         "dtw_similarity": 1.0,
-        "path_overlap": 1.0,
+        "path_overlap": 3.857142857142857,
         "average_distance": 0.0
       },
       "Zealot_1": {
@@ -1140,34 +1145,9 @@
         "path_overlap": 0.7272727272727273,
         "average_distance": 41.321683176868994
       },
-      "Stalker_1": {
-        "dtw_similarity": 1.0,
-        "path_overlap": 7.545454545454546,
-        "average_distance": 0.0
-      },
-      "Marauder_1": {
-        "dtw_similarity": 1.0,
-        "path_overlap": 2.2,
-        "average_distance": 0.0
-      },
-      "Viking Assault_1": {
-        "dtw_similarity": 1.0,
-        "path_overlap": 3.857142857142857,
-        "average_distance": 0.0
-      },
-      "Banshee_1": {
+      "Marine_1": {
         "dtw_similarity": 1.0,
         "path_overlap": 1.0,
-        "average_distance": 0.0
-      },
-      "Immortal_1": {
-        "dtw_similarity": 1.0,
-        "path_overlap": 6.090909090909091,
-        "average_distance": 0.0
-      },
-      "Ghost_1": {
-        "dtw_similarity": 1.0,
-        "path_overlap": 4.75,
         "average_distance": 0.0
       },
       "Reaper_1": {
@@ -1175,150 +1155,14 @@
         "path_overlap": 4.333333333333333,
         "average_distance": 0.0
       },
-      "Hellbat_1": {
+      "Immortal_1": {
         "dtw_similarity": 1.0,
-        "path_overlap": 3.0,
-        "average_distance": 0.0
-      },
-      "Archon_1": {
-        "dtw_similarity": 1.0,
-        "path_overlap": 1.5,
+        "path_overlap": 6.090909090909091,
         "average_distance": 0.0
       },
       "Phoenix_1": {
         "dtw_similarity": 1.0,
         "path_overlap": 3.0,
-        "average_distance": 0.0
-      },
-      "Medivac_1": {
-        "dtw_similarity": 0.9917067832132413,
-        "path_overlap": 3.5454545454545454,
-        "average_distance": 16.012107773953787
-      }
-    },
-    "key_node_match_rate": 1.0,
-    "sequence_similarity": 1.0
-  },
-  {
-    "scene": "VLM注意力机制",
-    "experiment1": "qwen_20260213_172642_vlm_attention_1",
-    "experiment2": "qwen_20260213_201016_vlm_attention_1",
-    "model_type_1": "VLM",
-    "model_type_2": "VLM",
-    "prefab_enabled_1": false,
-    "prefab_enabled_2": false,
-    "trajectory_similarity": {
-      "Marine_1": {
-        "dtw_similarity": 1.0,
-        "path_overlap": 1.0,
-        "average_distance": 0.0
-      },
-      "Zealot_1": {
-        "dtw_similarity": 0.9423838320000297,
-        "path_overlap": 0.25,
-        "average_distance": 48.285942488926686
-      },
-      "Stalker_1": {
-        "dtw_similarity": 0.9794017132293228,
-        "path_overlap": 0.16666666666666666,
-        "average_distance": 18.878922592684482
-      },
-      "Marauder_1": {
-        "dtw_similarity": 0.9720395609688778,
-        "path_overlap": 0.4,
-        "average_distance": 54.053307021864995
-      },
-      "Viking Assault_1": {
-        "dtw_similarity": 1.0,
-        "path_overlap": 3.142857142857143,
-        "average_distance": 0.0
-      },
-      "Banshee_1": {
-        "dtw_similarity": 1.0,
-        "path_overlap": 1.0,
-        "average_distance": 0.0
-      },
-      "Immortal_1": {
-        "dtw_similarity": 0.9352450708084715,
-        "path_overlap": 0.16666666666666666,
-        "average_distance": 69.2558130291525
-      },
-      "Ghost_1": {
-        "dtw_similarity": 1.0,
-        "path_overlap": 5.0,
-        "average_distance": 0.0
-      },
-      "Reaper_1": {
-        "dtw_similarity": 1.0,
-        "path_overlap": 5.285714285714286,
-        "average_distance": 0.0
-      },
-      "Hellbat_1": {
-        "dtw_similarity": 0.9974350226514409,
-        "path_overlap": 2.3333333333333335,
-        "average_distance": 4.2
-      },
-      "Archon_1": {
-        "dtw_similarity": 0.9980088765534427,
-        "path_overlap": 1.5,
-        "average_distance": 2.0
-      },
-      "Phoenix_1": {
-        "dtw_similarity": 0.9481799958806656,
-        "path_overlap": 2.1666666666666665,
-        "average_distance": 96.21278317846573
-      },
-      "Medivac_1": {
-        "dtw_similarity": 0.9796009068651629,
-        "path_overlap": 3.6666666666666665,
-        "average_distance": 107.35542611955589
-      }
-    },
-    "key_node_match_rate": 0.7142857142857143,
-    "sequence_similarity": 0.75
-  },
-  {
-    "scene": "VLM注意力机制",
-    "experiment1": "qwen_20260213_172642_vlm_attention_1",
-    "experiment2": "qwen_20260214_095929_vlm_attention_1",
-    "model_type_1": "VLM",
-    "model_type_2": "VLM",
-    "prefab_enabled_1": false,
-    "prefab_enabled_2": false,
-    "trajectory_similarity": {
-      "Marine_1": {
-        "dtw_similarity": 1.0,
-        "path_overlap": 1.0,
-        "average_distance": 0.0
-      },
-      "Zealot_1": {
-        "dtw_similarity": 0.9729619987760056,
-        "path_overlap": 0.8333333333333334,
-        "average_distance": 39.41259226777809
-      },
-      "Stalker_1": {
-        "dtw_similarity": 0.9881242195059419,
-        "path_overlap": 6.916666666666667,
-        "average_distance": 0.0
-      },
-      "Marauder_1": {
-        "dtw_similarity": 1.0,
-        "path_overlap": 2.2,
-        "average_distance": 0.0
-      },
-      "Viking Assault_1": {
-        "dtw_similarity": 1.0,
-        "path_overlap": 3.857142857142857,
-        "average_distance": 0.0
-      },
-      "Banshee_1": {
-        "dtw_similarity": 1.0,
-        "path_overlap": 1.0,
-        "average_distance": 0.0
-      },
-      "Immortal_1": {
-        "dtw_similarity": 1.0,
-        "path_overlap": 6.25,
         "average_distance": 0.0
       },
       "Ghost_1": {
@@ -1326,67 +1170,9 @@
         "path_overlap": 4.75,
         "average_distance": 0.0
       },
-      "Reaper_1": {
-        "dtw_similarity": 1.0,
-        "path_overlap": 4.428571428571429,
-        "average_distance": 0.0
-      },
-      "Hellbat_1": {
-        "dtw_similarity": 1.0,
-        "path_overlap": 3.0,
-        "average_distance": 0.0
-      },
       "Archon_1": {
         "dtw_similarity": 1.0,
         "path_overlap": 1.5,
-        "average_distance": 0.0
-      },
-      "Phoenix_1": {
-        "dtw_similarity": 0.9568653169614829,
-        "path_overlap": 2.6666666666666665,
-        "average_distance": 37.056633674990636
-      },
-      "Medivac_1": {
-        "dtw_similarity": 0.9717360970027765,
-        "path_overlap": 3.25,
-        "average_distance": 28.914476932619802
-      }
-    },
-    "key_node_match_rate": 0.9285714285714286,
-    "sequence_similarity": 0.8333333333333334
-  },
-  {
-    "scene": "VLM注意力机制",
-    "experiment1": "qwen_20260213_201016_vlm_attention_1",
-    "experiment2": "qwen_20260214_095929_vlm_attention_1",
-    "model_type_1": "VLM",
-    "model_type_2": "VLM",
-    "prefab_enabled_1": false,
-    "prefab_enabled_2": false,
-    "trajectory_similarity": {
-      "Marine_1": {
-        "dtw_similarity": 1.0,
-        "path_overlap": 1.0,
-        "average_distance": 0.0
-      },
-      "Zealot_1": {
-        "dtw_similarity": 0.9606226780609718,
-        "path_overlap": 0.36363636363636365,
-        "average_distance": 39.39648789189727
-      },
-      "Stalker_1": {
-        "dtw_similarity": 0.9897132630778306,
-        "path_overlap": 0.16666666666666666,
-        "average_distance": 9.256670590078443
-      },
-      "Marauder_1": {
-        "dtw_similarity": 0.9720395609688778,
-        "path_overlap": 0.4,
-        "average_distance": 54.053307021864995
-      },
-      "Viking Assault_1": {
-        "dtw_similarity": 1.0,
-        "path_overlap": 3.142857142857143,
         "average_distance": 0.0
       },
       "Banshee_1": {
@@ -1394,19 +1180,82 @@
         "path_overlap": 1.0,
         "average_distance": 0.0
       },
+      "Hellbat_1": {
+        "dtw_similarity": 1.0,
+        "path_overlap": 3.0,
+        "average_distance": 0.0
+      },
+      "Marauder_1": {
+        "dtw_similarity": 1.0,
+        "path_overlap": 2.2,
+        "average_distance": 0.0
+      },
+      "Stalker_1": {
+        "dtw_similarity": 1.0,
+        "path_overlap": 7.545454545454546,
+        "average_distance": 0.0
+      }
+    },
+    "key_node_match_rate": 1.0,
+    "sequence_similarity": 1.0
+  },
+  {
+    "scene": "P5vsT8",
+    "experiment1": "qwen_20260213_172642_P5vsT8",
+    "experiment2": "qwen_20260213_201016_P5vsT8",
+    "model_type_1": "VLM",
+    "model_type_2": "VLM",
+    "prefab_enabled_1": true,
+    "prefab_enabled_2": false,
+    "trajectory_similarity": {
+      "Medivac_1": {
+        "dtw_similarity": 0.9796009068651629,
+        "path_overlap": 3.6666666666666665,
+        "average_distance": 107.35542611955589
+      },
+      "Viking Assault_1": {
+        "dtw_similarity": 1.0,
+        "path_overlap": 3.142857142857143,
+        "average_distance": 0.0
+      },
+      "Zealot_1": {
+        "dtw_similarity": 0.9423838320000297,
+        "path_overlap": 0.25,
+        "average_distance": 48.285942488926686
+      },
+      "Marine_1": {
+        "dtw_similarity": 1.0,
+        "path_overlap": 1.0,
+        "average_distance": 0.0
+      },
+      "Reaper_1": {
+        "dtw_similarity": 1.0,
+        "path_overlap": 5.285714285714286,
+        "average_distance": 0.0
+      },
       "Immortal_1": {
-        "dtw_similarity": 0.9371995888544049,
+        "dtw_similarity": 0.9352450708084715,
         "path_overlap": 0.16666666666666666,
-        "average_distance": 67.76857610707401
+        "average_distance": 69.2558130291525
+      },
+      "Phoenix_1": {
+        "dtw_similarity": 0.9481799958806656,
+        "path_overlap": 2.1666666666666665,
+        "average_distance": 96.21278317846573
       },
       "Ghost_1": {
         "dtw_similarity": 1.0,
         "path_overlap": 5.0,
         "average_distance": 0.0
       },
-      "Reaper_1": {
+      "Archon_1": {
+        "dtw_similarity": 0.9980088765534427,
+        "path_overlap": 1.5,
+        "average_distance": 2.0
+      },
+      "Banshee_1": {
         "dtw_similarity": 1.0,
-        "path_overlap": 4.428571428571429,
+        "path_overlap": 1.0,
         "average_distance": 0.0
       },
       "Hellbat_1": {
@@ -1414,20 +1263,171 @@
         "path_overlap": 2.3333333333333335,
         "average_distance": 4.2
       },
+      "Marauder_1": {
+        "dtw_similarity": 0.9720395609688778,
+        "path_overlap": 0.4,
+        "average_distance": 54.053307021864995
+      },
+      "Stalker_1": {
+        "dtw_similarity": 0.9794017132293228,
+        "path_overlap": 0.16666666666666666,
+        "average_distance": 18.878922592684482
+      }
+    },
+    "key_node_match_rate": 0.7142857142857143,
+    "sequence_similarity": 0.75
+  },
+  {
+    "scene": "P5vsT8",
+    "experiment1": "qwen_20260213_172642_P5vsT8",
+    "experiment2": "qwen_20260214_095929_P5vsT8",
+    "model_type_1": "VLM",
+    "model_type_2": "VLM",
+    "prefab_enabled_1": true,
+    "prefab_enabled_2": false,
+    "trajectory_similarity": {
+      "Medivac_1": {
+        "dtw_similarity": 0.9717360970027765,
+        "path_overlap": 3.25,
+        "average_distance": 28.914476932619802
+      },
+      "Viking Assault_1": {
+        "dtw_similarity": 1.0,
+        "path_overlap": 3.857142857142857,
+        "average_distance": 0.0
+      },
+      "Zealot_1": {
+        "dtw_similarity": 0.9729619987760056,
+        "path_overlap": 0.8333333333333334,
+        "average_distance": 39.41259226777809
+      },
+      "Marine_1": {
+        "dtw_similarity": 1.0,
+        "path_overlap": 1.0,
+        "average_distance": 0.0
+      },
+      "Reaper_1": {
+        "dtw_similarity": 1.0,
+        "path_overlap": 4.428571428571429,
+        "average_distance": 0.0
+      },
+      "Immortal_1": {
+        "dtw_similarity": 1.0,
+        "path_overlap": 6.25,
+        "average_distance": 0.0
+      },
+      "Phoenix_1": {
+        "dtw_similarity": 0.9568653169614829,
+        "path_overlap": 2.6666666666666665,
+        "average_distance": 37.056633674990636
+      },
+      "Ghost_1": {
+        "dtw_similarity": 1.0,
+        "path_overlap": 4.75,
+        "average_distance": 0.0
+      },
       "Archon_1": {
-        "dtw_similarity": 0.9980088765534427,
+        "dtw_similarity": 1.0,
         "path_overlap": 1.5,
-        "average_distance": 2.0
+        "average_distance": 0.0
+      },
+      "Banshee_1": {
+        "dtw_similarity": 1.0,
+        "path_overlap": 1.0,
+        "average_distance": 0.0
+      },
+      "Hellbat_1": {
+        "dtw_similarity": 1.0,
+        "path_overlap": 3.0,
+        "average_distance": 0.0
+      },
+      "Marauder_1": {
+        "dtw_similarity": 1.0,
+        "path_overlap": 2.2,
+        "average_distance": 0.0
+      },
+      "Stalker_1": {
+        "dtw_similarity": 0.9881242195059419,
+        "path_overlap": 6.916666666666667,
+        "average_distance": 0.0
+      }
+    },
+    "key_node_match_rate": 0.9285714285714286,
+    "sequence_similarity": 0.8333333333333334
+  },
+  {
+    "scene": "P5vsT8",
+    "experiment1": "qwen_20260213_201016_P5vsT8",
+    "experiment2": "qwen_20260214_095929_P5vsT8",
+    "model_type_1": "VLM",
+    "model_type_2": "VLM",
+    "prefab_enabled_1": false,
+    "prefab_enabled_2": false,
+    "trajectory_similarity": {
+      "Medivac_1": {
+        "dtw_similarity": 0.991446251080601,
+        "path_overlap": 3.75,
+        "average_distance": 116.1101816594859
+      },
+      "Viking Assault_1": {
+        "dtw_similarity": 1.0,
+        "path_overlap": 3.142857142857143,
+        "average_distance": 0.0
+      },
+      "Zealot_1": {
+        "dtw_similarity": 0.9606226780609718,
+        "path_overlap": 0.36363636363636365,
+        "average_distance": 39.39648789189727
+      },
+      "Marine_1": {
+        "dtw_similarity": 1.0,
+        "path_overlap": 1.0,
+        "average_distance": 0.0
+      },
+      "Reaper_1": {
+        "dtw_similarity": 1.0,
+        "path_overlap": 4.428571428571429,
+        "average_distance": 0.0
+      },
+      "Immortal_1": {
+        "dtw_similarity": 0.9371995888544049,
+        "path_overlap": 0.16666666666666666,
+        "average_distance": 67.76857610707401
       },
       "Phoenix_1": {
         "dtw_similarity": 0.9974595408021437,
         "path_overlap": 2.6666666666666665,
         "average_distance": 41.669374114373234
       },
-      "Medivac_1": {
-        "dtw_similarity": 0.991446251080601,
-        "path_overlap": 3.75,
-        "average_distance": 116.1101816594859
+      "Ghost_1": {
+        "dtw_similarity": 1.0,
+        "path_overlap": 5.0,
+        "average_distance": 0.0
+      },
+      "Archon_1": {
+        "dtw_similarity": 0.9980088765534427,
+        "path_overlap": 1.5,
+        "average_distance": 2.0
+      },
+      "Banshee_1": {
+        "dtw_similarity": 1.0,
+        "path_overlap": 1.0,
+        "average_distance": 0.0
+      },
+      "Hellbat_1": {
+        "dtw_similarity": 0.9974350226514409,
+        "path_overlap": 2.3333333333333335,
+        "average_distance": 4.2
+      },
+      "Marauder_1": {
+        "dtw_similarity": 0.9720395609688778,
+        "path_overlap": 0.4,
+        "average_distance": 54.053307021864995
+      },
+      "Stalker_1": {
+        "dtw_similarity": 0.9897132630778306,
+        "path_overlap": 0.16666666666666666,
+        "average_distance": 9.256670590078443
       }
     },
     "key_node_match_rate": 0.6923076923076923,

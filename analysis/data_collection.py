@@ -31,20 +31,48 @@ def collect_experiments():
         
         # 提取实验信息
         exp_parts = exp_dir.split('_')
-        model_type = "VLM"  # 所有实验都使用VLM模型
+        
+        # 提取时间戳和地图名称
         timestamp = exp_parts[1] + '_' + exp_parts[2]
+        map_name = exp_parts[3] if len(exp_parts) > 3 else "Unknown"
         
         # 确定实验场景
-        scene = "Unknown"
-        for key, value in experiment_mapping.items():
-            if key in exp_dir:
-                scene = value
-                break
+        scene_mapping = {
+            "MMM": "MMM场景",
+            "MMM2": "MMM2场景",
+            "P5vsT8": "P5vsT8"
+        }
+        scene = scene_mapping.get(map_name, "Unknown")
         
-        # 确定预制函数状态和图像输入条件
-        # 根据目录命名规则推断
-        prefab_enabled = "ability" in exp_dir
-        image_input = True  # 所有VLM实验都有图像输入
+        # 根据时间戳确定条件组合
+        # 实验执行顺序：1)有预制函数+有视觉信息 2)有预制函数+无视觉信息 3)无预制函数+有视觉信息 4)无预制函数+无视觉信息
+        time_groups = {
+            # 1) 有预制函数+有视觉信息
+            "20260213_160916": {"prefab_enabled": True, "image_input": True, "model_type": "VLM"},
+            # 2) 有预制函数+无视觉信息
+            "20260213_172642": {"prefab_enabled": True, "image_input": False, "model_type": "VLM"},
+            "20260213_172646": {"prefab_enabled": True, "image_input": False, "model_type": "VLM"},
+            "20260213_172649": {"prefab_enabled": True, "image_input": False, "model_type": "VLM"},
+            # 3) 无预制函数+有视觉信息
+            "20260213_201016": {"prefab_enabled": False, "image_input": True, "model_type": "VLM"},
+            "20260213_201018": {"prefab_enabled": False, "image_input": True, "model_type": "VLM"},
+            "20260213_201025": {"prefab_enabled": False, "image_input": True, "model_type": "VLM"},
+            # 4) 无预制函数+无视觉信息
+            "20260214_095929": {"prefab_enabled": False, "image_input": False, "model_type": "VLM"},
+            "20260214_095942": {"prefab_enabled": False, "image_input": False, "model_type": "VLM"},
+            "20260214_095946": {"prefab_enabled": False, "image_input": False, "model_type": "VLM"}
+        }
+        
+        # 获取条件组合
+        if timestamp in time_groups:
+            prefab_enabled = time_groups[timestamp]["prefab_enabled"]
+            image_input = time_groups[timestamp]["image_input"]
+            model_type = time_groups[timestamp]["model_type"]
+        else:
+            # 默认值
+            prefab_enabled = False
+            image_input = False
+            model_type = "VLM"
         
         # 读取complete_data.json文件
         data_path = os.path.join(LOG_DIR, exp_dir, "episode_0", "logs_file", "complete_data.json")
